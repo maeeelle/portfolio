@@ -1,6 +1,8 @@
+import Image from 'next/image'
+
 export default function Home() {
   return (
-    <div className='min-h-screen flex flex-col'>
+    <div className='min-h-screen flex flex-col relative overflow-hidden'>
       <header className='bg-[#161C51] p-6 sm:p-4.5 flex justify-center items-center'>
         <p className='text-sm text-[#F1F2FF] font-normal uppercase max-sm:max-w-56'>
           Portfolio update coming soon, 2022&apos;s book is available{' '}
@@ -24,7 +26,27 @@ export default function Home() {
         </p>
       </header>
 
-      <main className='max-w-screen-lg mx-auto px-11 py-14 sm:py-20 flex-1 flex flex-col justify-end'>
+      <main className='max-w-screen-lg px-11 py-14 sm:py-20 flex-1 flex flex-col justify-end lg:ml-[12.5rem]'>
+        <Image
+          src='/blur-bg.png'
+          alt=''
+          role='presentation'
+          width={1512}
+          height={982}
+          quality={100}
+          priority
+          className='pointer-events-none absolute right-0 top-0 bottom-0 w-full h-full select-none -z-10'
+        />
+        <Image
+          src='/maelle-bg.png'
+          alt=''
+          role='presentation'
+          width={2578}
+          height={659}
+          quality={100}
+          priority
+          className='pointer-events-none absolute -left-24 sm:-left-12 bottom-16 object-cover object-left min-w-max w-full select-none -z-10 mix-blend-multiply supports-[mix-blend-mode:plus-darker]:mix-blend-plus-darker'
+        />
         <div className='mb-6 flex gap-4'>
           <a
             href='https://www.linkedin.com/in/maellems/'
