@@ -26,7 +26,7 @@ export default function Home() {
         </p>
       </header>
 
-      <main className='max-w-screen-lg px-11 py-14 sm:py-20 flex-1 flex flex-col justify-end lg:ml-[12.5rem]'>
+      <main className='max-w-screen-lg px-11 py-14 sm:py-20 flex-1 flex flex-col justify-end xl:ml-[12.5rem]'>
         <Image
           src='/blur-bg.png'
           alt=''
@@ -45,7 +45,7 @@ export default function Home() {
           height={659}
           quality={100}
           priority
-          className='pointer-events-none absolute -left-24 sm:-left-12 bottom-16 object-cover object-left min-w-max w-full select-none -z-10 mix-blend-multiply supports-[mix-blend-mode:plus-darker]:mix-blend-plus-darker'
+          className='pointer-events-none absolute -left-24 sm:-left-12 bottom-16 object-cover object-left min-w-max w-full 2xl:min-w-[171vw] select-none -z-10 mix-blend-multiply supports-[mix-blend-mode:plus-darker]:mix-blend-plus-darker'
         />
         <div className='mb-6 flex gap-4'>
           <a
