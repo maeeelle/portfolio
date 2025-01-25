@@ -89,7 +89,7 @@ export default function Home() {
           </a>
         </div>
 
-        <h1 className='inline-block font-normal text-5xl sm:text-5.5xl italic text-[#0C1354] max-w-5xl leading-tight'>
+        <h1 className='inline-block font-normal text-5xl sm:text-5.5xl italic text-[#0C1354] max-w-5xl leading-[56px] sm:leading-[65px]'>
           Digital product designer based in Paris{' '}
           <span className='hidden lg:inline'>
             <br />
