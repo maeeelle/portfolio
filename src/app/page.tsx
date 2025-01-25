@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className='min-h-screen'>
+    <div className='min-h-screen flex flex-col'>
       <header className='bg-[#161C51] p-6 sm:p-4.5 flex justify-center items-center'>
         <p className='text-sm text-[#F1F2FF] font-normal uppercase max-sm:max-w-56'>
           Portfolio update coming soon, 2022&apos;s book is available{' '}
@@ -24,7 +24,7 @@ export default function Home() {
         </p>
       </header>
 
-      <main className='max-w-screen-lg px-11 py-14 sm:py-20'>
+      <main className='max-w-screen-lg mx-auto px-11 py-14 sm:py-20 flex-1 flex flex-col justify-end'>
         <div className='mb-6 flex gap-4'>
           <a
             href='https://www.linkedin.com/in/maellems/'
