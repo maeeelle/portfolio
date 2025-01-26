@@ -28,9 +28,9 @@ export default function Home() {
 
       <main className='max-w-screen-lg px-11 py-14 sm:py-20 flex-1 flex flex-col justify-end xl:ml-[12.5rem]'>
         <Image
+          role='presentation'
           src='/blur-bg.png'
           alt=''
-          role='presentation'
           width={1512}
           height={982}
           quality={100}
@@ -38,9 +38,9 @@ export default function Home() {
           className='pointer-events-none absolute right-0 top-0 bottom-0 w-full h-full select-none -z-10'
         />
         <Image
+          role='presentation'
           src='/maelle-bg.png'
           alt=''
-          role='presentation'
           width={2578}
           height={659}
           quality={100}
