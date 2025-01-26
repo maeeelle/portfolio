@@ -52,7 +52,7 @@ export default function Home() {
             href='https://www.linkedin.com/in/maellems/'
             target='_blank'
             rel='noopener noreferrer'
-            className='text-sm text-[#11187F] p-3 bg-white bg-opacity-40 rounded-lg leading-none border border-white gap-2 inline-flex backdrop-blur-sm'
+            className='text-sm text-[#11187F] p-3 bg-white bg-opacity-40 rounded-lg leading-none border border-white gap-2 inline-flex items-center backdrop-blur-sm'
             aria-label='Visit LinkedIn profile'
           >
             <svg
@@ -70,7 +70,7 @@ export default function Home() {
           </a>
           <a
             href='mailto:moisismaelle@gmail.com'
-            className='text-sm text-[#11187F] p-3 bg-white bg-opacity-40 rounded-lg leading-none border border-white gap-2 inline-flex backdrop-blur-sm'
+            className='text-sm text-[#11187F] p-3 bg-white bg-opacity-40 rounded-lg leading-none border border-white gap-2 inline-flex items-center backdrop-blur-sm'
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
