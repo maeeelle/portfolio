@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className='min-h-screen flex flex-col relative overflow-hidden'>
+    <div className='min-h-dvh flex flex-col relative overflow-hidden max-h-dvh'>
       <header className='bg-[#161C51] p-6 sm:p-4.5 flex justify-center items-center'>
         <p className='text-sm text-[#F1F2FF] font-normal uppercase max-sm:max-w-56'>
           Portfolio update coming soon, 2022&apos;s book is available{' '}
