@@ -29,7 +29,7 @@ export default function Home() {
       <main className='max-w-screen-lg px-11 py-14 sm:py-20 flex-1 flex flex-col justify-end xl:ml-[12.5rem]'>
         <Image
           role='presentation'
-          src='/blur-bg.png'
+          src='/blur-bg.webp'
           alt=''
           width={1512}
           height={982}
@@ -38,11 +38,11 @@ export default function Home() {
         />
         <Image
           role='presentation'
-          src='/maelle-bg.png'
+          src='/maelle-bg.webp'
           alt=''
           width={2578}
           height={659}
-          quality={90}
+          unoptimized
           priority
           className='pointer-events-none absolute -left-24 sm:-left-12 bottom-16 object-cover object-left min-w-max w-full 2xl:min-w-[171vw] select-none -z-10 mix-blend-multiply supports-[mix-blend-mode:plus-darker]:mix-blend-plus-darker'
         />
