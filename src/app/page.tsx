@@ -34,7 +34,7 @@ export default function Home() {
           width={1512}
           height={982}
           priority
-          className='pointer-events-none absolute right-0 top-0 w-full h-full select-none -z-10'
+          className='pointer-events-none absolute right-0 top-0 w-full h-screen object-cover select-none -z-10'
         />
         <Image
           role='presentation'
