@@ -33,9 +33,8 @@ export default function Home() {
           alt=''
           width={1512}
           height={982}
-          quality={100}
           priority
-          className='pointer-events-none absolute right-0 top-0 bottom-0 w-full h-full select-none -z-10'
+          className='pointer-events-none absolute right-0 top-0 w-full h-full select-none -z-10'
         />
         <Image
           role='presentation'
@@ -43,7 +42,7 @@ export default function Home() {
           alt=''
           width={2578}
           height={659}
-          quality={100}
+          quality={90}
           priority
           className='pointer-events-none absolute -left-24 sm:-left-12 bottom-16 object-cover object-left min-w-max w-full 2xl:min-w-[171vw] select-none -z-10 mix-blend-multiply supports-[mix-blend-mode:plus-darker]:mix-blend-plus-darker'
         />
