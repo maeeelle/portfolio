@@ -88,12 +88,9 @@ export default function Home() {
           </a>
         </div>
 
-        <h1 className='inline-block font-normal text-5xl sm:text-5.5xl italic text-[#0C1354] max-w-5xl leading-[56px] sm:leading-[65px]'>
-          Digital product designer based in Paris{' '}
-          <span className='hidden lg:inline'>
-            <br />
-          </span>
-          focused on clean and user-centered solutions
+        <h1 className='inline-block font-normal text-5xl sm:text-5.5xl italic text-[#0C1354] max-w-5xl leading-[56px] sm:leading-[65px] text-balance'>
+          Digital product designer based in Paris focused on clean and
+          user-centered solutions
         </h1>
       </main>
     </div>
