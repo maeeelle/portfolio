@@ -1,6 +1,7 @@
 import { Project } from '@/components/Project'
 import { setRequestLocale } from 'next-intl/server'
 import Link from 'next/link'
+import { projects } from './_projects'
 
 type HomeProps = {
   params: Promise<{ locale: string }>
@@ -42,7 +43,9 @@ export default async function Home({ params }: HomeProps) {
       </header>
 
       <main className='flex flex-col gap-y-20 px-20 py-10'>
-        <Project />
+        {projects.map((project) => (
+          <Project key={project.project.title} {...project} />
+        ))}
       </main>
 
       <footer className='flex justify-between items-center px-20 py-6 font-normal text-[#282828] text-base'>
