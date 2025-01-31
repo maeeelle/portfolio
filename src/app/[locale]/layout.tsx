@@ -20,6 +20,9 @@ const diolce = localFont({
 
 export const metadata: Metadata = {
   title: 'maëlle ・ digital product designer',
+  alternates: {
+    canonical: 'https://maelle.works/',
+  },
 }
 
 export function generateStaticParams() {
