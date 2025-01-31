@@ -1,28 +1,44 @@
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 import Image from 'next/image'
 
-export default function Home() {
+type HomeProps = {
+  params: Promise<{ locale: string }>
+}
+
+export default async function Home({ params }: HomeProps) {
+  const { locale } = await params
+  setRequestLocale(locale)
+
+  const t = await getTranslations('home')
+
   return (
     <div className='min-h-dvh flex flex-col relative overflow-hidden max-h-dvh'>
       <header className='bg-[#161C51] p-6 sm:p-4.5 flex justify-center items-center'>
         <p className='text-sm text-[#F1F2FF] font-normal uppercase max-sm:max-w-56'>
-          Portfolio update coming soon, 2022&apos;s book is available{' '}
-          <a href='/doc/book.pdf' className='inline-flex items-center gap-0.5'>
-            <span className='underline decoration-wavy underline-offset-4 decoration-from-font text-white'>
-              here
-            </span>
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              width='14'
-              height='14'
-              fill='none'
-              viewBox='0 0 14 14'
-            >
-              <path
-                fill='#fff'
-                d='m3.733 10.5-.816-.817 5.6-5.6H3.5V2.917h7v7H9.333V4.9l-5.6 5.6Z'
-              />
-            </svg>
-          </a>
+          {t.rich('header', {
+            book: (chunks) => (
+              <a
+                href='/doc/book.pdf'
+                className='inline-flex items-center gap-0.5'
+              >
+                <span className='underline decoration-wavy underline-offset-4 decoration-from-font text-white'>
+                  {chunks}
+                </span>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='14'
+                  height='14'
+                  fill='none'
+                  viewBox='0 0 14 14'
+                >
+                  <path
+                    fill='#fff'
+                    d='m3.733 10.5-.816-.817 5.6-5.6H3.5V2.917h7v7H9.333V4.9l-5.6 5.6Z'
+                  />
+                </svg>
+              </a>
+            ),
+          })}
         </p>
       </header>
 
