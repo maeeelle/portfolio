@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #f9f9f9;
   --foreground: #171717;
 
   font-synthesis: none;
@@ -16,13 +16,4 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-overused-gr), Helvetica, sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-diolce), Helvetica, sans-serif;
 }
