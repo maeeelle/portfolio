@@ -39,6 +39,12 @@ export default async function Home({ params }: HomeProps) {
           </button>
         </div>
       </header>
+
+      <footer className='flex justify-between items-center px-20 py-6 font-normal text-[#282828] text-base'>
+        <span>Développé par Erick</span>
+        <span>Crédits</span>
+        <span>Mis à jour : Février 2025</span>
+      </footer>
     </div>
   )
 }
