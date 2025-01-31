@@ -2,6 +2,7 @@ import { Project } from '@/components/Project'
 import { setRequestLocale } from 'next-intl/server'
 import Link from 'next/link'
 import { projects } from './_projects'
+import { Separator } from '@/components/Separator'
 
 type HomeProps = {
   params: Promise<{ locale: string }>
@@ -41,13 +42,20 @@ export default async function Home({ params }: HomeProps) {
           </button>
         </div>
       </header>
+      <Separator className='relative left-1/2 -translate-x-1/2 w-screen' />
 
-      <main className='flex flex-col gap-y-20 px-20 py-10'>
-        {projects.map((project) => (
-          <Project key={project.project.title} {...project} />
+      <main className='flex flex-col gap-y-10 px-20 py-10 max-w-screen-2xl mx-auto'>
+        {projects.map((project, index) => (
+          <div key={project.project.title}>
+            <Project {...project} />
+            {index < projects.length - 1 && (
+              <Separator className='mt-10 relative left-1/2 -translate-x-1/2 w-screen' />
+            )}
+          </div>
         ))}
       </main>
 
+      <Separator className='relative left-1/2 -translate-x-1/2 w-screen' />
       <footer className='flex justify-between items-center px-20 py-6 font-normal text-[#282828] text-base'>
         <span>Développé par Erick</span>
         <span>Crédits</span>
