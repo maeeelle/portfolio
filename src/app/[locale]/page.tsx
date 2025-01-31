@@ -1,3 +1,4 @@
+import { Project } from '@/components/Project'
 import { setRequestLocale } from 'next-intl/server'
 import Link from 'next/link'
 
@@ -39,6 +40,10 @@ export default async function Home({ params }: HomeProps) {
           </button>
         </div>
       </header>
+
+      <main className='flex flex-col gap-y-20 px-20 py-10'>
+        <Project />
+      </main>
 
       <footer className='flex justify-between items-center px-20 py-6 font-normal text-[#282828] text-base'>
         <span>Développé par Erick</span>
