@@ -2,6 +2,17 @@ import { Link } from '@/i18n/routing'
 import { notFound } from 'next/navigation'
 import { projects } from '../_projects'
 import Image from 'next/image'
+import { ProjectTag } from '@/components/Project'
+
+function Heading({ children }: { children: React.ReactNode }) {
+  return <h2 className='font-bold text-xs text-[#AEAEAE] mb-1'>{children}</h2>
+}
+
+function Paragraph({ children }: { children: React.ReactNode }) {
+  return (
+    <p className='text-base/relaxed font-[350] text-[#282828]'>{children}</p>
+  )
+}
 
 type PageProps = {
   params: Promise<{
@@ -74,8 +85,46 @@ export default async function ProjectPage({ params }: PageProps) {
             </div>
           </header>
 
-          {/* TODO */}
-          <div className='content'>{/* body content here */}</div>
+          <div className='my-10 space-y-8'>
+            <section>
+              <Heading>Contexte</Heading>
+              <Paragraph>
+                Mon Coach Bescherelle est une application développée par Hatier
+                proposant un entraînement en orthographe et en rédaction. Elle
+                permet un apprentissage basé sur l’intelligence artificielle
+                afin de s’adapter au parcours de l’utilisateur en temps réel.
+                Cet outil est mis à disposition des entreprises et des écoles
+                afin d’aider les personnes à progresser de manière ludique. Il
+                cible surtout les lycéens et les salariés. Cette application
+                présente à la fois un côté B2C et un côté B2B accessible via un
+                code d’activation.  Mon coach Bescherelle permet aussi à ses
+                utilisateurs de valider leurs compétences grâce à la
+                certification Bescherelle.
+              </Paragraph>
+            </section>
+            <section>
+              <Heading>Contribution</Heading>
+              <Paragraph>
+                Le problème de Mon coach Bescherelle est son accessibilité. En
+                effet, elle n’est présente que sous forme d’application sur
+                smartphone. Ma mission était donc de rendre Mon Coach
+                Bescherelle disponible sur la plateforme Educadhoc tout en
+                prenant en compte les contraintes posées par celle-ci.
+              </Paragraph>
+            </section>
+          </div>
+
+          <footer className='flex justify-between'>
+            <ul className='inline-flex gap-2 flex-wrap list-none p-0'>
+              <ProjectTag name='UX' />
+              <ProjectTag name='UI' />
+              <ProjectTag name='Web Application' />
+            </ul>
+
+            <small className='font-[350] text-[#8E8E8E] text-base/5'>
+              2020
+            </small>
+          </footer>
         </article>
       </main>
 
