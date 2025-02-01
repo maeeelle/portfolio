@@ -66,7 +66,7 @@ export default async function ProjectPage({ params }: PageProps) {
             <div className='text-3xl text-balance'>
               <h1 className='font-medium'>
                 <span>{project.project.title}</span>
-                <span aria-hidden='true'> - </span>
+                <span> - </span>
                 <span className='font-[350]'>{project.project.subtitle}</span>
               </h1>
             </div>
