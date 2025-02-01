@@ -39,7 +39,7 @@ export default async function ProjectPage({ params }: PageProps) {
   }
 
   return (
-    <div className='max-w-screen-2xl mx-auto min-h-screen flex text-[#161616]'>
+    <div className='max-w-screen-2xl mx-auto min-h-screen flex text-[#161616] tracking-[-.02em]'>
       <div className='absolute top-0 bottom-0 right-0 bg-white -z-10 w-7/12' />
 
       <main className='bg-[#F9F9F9] flex-[6] px-20 py-5' role='main'>
@@ -47,7 +47,7 @@ export default async function ProjectPage({ params }: PageProps) {
           <nav aria-label='Back navigation' className='inline-flex'>
             <Link
               href='/'
-              className='flex gap-2 items-center text-[#161616] text-base/none font-normal'
+              className='flex gap-2 items-center text-[#161616] text-base/none font-normal tracking-normal'
               aria-label='Return to home page'
             >
               <svg
@@ -80,7 +80,7 @@ export default async function ProjectPage({ params }: PageProps) {
                 />
                 <span>{project.organization.name}</span>
               </div>
-              <div className='text-3xl text-balance'>
+              <div className='text-3xl/[2.375rem] text-balance'>
                 <h1 className='font-medium'>
                   <span>{project.project.title}</span>
                   <span> - </span>
