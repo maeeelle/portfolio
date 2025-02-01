@@ -26,7 +26,9 @@ export default async function ProjectPage({ params }: PageProps) {
 
   return (
     <div className='max-w-screen-2xl mx-auto min-h-screen flex text-[#161616]'>
-      <main className='bg-[#F9F9F9] flex-1 px-20 py-5' role='main'>
+      <div className='absolute top-0 bottom-0 right-0 bg-white -z-10 w-7/12' />
+
+      <main className='bg-[#F9F9F9] flex-[6] px-20 py-5' role='main'>
         <nav aria-label='Back navigation' className='inline-flex'>
           <Link
             href='/'
@@ -77,9 +79,73 @@ export default async function ProjectPage({ params }: PageProps) {
         </article>
       </main>
 
-      {/* TODO */}
-      <aside className='bg-white flex-1 px-20 py-5' role='complementary'>
-        {/* aside content */}
+      <aside
+        className='bg-white flex-[8] px-20 py-5 mt-16 flex flex-col gap-10'
+        role='complementary'
+      >
+        <Image
+          src='/images/projects/mon-coach-bescherelle/pré-accueil-1.png'
+          alt=''
+          width={1920}
+          height={1080}
+          className='rounded-lg w-full select-none'
+        />
+        <Image
+          src='/images/projects/mon-coach-bescherelle/tableau-de-bord-test.png'
+          alt=''
+          width={1920}
+          height={1080}
+          className='rounded-lg w-full select-none'
+        />
+        <Image
+          src='/images/projects/mon-coach-bescherelle/tableau-de-bord-n1-td.png'
+          alt=''
+          width={1920}
+          height={1080}
+          className='rounded-lg w-full select-none'
+        />
+        <Image
+          src='/images/projects/mon-coach-bescherelle/parcours-test.png'
+          alt=''
+          width={1920}
+          height={1080}
+          className='rounded-lg w-full select-none'
+        />
+        <Image
+          src='/images/projects/mon-coach-bescherelle/parcours-conjugaison-intermédiaire.png'
+          alt=''
+          width={1920}
+          height={1080}
+          className='rounded-lg w-full select-none'
+        />
+        <Image
+          src='/images/projects/mon-coach-bescherelle/parcours-rédaction-Intermédiaire.png'
+          alt=''
+          width={1920}
+          height={1080}
+          className='rounded-lg w-full select-none'
+        />
+        <Image
+          src='/images/projects/mon-coach-bescherelle/parcours-confusions-exercice.png'
+          alt=''
+          width={1920}
+          height={1080}
+          className='rounded-lg w-full select-none'
+        />
+        <Image
+          src='/images/projects/mon-coach-bescherelle/parcours-accords-exercice.png'
+          alt=''
+          width={1920}
+          height={1080}
+          className='rounded-lg w-full select-none'
+        />
+        <Image
+          src='/images/projects/mon-coach-bescherelle/vidéos-accords.png'
+          alt=''
+          width={1920}
+          height={1080}
+          className='rounded-lg w-full select-none'
+        />
       </aside>
     </div>
   )
