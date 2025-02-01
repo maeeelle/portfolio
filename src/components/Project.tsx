@@ -6,9 +6,9 @@ type ProjectTagProps = {
   name: string
 }
 
-function ProjectTag({ name }: ProjectTagProps) {
+export function ProjectTag({ name }: ProjectTagProps) {
   return (
-    <li className='text-[#838383] text-base/none px-2 py-1.5 rounded-sm border border-[#DBDBDB]'>
+    <li className='text-[#838383] text-base/none px-2 py-1.5 rounded-sm border border-[#DBDBDB] font-[350]'>
       {name}
     </li>
   )
