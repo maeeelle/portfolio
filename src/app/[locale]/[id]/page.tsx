@@ -136,63 +136,63 @@ export default async function ProjectPage({ params }: PageProps) {
           alt=''
           width={1920}
           height={1080}
-          className='rounded-lg w-full select-none'
+          className='rounded-lg w-full select-none border border-black/10'
         />
         <Image
           src='/images/projects/mon-coach-bescherelle/tableau-de-bord-test.png'
           alt=''
           width={1920}
           height={1080}
-          className='rounded-lg w-full select-none'
+          className='rounded-lg w-full select-none border border-black/10'
         />
         <Image
           src='/images/projects/mon-coach-bescherelle/tableau-de-bord-n1-td.png'
           alt=''
           width={1920}
           height={1080}
-          className='rounded-lg w-full select-none'
+          className='rounded-lg w-full select-none border border-black/10'
         />
         <Image
           src='/images/projects/mon-coach-bescherelle/parcours-test.png'
           alt=''
           width={1920}
           height={1080}
-          className='rounded-lg w-full select-none'
+          className='rounded-lg w-full select-none border border-black/10'
         />
         <Image
           src='/images/projects/mon-coach-bescherelle/parcours-conjugaison-intermédiaire.png'
           alt=''
           width={1920}
           height={1080}
-          className='rounded-lg w-full select-none'
+          className='rounded-lg w-full select-none border border-black/10'
         />
         <Image
           src='/images/projects/mon-coach-bescherelle/parcours-rédaction-Intermédiaire.png'
           alt=''
           width={1920}
           height={1080}
-          className='rounded-lg w-full select-none'
+          className='rounded-lg w-full select-none border border-black/10'
         />
         <Image
           src='/images/projects/mon-coach-bescherelle/parcours-confusions-exercice.png'
           alt=''
           width={1920}
           height={1080}
-          className='rounded-lg w-full select-none'
+          className='rounded-lg w-full select-none border border-black/10'
         />
         <Image
           src='/images/projects/mon-coach-bescherelle/parcours-accords-exercice.png'
           alt=''
           width={1920}
           height={1080}
-          className='rounded-lg w-full select-none'
+          className='rounded-lg w-full select-none border border-black/10'
         />
         <Image
           src='/images/projects/mon-coach-bescherelle/vidéos-accords.png'
           alt=''
           width={1920}
           height={1080}
-          className='rounded-lg w-full select-none'
+          className='rounded-lg w-full select-none border border-black/10'
         />
       </aside>
     </div>
