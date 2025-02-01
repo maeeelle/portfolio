@@ -14,12 +14,14 @@ export default async function Home({ params }: HomeProps) {
 
   return (
     <div className='min-h-dvh flex flex-col relative overflow-hidden'>
-      <header className='flex justify-between items-center px-20 py-5 font-normal text-[#282828] text-base'>
-        <nav className='space-x-4'>
-          <Link href='/doc/cv_maelle.pdf'>CV</Link>
-        </nav>
+      <header className='flex flex-wrap justify-between items-center px-8 sm:px-20 pt-16 pb-5 sm:pt-5 font-normal text-[#282828] text-base'>
+        <Link href='/doc/cv_maelle.pdf' className='max-sm:text-[#4F32FF]'>
+          CV
+        </Link>
 
-        <h1>Maëlle - Digital Product Designer</h1>
+        <h1 className='max-sm:-order-1 w-full sm:w-auto mb-1.5 sm:mb-0'>
+          Maëlle - Digital Product Designer
+        </h1>
 
         <div className='flex gap-5 items-center'>
           <Link
