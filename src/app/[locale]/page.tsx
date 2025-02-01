@@ -14,7 +14,7 @@ export default async function Home({ params }: HomeProps) {
 
   return (
     <div className='min-h-dvh flex flex-col relative overflow-hidden'>
-      <header className='flex flex-wrap justify-between items-center px-8 sm:px-20 pb-5 pt-5 font-normal text-[#282828] text-base'>
+      <header className='max-w-screen-2xl mx-auto w-full flex flex-wrap justify-between items-center px-8 sm:px-20 pb-5 pt-5 font-normal text-[#282828] text-base'>
         <Link href='/doc/cv_maelle.pdf' className='max-sm:text-[#4F32FF]'>
           CV
         </Link>
@@ -87,7 +87,7 @@ export default async function Home({ params }: HomeProps) {
       </main>
 
       <Separator className='relative left-1/2 -translate-x-1/2 w-screen' />
-      <footer className='flex flex-col gap-4 sm:flex-row sm:gap-0 sm:justify-between sm:items-center px-8 sm:px-20 pb-12 sm:pb-6 pt-8 sm:pt-5 font-normal text-[#282828] text-base'>
+      <footer className='max-w-screen-2xl mx-auto w-full flex flex-col gap-4 sm:flex-row sm:gap-0 sm:justify-between sm:items-center px-8 sm:px-20 pb-12 sm:pb-6 pt-8 sm:pt-5 font-normal text-[#282828] text-base'>
         <span>
           Développé par{' '}
           <a
