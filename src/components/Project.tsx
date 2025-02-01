@@ -59,7 +59,7 @@ export function Project({ organization, project, tags, id }: Project) {
               className='text-3xl/none sm:text-4.5xl/none text-black mb-2 inline-flex items-center gap-2 group-hover:text-[#4F32FF] transition-colors duration-150'
             >
               {project.title}
-              <ArrowIcon className='hidden sm:inline-block transition-all duration-300 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0' />
+              <ArrowIcon className='hidden shrink-0 sm:inline-block transition-all duration-300 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0' />
             </h2>
             <p className='text-[#8E8E8E] text-xl/none sm:text-2xl/none'>
               {project.subtitle}
