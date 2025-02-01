@@ -75,12 +75,12 @@ export default async function Home({ params }: HomeProps) {
       </header>
       <Separator className='relative left-1/2 -translate-x-1/2 w-screen' />
 
-      <main className='flex flex-col gap-y-10 px-20 py-10 max-w-screen-2xl mx-auto flex-1'>
+      <main className='relative flex flex-col gap-y-20 px-8 sm:px-20 py-10 max-w-screen-2xl mx-auto flex-1'>
         {projects.map((project, index) => (
           <div key={project.id}>
             <Project {...project} />
             {index < projects.length - 1 && (
-              <Separator className='mt-10 relative left-1/2 -translate-x-1/2 w-screen' />
+              <Separator className='mt-10 absolute left-1/2 -translate-x-1/2 w-screen' />
             )}
           </div>
         ))}

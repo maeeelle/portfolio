@@ -14,7 +14,7 @@ export function ProjectTag({ name }: ProjectTagProps) {
   )
 }
 
-function ArrowIcon() {
+function ArrowIcon({ className }: { className?: string }) {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -22,7 +22,7 @@ function ArrowIcon() {
       height='32'
       fill='none'
       viewBox='0 0 32 32'
-      className='transition-all duration-300 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0'
+      className={className}
     >
       <path
         fill='#4F32FF'
@@ -37,9 +37,9 @@ export function Project({ organization, project, tags, id }: Project) {
 
   return (
     <Link href={`/${id}`} aria-labelledby={titleId} className='block group'>
-      <article aria-labelledby={titleId} className='font-[350] pr-12'>
-        <header>
-          <div className='text-[#161616] text-base mb-4 inline-flex items-center gap-2'>
+      <article aria-labelledby={titleId} className='font-[350]'>
+        <header className='relative'>
+          <div className='text-[#161616] text-base mb-3 sm:mb-4 inline-flex items-center gap-2'>
             <Image
               src={organization.image}
               alt={`${organization.name} logo`}
@@ -56,16 +56,20 @@ export function Project({ organization, project, tags, id }: Project) {
           <div>
             <h2
               id={titleId}
-              className='text-4.5xl/none text-black mb-2 inline-flex items-center gap-2 group-hover:text-[#4F32FF] transition-colors duration-150'
+              className='text-3xl/none sm:text-4.5xl/none text-black mb-2 inline-flex items-center gap-2 group-hover:text-[#4F32FF] transition-colors duration-150'
             >
               {project.title}
-              <ArrowIcon />
+              <ArrowIcon className='hidden sm:inline-block transition-all duration-300 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0' />
             </h2>
-            <p className='text-[#8E8E8E] text-2xl/none'>{project.subtitle}</p>
+            <p className='text-[#8E8E8E] text-xl/none sm:text-2xl/none'>
+              {project.subtitle}
+            </p>
           </div>
+
+          <ArrowIcon className='absolute right-0 top-0 size-5 sm:hidden' />
         </header>
 
-        <footer className='mt-6'>
+        <footer className='mt-4 sm:mt-6'>
           <ul
             className='inline-flex gap-2 flex-wrap list-none p-0'
             aria-label='Project technologies'
