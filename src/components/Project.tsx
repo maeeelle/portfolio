@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import type { Project } from '@/app/[locale]/_projects'
+import { Link } from '@/i18n/routing'
 
 type ProjectTagProps = {
   name: string
@@ -16,7 +16,7 @@ function ProjectTag({ name }: ProjectTagProps) {
 
 export function Project({ organization, project, tags, id }: Project) {
   return (
-    <Link href={`/project/${id}`}>
+    <Link href={`/${id}`}>
       <article className='font-[350] pr-12'>
         <div>
           <div className='text-[#161616] text-base mb-4 inline-flex items-center gap-2'>
