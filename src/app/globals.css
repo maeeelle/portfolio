@@ -17,3 +17,7 @@ body {
   background: var(--background);
   font-family: var(--font-overused-gr), Helvetica, sans-serif;
 }
+
+*::selection {
+  background-color: #b2ff5d;
+}
