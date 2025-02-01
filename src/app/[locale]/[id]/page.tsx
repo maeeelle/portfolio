@@ -5,7 +5,11 @@ import Image from 'next/image'
 import { ProjectTag } from '@/components/Project'
 
 function Heading({ children }: { children: React.ReactNode }) {
-  return <h2 className='font-bold text-xs text-[#AEAEAE] mb-1'>{children}</h2>
+  return (
+    <h2 className='font-bold text-xs text-[#AEAEAE] mb-1 uppercase'>
+      {children}
+    </h2>
+  )
 }
 
 function Paragraph({ children }: { children: React.ReactNode }) {
