@@ -1,4 +1,5 @@
 export type Project = {
+  id: string
   organization: {
     name: string
     image: string
@@ -13,6 +14,7 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: 'collection-zoologie-sorbonne',
     organization: {
       name: 'Université Sorbonne Paris Nord',
       image: '/images/projects/sorbonne.png',
@@ -25,6 +27,7 @@ export const projects: Project[] = [
     tags: ['User Research', 'UX'],
   },
   {
+    id: 'easipromo',
     organization: {
       name: 'Carrefour',
       image: '/images/projects/carrefour.png',
@@ -38,6 +41,7 @@ export const projects: Project[] = [
     tags: ['User Research', 'UX', 'UI', 'Web Application'],
   },
   {
+    id: 'buddy',
     organization: {
       name: 'Carrefour',
       image: '/images/projects/carrefour.png',
@@ -51,6 +55,7 @@ export const projects: Project[] = [
     tags: ['Illustration'],
   },
   {
+    id: 'qsmp-shop',
     organization: {
       name: 'Quackity Studios',
       image: '/images/projects/quackity.png',
@@ -64,6 +69,7 @@ export const projects: Project[] = [
     tags: ['User Research', 'UX', 'UI', 'E-commerce'],
   },
   {
+    id: 'qsmp-co',
     organization: {
       name: 'Quackity Studios',
       image: '/images/projects/quackity.png',
@@ -77,6 +83,7 @@ export const projects: Project[] = [
     tags: ['User Research', 'UX', 'UI', 'Site vitrine'],
   },
   {
+    id: 'maison-laurentine',
     organization: {
       name: 'Université Sorbonne Paris Nord',
       image: '/images/projects/sorbonne.png',
@@ -90,6 +97,7 @@ export const projects: Project[] = [
     tags: ['User Research', 'UX', 'UI', 'Web Application'],
   },
   {
+    id: 'ths-tracker',
     organization: {
       name: 'Projet personnel',
       image: '/images/projects/ths.png',
@@ -103,6 +111,7 @@ export const projects: Project[] = [
     tags: ['User Research', 'UX', 'Application mobile'],
   },
   {
+    id: 'totoro',
     organization: {
       name: 'HETIC',
       image: '/images/projects/hetic.png',
@@ -115,6 +124,7 @@ export const projects: Project[] = [
     tags: ['UX', 'UI', 'Application mobile'],
   },
   {
+    id: 'mon-coach-bescherelle',
     organization: {
       name: 'Editions Hatier',
       image: '/images/projects/hatier.png',

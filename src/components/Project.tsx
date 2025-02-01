@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import type { Project } from '@/app/[locale]/_projects'
 
 type ProjectTagProps = {
@@ -13,38 +14,40 @@ function ProjectTag({ name }: ProjectTagProps) {
   )
 }
 
-export function Project({ organization, project, tags }: Project) {
+export function Project({ organization, project, tags, id }: Project) {
   return (
-    <article className='font-[350]'>
-      <div>
-        <div className='text-[#161616] text-base mb-4 inline-flex items-center gap-2'>
-          <Image
-            src={organization.image}
-            alt={organization.name}
-            width={80}
-            height={80}
-            className='rounded-sm size-5'
-            aria-hidden
-          />
+    <Link href={`/project/${id}`}>
+      <article className='font-[350] pr-12'>
+        <div>
+          <div className='text-[#161616] text-base mb-4 inline-flex items-center gap-2'>
+            <Image
+              src={organization.image}
+              alt={organization.name}
+              width={80}
+              height={80}
+              className='rounded-sm size-5'
+              aria-hidden
+            />
+            <div>
+              <span>{organization.name}</span>
+              <span> - </span>
+              <span>{organization.year}</span>
+            </div>
+          </div>
           <div>
-            <span>{organization.name}</span>
-            <span> - </span>
-            <span>{organization.year}</span>
+            <h2 className='text-4.5xl/none text-black mb-2'>{project.title}</h2>
+            <span className='text-[#8E8E8E] text-2xl/none'>
+              {project.subtitle}
+            </span>
           </div>
         </div>
-        <div>
-          <h2 className='text-4.5xl/none text-black mb-2'>{project.title}</h2>
-          <span className='text-[#8E8E8E] text-2xl/none'>
-            {project.subtitle}
-          </span>
-        </div>
-      </div>
 
-      <div className='inline-flex gap-2 flex-wrap mt-6'>
-        {tags.map((tag) => (
-          <ProjectTag key={tag} name={tag} />
-        ))}
-      </div>
-    </article>
+        <div className='inline-flex gap-2 flex-wrap mt-6'>
+          {tags.map((tag) => (
+            <ProjectTag key={tag} name={tag} />
+          ))}
+        </div>
+      </article>
+    </Link>
   )
 }
