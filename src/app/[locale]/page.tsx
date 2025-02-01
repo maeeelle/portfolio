@@ -56,9 +56,24 @@ export default async function Home({ params }: HomeProps) {
       </main>
 
       <Separator className='relative left-1/2 -translate-x-1/2 w-screen' />
-      <footer className='flex justify-between items-center px-20 py-6 font-normal text-[#282828] text-base'>
-        <span>Développé par Erick</span>
-        <span>Crédits</span>
+      <footer className='flex justify-between items-center px-20 pb-6 pt-5 font-normal text-[#282828] text-base'>
+        <span>
+          Développé par{' '}
+          <a
+            href='https://erickgust.vercel.app/'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='transition-all duration-150 hover:text-[#0400FF] underline decoration-from-font decoration-wavy underline-offset-4 decoration-[#0400FF]/0 hover:decoration-[#0400FF]/100'
+          >
+            Erick
+          </a>
+        </span>
+        <a
+          href='#'
+          className='transition-all duration-150 hover:text-[#0400FF] underline decoration-from-font decoration-wavy underline-offset-4 decoration-[#0400FF]/0 hover:decoration-[#0400FF]/100'
+        >
+          Crédits
+        </a>
         <span>Mis à jour : Février 2025</span>
       </footer>
     </div>
