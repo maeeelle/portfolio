@@ -87,21 +87,21 @@ export default async function Home({ params }: HomeProps) {
       </main>
 
       <Separator className='relative left-1/2 -translate-x-1/2 w-screen' />
-      <footer className='flex justify-between items-center px-20 pb-6 pt-5 font-normal text-[#282828] text-base'>
+      <footer className='flex flex-col gap-4 sm:flex-row sm:gap-0 sm:justify-between sm:items-center px-8 sm:px-20 pb-12 sm:pb-6 pt-8 sm:pt-5 font-normal text-[#282828] text-base'>
         <span>
           Développé par{' '}
           <a
             href='https://erickgust.vercel.app/'
             target='_blank'
             rel='noopener noreferrer'
-            className='transition-all duration-150 hover:text-[#4F32FF] underline decoration-from-font decoration-wavy underline-offset-4 decoration-[#4F32FF]/0 hover:decoration-[#4F32FF]/100'
+            className='no-underline text-[#4F32FF] sm:text-inherit transition-all duration-150 hover:text-[#4F32FF] sm:underline decoration-from-font decoration-wavy underline-offset-4 decoration-[#4F32FF]/0 hover:decoration-[#4F32FF]/100'
           >
             Erick
           </a>
         </span>
         <a
           href='#'
-          className='transition-all duration-150 hover:text-[#4F32FF] underline decoration-from-font decoration-wavy underline-offset-4 decoration-[#4F32FF]/0 hover:decoration-[#4F32FF]/100'
+          className='no-underline text-[#4F32FF] sm:text-inherit transition-all duration-150 hover:text-[#4F32FF] sm:underline decoration-from-font decoration-wavy underline-offset-4 decoration-[#4F32FF]/0 hover:decoration-[#4F32FF]/100'
         >
           Crédits
         </a>
