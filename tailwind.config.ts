@@ -19,6 +19,7 @@ export default {
         'screen-lg': '1112px',
       },
       fontSize: {
+        xs: ['0.625rem', '0.75rem'],
         '3xl': ['2rem', '2.5rem'],
         '4.5xl': ['2.5rem', '3.5rem'],
         '5xl': '3.25rem',
