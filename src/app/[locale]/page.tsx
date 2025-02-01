@@ -22,18 +22,21 @@ export default async function Home({ params }: HomeProps) {
         <h1>Maëlle - Digital Product Designer</h1>
 
         <div className='flex gap-5 items-center'>
-          <button
-            type='button'
-            aria-label='Toggle language'
+          <Link
+            // href={`/${locale === 'en' ? 'fr' : 'en'}`}
+            href='/fr'
             className='w-6 h-5 relative group overflow-hidden flex'
+            aria-label='Toggle language'
           >
             <span className='absolute inset-0 transition-all duration-300 group-hover:translate-y-5 opacity-100 group-hover:opacity-0 leading-tight'>
-              EN
-            </span>
-            <span className='absolute inset-0 transition-all duration-300 -translate-y-5 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 leading-tight'>
+              {/* {locale === 'en' ? 'EN' : 'FR'} */}
               FR
             </span>
-          </button>
+            <span className='absolute inset-0 transition-all duration-300 -translate-y-5 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 leading-tight'>
+              {/* {locale === 'en' ? 'FR' : 'EN'} */}
+              EN
+            </span>
+          </Link>
 
           <button
             type='button'
