@@ -27,13 +27,12 @@ function getProjectById(id: string) {
 
 export default async function ProjectPage({ params }: PageProps) {
   const { id } = await params
-  const project = getProjectById(id)
+  console.log(id)
+  const project = getProjectById('mon-coach-bescherelle')
 
   if (!project) {
     notFound()
   }
-
-  console.log(project)
 
   return (
     <div className='max-w-screen-2xl mx-auto min-h-screen flex text-[#161616]'>
@@ -64,7 +63,7 @@ export default async function ProjectPage({ params }: PageProps) {
           </Link>
         </nav>
 
-        <article className='relative mt-12'>
+        <article className='mt-12 sticky top-5'>
           <header>
             <div className='text-base mb-4 inline-flex items-center gap-2 font-[350]'>
               <Image
@@ -114,7 +113,7 @@ export default async function ProjectPage({ params }: PageProps) {
             </section>
           </div>
 
-          <footer className='flex justify-between'>
+          <footer className='flex justify-between items-center'>
             <ul className='inline-flex gap-2 flex-wrap list-none p-0'>
               <ProjectTag name='UX' />
               <ProjectTag name='UI' />
@@ -129,7 +128,7 @@ export default async function ProjectPage({ params }: PageProps) {
       </main>
 
       <aside
-        className='bg-white flex-[8] px-20 py-5 mt-16 flex flex-col gap-10'
+        className='bg-white flex-[8] px-20 py-20 mt-2 flex flex-col gap-10'
         role='complementary'
       >
         <Image
