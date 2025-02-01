@@ -63,14 +63,14 @@ export default async function Home({ params }: HomeProps) {
             href='https://erickgust.vercel.app/'
             target='_blank'
             rel='noopener noreferrer'
-            className='transition-all duration-150 hover:text-[#0400FF] underline decoration-from-font decoration-wavy underline-offset-4 decoration-[#0400FF]/0 hover:decoration-[#0400FF]/100'
+            className='transition-all duration-150 hover:text-[#4F32FF] underline decoration-from-font decoration-wavy underline-offset-4 decoration-[#4F32FF]/0 hover:decoration-[#4F32FF]/100'
           >
             Erick
           </a>
         </span>
         <a
           href='#'
-          className='transition-all duration-150 hover:text-[#0400FF] underline decoration-from-font decoration-wavy underline-offset-4 decoration-[#0400FF]/0 hover:decoration-[#0400FF]/100'
+          className='transition-all duration-150 hover:text-[#4F32FF] underline decoration-from-font decoration-wavy underline-offset-4 decoration-[#4F32FF]/0 hover:decoration-[#4F32FF]/100'
         >
           Crédits
         </a>

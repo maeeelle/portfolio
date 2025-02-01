@@ -25,7 +25,7 @@ function ArrowIcon() {
       className='transition-all duration-300 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0'
     >
       <path
-        fill='#0400FF'
+        fill='#4F32FF'
         d='M8 8v2.667h11.453L6.667 23.453l1.88 1.88 12.786-12.786V24H24V8H8Z'
       />
     </svg>
@@ -56,7 +56,7 @@ export function Project({ organization, project, tags, id }: Project) {
           <div>
             <h2
               id={titleId}
-              className='text-4.5xl/none text-black mb-2 inline-flex items-center gap-2 group-hover:text-[#0400FF] transition-colors duration-150'
+              className='text-4.5xl/none text-black mb-2 inline-flex items-center gap-2 group-hover:text-[#4F32FF] transition-colors duration-150'
             >
               {project.title}
               <ArrowIcon />
