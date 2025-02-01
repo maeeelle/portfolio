@@ -16,10 +16,7 @@ export default async function Home({ params }: HomeProps) {
     <div className='min-h-dvh flex flex-col relative overflow-hidden'>
       <header className='flex justify-between items-center px-20 py-5 font-normal text-[#282828] text-base'>
         <nav className='space-x-4'>
-          <Link href='/' className='font-medium'>
-            Projets
-          </Link>
-          <Link href='/doc/book.pdf'>CV</Link>
+          <Link href='/doc/cv_maelle.pdf'>CV</Link>
         </nav>
 
         <h1>Maëlle - Digital Product Designer</h1>
