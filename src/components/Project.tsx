@@ -65,8 +65,6 @@ export function Project({ organization, project, tags, id }: Project) {
               {project.subtitle}
             </p>
           </div>
-
-          <ArrowIcon className='absolute right-0 top-0 size-5 sm:hidden' />
         </header>
 
         <footer className='mt-4 sm:mt-6'>

@@ -14,7 +14,7 @@ export default async function Home({ params }: HomeProps) {
 
   return (
     <div className='min-h-dvh flex flex-col relative overflow-hidden'>
-      <header className='flex flex-wrap justify-between items-center px-8 sm:px-20 pt-16 pb-5 sm:pt-5 font-normal text-[#282828] text-base'>
+      <header className='flex flex-wrap justify-between items-center px-8 sm:px-20 pb-5 pt-5 font-normal text-[#282828] text-base'>
         <Link href='/doc/cv_maelle.pdf' className='max-sm:text-[#4F32FF]'>
           CV
         </Link>
