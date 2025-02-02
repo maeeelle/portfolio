@@ -88,12 +88,13 @@ export default async function ProjectPage({ params }: PageProps) {
                   />
                   <span>{project.organization.name}</span>
                 </div>
-                <div className='text-3xl/[2.25rem] text-balance'>
+                <div className='text-3xl/[2.25rem]'>
                   <h1 className='font-medium'>
                     <span>{project.project.title}</span>
                     <span> - </span>
                     <span className='font-normal sm:font-[350]'>
-                      {project.project.subtitle}
+                      Repenser une application mobile en une solution web
+                      adaptée aux contraintes de la plateforme Educadhoc
                     </span>
                   </h1>
                 </div>
