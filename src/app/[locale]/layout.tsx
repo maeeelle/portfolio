@@ -74,7 +74,7 @@ export default async function RootLayout({
       </head>
 
       <body
-        className={`${overusedGR.variable} ${diolce.variable} antialiased selection:bg-[#b2ff5d] dark:selection:bg-[#4f32ff]`}
+        className={`${overusedGR.variable} ${diolce.variable} antialiased selection:bg-[#b2ff5d] dark:selection:bg-[#4f32ff] dark:selection:text-[#D3D3D3]`}
       >
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider>{children}</ThemeProvider>

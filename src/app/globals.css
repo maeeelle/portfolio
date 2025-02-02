@@ -4,20 +4,19 @@
 
 :root {
   --background: #f9f9f9;
-  --foreground: #171717;
+  --foreground: #0f0f0f;
 
   font-synthesis: none;
   text-rendering: geometricPrecision;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+
+.dark {
+  --background: #0f0f0f;
+  --foreground: #f9f9f9;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-overused-gr), Helvetica, sans-serif;
-}
-
-::selection {
-  background-color: #b2ff5d;
 }
