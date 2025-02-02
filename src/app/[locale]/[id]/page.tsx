@@ -15,7 +15,7 @@ function Heading({ children }: { children: React.ReactNode }) {
 
 function Paragraph({ children }: { children: React.ReactNode }) {
   return (
-    <p className='text-base text-pretty leading-normal sm:leading-relaxed font-[350] text-[#282828] dark:text-[#D3D3D3]'>
+    <p className='text-base text-pretty leading-normal sm:leading-[21px] font-[350] text-[#282828] dark:text-[#D3D3D3] has-[+p]:mb-1'>
       {children}
     </p>
   )
@@ -75,7 +75,7 @@ export default async function ProjectPage({ params }: PageProps) {
             </Link>
           </nav>
 
-          <article className='mt-12'>
+          <article className='mt-[3.75rem]'>
             <header>
               <div className='text-base mb-2 sm:mb-4 inline-flex items-center gap-2 font-[350]'>
                 <Image
@@ -87,7 +87,7 @@ export default async function ProjectPage({ params }: PageProps) {
                 />
                 <span>{project.organization.name}</span>
               </div>
-              <div className='text-3xl/[2.375rem] text-balance'>
+              <div className='text-3xl/[2.25rem] text-balance'>
                 <h1 className='font-medium'>
                   <span>{project.project.title}</span>
                   <span> - </span>
@@ -98,21 +98,19 @@ export default async function ProjectPage({ params }: PageProps) {
               </div>
             </header>
 
-            <div className='my-10 space-y-10 sm;space-y-8'>
+            <div className='my-8 space-y-10 sm:space-y-8'>
               <section>
                 <Heading>Contexte</Heading>
                 <Paragraph>
-                  Mon Coach Bescherelle est une application développée par
-                  Hatier proposant un entraînement en orthographe et en
-                  rédaction. Elle permet un apprentissage basé sur
-                  l’intelligence artificielle afin de s’adapter au parcours de
-                  l’utilisateur en temps réel. Cet outil est mis à disposition
-                  des entreprises et des écoles afin d’aider les personnes à
-                  progresser de manière ludique. Il cible surtout les lycéens et
-                  les salariés. Cette application présente à la fois un côté B2C
-                  et un côté B2B accessible via un code d’activation.  Mon coach
-                  Bescherelle permet aussi à ses utilisateurs de valider leurs
-                  compétences grâce à la certification Bescherelle.
+                  Mon Coach Bescherelle est un outil développé par Hatier
+                  proposant un entraînement en orthographe et en rédaction.
+                </Paragraph>
+                <Paragraph>
+                  Son problème principal était son accessibilité. Le service
+                  n&apos;était présent que sous forme d’application sur
+                  smartphone. Ma mission était donc de le rendre disponible sur
+                  la plateforme éducative Educadhoc tout en prenant en compte
+                  les contraintes imposées par sa mise en page.
                 </Paragraph>
               </section>
               <section>
@@ -125,6 +123,13 @@ export default async function ProjectPage({ params }: PageProps) {
                   prenant en compte les contraintes posées par celle-ci.
                 </Paragraph>
               </section>
+
+              <Link
+                href='#'
+                className='p-4 rounded inline-block leading-none font-[350] -tracking-[.02em] text-[#F9F9F9] bg-[#161616] dark:bg-[#F9F9F9] dark:text-[#161616]'
+              >
+                Accéder à la démo
+              </Link>
             </div>
 
             <footer className='flex justify-between items-center'>
