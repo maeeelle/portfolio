@@ -20,7 +20,10 @@ const diolce = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'maëlle ・ digital product designer',
+  title: 'Maëlle - Digital Product Designer',
+  description:
+    'Digital Product Designer (UI & UX) spécialisée en interfaces intuitives et en solutions centrées utilisateur, venez découvrir mes projets!',
+
   alternates: {
     canonical: 'https://maelle.works/',
   },
