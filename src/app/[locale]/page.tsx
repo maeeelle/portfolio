@@ -68,14 +68,14 @@ export default async function Home({ params }: HomeProps) {
             href='https://erickgust.vercel.app/'
             target='_blank'
             rel='noopener noreferrer'
-            className='no-underline text-[#4F32FF] dark:text-[#B2FF5D] sm:text-inherit transition-all duration-150 hover:text-[#4F32FF] dark:hover:text-[#B2FF5D] sm:underline decoration-from-font decoration-wavy underline-offset-4 decoration-[#4F32FF]/0 dark:decoration-[#B2FF5D]/0 hover:decoration-[#4F32FF]/100 dark:hover:decoration-[#B2FF5D]/100'
+            className='no-underline text-[#4F32FF] dark:text-[#B2FF5D] transition-all duration-150 hover:text-[#4F32FF] dark:hover:text-[#B2FF5D] sm:underline decoration-from-font decoration-wavy underline-offset-4 decoration-[#4F32FF]/0 dark:decoration-[#B2FF5D]/0 hover:decoration-[#4F32FF]/100 dark:hover:decoration-[#B2FF5D]/100'
           >
             Erick
           </a>
         </span>
         <a
           href='#'
-          className='no-underline text-[#4F32FF] dark:text-[#B2FF5D] sm:text-inherit transition-all duration-150 hover:text-[#4F32FF] dark:hover:text-[#B2FF5D] sm:underline decoration-from-font decoration-wavy underline-offset-4 decoration-[#4F32FF]/0 dark:decoration-[#B2FF5D]/0 hover:decoration-[#4F32FF]/100 dark:hover:decoration-[#B2FF5D]/100'
+          className='no-underline text-[#4F32FF] dark:text-[#B2FF5D] transition-all duration-150 hover:text-[#4F32FF] dark:hover:text-[#B2FF5D] sm:underline decoration-from-font decoration-wavy underline-offset-4 decoration-[#4F32FF]/0 dark:decoration-[#B2FF5D]/0 hover:decoration-[#4F32FF]/100 dark:hover:decoration-[#B2FF5D]/100'
         >
           Crédits
         </a>
