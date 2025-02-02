@@ -7,7 +7,7 @@ import { setRequestLocale } from 'next-intl/server'
 
 function Heading({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className='font-bold text-xs text-[#AEAEAE] mb-2 sm:mb-1 uppercase'>
+    <h2 className='font-bold text-xs text-[#AEAEAE] dark:text-[#4C4C4C] mb-2 sm:mb-1 uppercase'>
       {children}
     </h2>
   )
@@ -15,7 +15,7 @@ function Heading({ children }: { children: React.ReactNode }) {
 
 function Paragraph({ children }: { children: React.ReactNode }) {
   return (
-    <p className='text-base text-pretty leading-normal sm:leading-relaxed font-[350] text-[#282828]'>
+    <p className='text-base text-pretty leading-normal sm:leading-relaxed font-[350] text-[#282828] dark:text-[#D3D3D3]'>
       {children}
     </p>
   )
@@ -43,18 +43,18 @@ export default async function ProjectPage({ params }: PageProps) {
   }
 
   return (
-    <div className='max-w-screen-2xl mx-auto min-h-screen flex flex-col lg:flex-row text-[#161616] tracking-[-.02em]'>
-      <div className='absolute top-0 bottom-0 right-0 bg-white -z-10 w-7/12' />
+    <div className='max-w-screen-2xl mx-auto min-h-screen flex flex-col lg:flex-row text-[#161616] dark:text-[#D3D3D3] tracking-[-.02em]'>
+      <div className='absolute top-0 bottom-0 right-0 bg-white dark:bg-black -z-10 w-7/12' />
 
       <main
-        className='bg-[#F9F9F9] flex-[6] px-8 xl:px-20 pt-5 pb-16 xl:pb-5'
+        className='bg-[#F9F9F9] dark:bg-[#0F0F0F] flex-[6] px-8 xl:px-20 pt-5 pb-16 xl:pb-5'
         role='main'
       >
         <div className='sticky top-5'>
           <nav aria-label='Back navigation' className='inline-flex'>
             <Link
               href='/'
-              className='flex gap-2 items-center text-[#161616] text-base/none font-normal tracking-normal'
+              className='flex gap-2 items-center text-base/none font-normal tracking-normal'
               aria-label='Return to home page'
             >
               <svg
@@ -67,7 +67,7 @@ export default async function ProjectPage({ params }: PageProps) {
                 role='img'
               >
                 <path
-                  fill='#000'
+                  fill='currentColor'
                   d='M5.217 8.667 8.95 12.4l-.95.933L2.667 8 8 2.667l.95.933-3.733 3.733h8.116v1.334H5.217Z'
                 />
               </svg>
@@ -134,7 +134,7 @@ export default async function ProjectPage({ params }: PageProps) {
                 <ProjectTag name='Web Application' />
               </ul>
 
-              <small className='font-[350] text-[#8E8E8E] text-base/5'>
+              <small className='font-[350] text-[#8E8E8E] dark:text-[#737373] text-base/5'>
                 2020
               </small>
             </footer>
@@ -143,7 +143,7 @@ export default async function ProjectPage({ params }: PageProps) {
       </main>
 
       <aside
-        className='bg-white flex-[8] flex flex-col gap-10 px-8 pt-16 pb-12 xl:px-20 xl:pt-20 xl:pb-20 xl:mt-2'
+        className='bg-white dark:bg-black flex-[8] flex flex-col gap-10 px-8 pt-16 pb-12 xl:px-20 xl:pt-20 xl:pb-20 xl:mt-2'
         role='complementary'
       >
         <Image
@@ -151,63 +151,63 @@ export default async function ProjectPage({ params }: PageProps) {
           alt=''
           width={1920}
           height={1080}
-          className='rounded-lg w-full select-none border border-black/10'
+          className='rounded-lg w-full select-none border border-black/10 dark:border-white/10'
         />
         <Image
           src='/images/projects/mon-coach-bescherelle/tableau-de-bord-test.png'
           alt=''
           width={1920}
           height={1080}
-          className='rounded-lg w-full select-none border border-black/10'
+          className='rounded-lg w-full select-none border border-black/10 dark:border-white/10'
         />
         <Image
           src='/images/projects/mon-coach-bescherelle/tableau-de-bord-n1-td.png'
           alt=''
           width={1920}
           height={1080}
-          className='rounded-lg w-full select-none border border-black/10'
+          className='rounded-lg w-full select-none border border-black/10 dark:border-white/10'
         />
         <Image
           src='/images/projects/mon-coach-bescherelle/parcours-test.png'
           alt=''
           width={1920}
           height={1080}
-          className='rounded-lg w-full select-none border border-black/10'
+          className='rounded-lg w-full select-none border border-black/10 dark:border-white/10'
         />
         <Image
           src='/images/projects/mon-coach-bescherelle/parcours-conjugaison-intermédiaire.png'
           alt=''
           width={1920}
           height={1080}
-          className='rounded-lg w-full select-none border border-black/10'
+          className='rounded-lg w-full select-none border border-black/10 dark:border-white/10'
         />
         <Image
           src='/images/projects/mon-coach-bescherelle/parcours-rédaction-Intermédiaire.png'
           alt=''
           width={1920}
           height={1080}
-          className='rounded-lg w-full select-none border border-black/10'
+          className='rounded-lg w-full select-none border border-black/10 dark:border-white/10'
         />
         <Image
           src='/images/projects/mon-coach-bescherelle/parcours-confusions-exercice.png'
           alt=''
           width={1920}
           height={1080}
-          className='rounded-lg w-full select-none border border-black/10'
+          className='rounded-lg w-full select-none border border-black/10 dark:border-white/10'
         />
         <Image
           src='/images/projects/mon-coach-bescherelle/parcours-accords-exercice.png'
           alt=''
           width={1920}
           height={1080}
-          className='rounded-lg w-full select-none border border-black/10'
+          className='rounded-lg w-full select-none border border-black/10 dark:border-white/10'
         />
         <Image
           src='/images/projects/mon-coach-bescherelle/vidéos-accords.png'
           alt=''
           width={1920}
           height={1080}
-          className='rounded-lg w-full select-none border border-black/10'
+          className='rounded-lg w-full select-none border border-black/10 dark:border-white/10'
         />
       </aside>
     </div>
