@@ -47,7 +47,7 @@ export default async function ProjectPage({ params }: PageProps) {
       <div className='absolute top-0 bottom-0 right-0 bg-white dark:bg-black w-7/12' />
 
       <main
-        className='bg-[#F9F9F9] dark:bg-[#0F0F0F] flex-[6] px-8 xl:px-20 pt-5 pb-16 xl:pb-5 flex min-h-[inherit] h-full sticky top-0'
+        className='bg-[#F9F9F9] dark:bg-[#0F0F0F] flex-[6] px-8 sm:px-20 pt-5 pb-16 sm:pb-5 flex min-h-[inherit] h-full relative lg:sticky top-0'
         role='main'
       >
         <div className='flex-1 flex flex-col'>
@@ -151,7 +151,7 @@ export default async function ProjectPage({ params }: PageProps) {
       </main>
 
       <aside
-        className='bg-white dark:bg-black flex-[8] flex flex-col gap-10 px-8 pt-16 pb-12 xl:px-20 xl:pt-20 xl:pb-20 relative'
+        className='bg-white dark:bg-black flex-[8] flex flex-col gap-10 px-8 pt-16 pb-12 sm:px-20 sm:pt-20 sm:pb-20 relative'
         role='complementary'
       >
         <Image
