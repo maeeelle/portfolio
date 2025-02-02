@@ -60,12 +60,12 @@ export default async function RootLayout({
               const classList = document.documentElement.classList;
 
               classList.remove("light", "dark", "system");
-              if (theme === 'dark') {
-                classList.add('dark')
-              } else if (theme === 'light') {
-                classList.add('light')
+
+              if (theme === "system") {
+                const isDarkTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                classList.add(isDarkTheme ? "dark" : "light");
               } else {
-                classList.add('system')
+                classList.add(theme);
               }
             }
           `,
