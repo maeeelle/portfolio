@@ -3,7 +3,7 @@ import { setRequestLocale } from 'next-intl/server'
 import Link from 'next/link'
 import { projects } from './_projects'
 import { Separator } from '@/components/Separator'
-import { ToggleButton } from '@/components/ThemeToggle'
+import { ToggleThemeButton } from '@/components/ThemeToggle'
 
 type HomeProps = {
   params: Promise<{ locale: string }>
@@ -41,7 +41,7 @@ export default async function Home({ params }: HomeProps) {
             </span>
           </Link>
 
-          <ToggleButton />
+          <ToggleThemeButton />
         </div>
       </header>
       <Separator className='relative left-1/2 -translate-x-1/2 w-screen' />

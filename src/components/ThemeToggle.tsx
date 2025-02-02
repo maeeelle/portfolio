@@ -56,7 +56,7 @@ export function useTheme() {
   return context
 }
 
-export function ToggleButton() {
+export function ToggleThemeButton() {
   const { theme, setTheme } = useTheme()
 
   return (
