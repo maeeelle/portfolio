@@ -5,6 +5,8 @@ import { routing } from '@/i18n/routing'
 import { notFound } from 'next/navigation'
 import { getMessages, setRequestLocale } from 'next-intl/server'
 import { NextIntlClientProvider } from 'next-intl'
+import { ThemeProvider } from '@/components/ThemeToggle'
+import Script from 'next/script'
 
 const overusedGR = localFont({
   src: '../fonts/OverusedGroteskRoman-VF.ttf',
@@ -49,8 +51,35 @@ export default async function RootLayout({
     <html lang={locale}>
       <body className={`${overusedGR.variable} ${diolce.variable} antialiased`}>
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <ThemeProvider>{children}</ThemeProvider>
         </NextIntlClientProvider>
+
+        <Script
+          id='theme'
+          strategy='afterInteractive'
+          dangerouslySetInnerHTML={{
+            __html: `
+            try {
+              _updateTheme(localStorage.getItem('theme') || 'system')
+            } catch {}
+
+            console.log('theme script loaded')
+
+            function _updateTheme(theme) {
+              let classList = document.documentElement.classList;
+
+              classList.remove("light", "dark", "system");
+              if (theme === 'dark') {
+                classList.add('dark')
+              } else if (theme === 'light') {
+                classList.add('light')
+              } else {
+                classList.add('system')
+              }
+            }
+          `,
+          }}
+        />
       </body>
     </html>
   )
