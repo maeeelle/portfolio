@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import { projects } from '../_projects'
 import Image from 'next/image'
 import { ProjectTag } from '@/components/Project'
+import { setRequestLocale } from 'next-intl/server'
 
 function Heading({ children }: { children: React.ReactNode }) {
   return (
@@ -32,8 +33,9 @@ function getProjectById(id: string) {
 }
 
 export default async function ProjectPage({ params }: PageProps) {
-  const { id } = await params
-  console.log(id)
+  const { locale } = await params
+  setRequestLocale(locale)
+
   const project = getProjectById('mon-coach-bescherelle')
 
   if (!project) {
