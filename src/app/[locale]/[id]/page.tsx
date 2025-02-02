@@ -6,7 +6,7 @@ import { ProjectTag } from '@/components/Project'
 
 function Heading({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className='font-bold text-xs text-[#AEAEAE] mb-1 uppercase'>
+    <h2 className='font-bold text-xs text-[#AEAEAE] mb-2 sm:mb-1 uppercase'>
       {children}
     </h2>
   )
@@ -14,7 +14,9 @@ function Heading({ children }: { children: React.ReactNode }) {
 
 function Paragraph({ children }: { children: React.ReactNode }) {
   return (
-    <p className='text-base/relaxed font-[350] text-[#282828]'>{children}</p>
+    <p className='text-base text-pretty leading-normal sm:leading-relaxed font-[350] text-[#282828]'>
+      {children}
+    </p>
   )
 }
 
@@ -39,10 +41,13 @@ export default async function ProjectPage({ params }: PageProps) {
   }
 
   return (
-    <div className='max-w-screen-2xl mx-auto min-h-screen flex text-[#161616] tracking-[-.02em]'>
+    <div className='max-w-screen-2xl mx-auto min-h-screen flex flex-col lg:flex-row text-[#161616] tracking-[-.02em]'>
       <div className='absolute top-0 bottom-0 right-0 bg-white -z-10 w-7/12' />
 
-      <main className='bg-[#F9F9F9] flex-[6] px-20 py-5' role='main'>
+      <main
+        className='bg-[#F9F9F9] flex-[6] px-8 xl:px-20 pt-5 pb-16 xl:pb-5'
+        role='main'
+      >
         <div className='sticky top-5'>
           <nav aria-label='Back navigation' className='inline-flex'>
             <Link
@@ -70,7 +75,7 @@ export default async function ProjectPage({ params }: PageProps) {
 
           <article className='mt-12'>
             <header>
-              <div className='text-base mb-4 inline-flex items-center gap-2 font-[350]'>
+              <div className='text-base mb-2 sm:mb-4 inline-flex items-center gap-2 font-[350]'>
                 <Image
                   src={project.organization.image}
                   alt={`${project.organization.name} logo`}
@@ -84,12 +89,14 @@ export default async function ProjectPage({ params }: PageProps) {
                 <h1 className='font-medium'>
                   <span>{project.project.title}</span>
                   <span> - </span>
-                  <span className='font-[350]'>{project.project.subtitle}</span>
+                  <span className='font-normal sm:font-[350]'>
+                    {project.project.subtitle}
+                  </span>
                 </h1>
               </div>
             </header>
 
-            <div className='my-10 space-y-8'>
+            <div className='my-10 space-y-10 sm;space-y-8'>
               <section>
                 <Heading>Contexte</Heading>
                 <Paragraph>
@@ -134,7 +141,7 @@ export default async function ProjectPage({ params }: PageProps) {
       </main>
 
       <aside
-        className='bg-white flex-[8] px-20 py-20 mt-2 flex flex-col gap-10'
+        className='bg-white flex-[8] flex flex-col gap-10 px-8 pt-16 pb-12 xl:px-20 xl:pt-20 xl:pb-20 xl:mt-2'
         role='complementary'
       >
         <Image
