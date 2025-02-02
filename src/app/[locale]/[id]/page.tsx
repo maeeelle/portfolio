@@ -44,13 +44,13 @@ export default async function ProjectPage({ params }: PageProps) {
 
   return (
     <div className='max-w-screen-2xl mx-auto min-h-screen flex flex-col lg:flex-row text-[#161616] dark:text-[#D3D3D3] tracking-[-.02em]'>
-      <div className='absolute top-0 bottom-0 right-0 bg-white dark:bg-black -z-10 w-7/12' />
+      <div className='absolute top-0 bottom-0 right-0 bg-white dark:bg-black w-7/12' />
 
       <main
-        className='bg-[#F9F9F9] dark:bg-[#0F0F0F] flex-[6] px-8 xl:px-20 pt-5 pb-16 xl:pb-5'
+        className='bg-[#F9F9F9] dark:bg-[#0F0F0F] flex-[6] px-8 xl:px-20 pt-5 pb-16 xl:pb-5 flex min-h-[inherit] h-full sticky top-0'
         role='main'
       >
-        <div className='sticky top-5'>
+        <div className='flex-1 flex flex-col'>
           <nav aria-label='Back navigation' className='inline-flex'>
             <Link
               href='/'
@@ -75,64 +75,66 @@ export default async function ProjectPage({ params }: PageProps) {
             </Link>
           </nav>
 
-          <article className='mt-[3.75rem]'>
-            <header>
-              <div className='text-base mb-2 sm:mb-4 inline-flex items-center gap-2 font-[350]'>
-                <Image
-                  src={project.organization.image}
-                  alt={`${project.organization.name} logo`}
-                  width={80}
-                  height={80}
-                  className='rounded-sm size-5'
-                />
-                <span>{project.organization.name}</span>
-              </div>
-              <div className='text-3xl/[2.25rem] text-balance'>
-                <h1 className='font-medium'>
-                  <span>{project.project.title}</span>
-                  <span> - </span>
-                  <span className='font-normal sm:font-[350]'>
-                    {project.project.subtitle}
-                  </span>
-                </h1>
-              </div>
-            </header>
+          <article className='mt-[3.75rem] flex flex-col justify-between flex-1'>
+            <div>
+              <header>
+                <div className='text-base mb-2 sm:mb-4 inline-flex items-center gap-2 font-[350]'>
+                  <Image
+                    src={project.organization.image}
+                    alt={`${project.organization.name} logo`}
+                    width={80}
+                    height={80}
+                    className='rounded-sm size-5'
+                  />
+                  <span>{project.organization.name}</span>
+                </div>
+                <div className='text-3xl/[2.25rem] text-balance'>
+                  <h1 className='font-medium'>
+                    <span>{project.project.title}</span>
+                    <span> - </span>
+                    <span className='font-normal sm:font-[350]'>
+                      {project.project.subtitle}
+                    </span>
+                  </h1>
+                </div>
+              </header>
 
-            <div className='my-8 space-y-10 sm:space-y-8'>
-              <section>
-                <Heading>Contexte</Heading>
-                <Paragraph>
-                  Mon Coach Bescherelle est un outil développé par Hatier
-                  proposant un entraînement en orthographe et en rédaction.
-                </Paragraph>
-                <Paragraph>
-                  Son problème principal était son accessibilité. Le service
-                  n&apos;était présent que sous forme d’application sur
-                  smartphone. Ma mission était donc de le rendre disponible sur
-                  la plateforme éducative Educadhoc tout en prenant en compte
-                  les contraintes imposées par sa mise en page.
-                </Paragraph>
-              </section>
-              <section>
-                <Heading>Contribution</Heading>
-                <Paragraph>
-                  Le problème de Mon coach Bescherelle est son accessibilité. En
-                  effet, elle n’est présente que sous forme d’application sur
-                  smartphone. Ma mission était donc de rendre Mon Coach
-                  Bescherelle disponible sur la plateforme Educadhoc tout en
-                  prenant en compte les contraintes posées par celle-ci.
-                </Paragraph>
-              </section>
+              <div className='mt-8 space-y-10 sm:space-y-8'>
+                <section>
+                  <Heading>Contexte</Heading>
+                  <Paragraph>
+                    Mon Coach Bescherelle est un outil développé par Hatier
+                    proposant un entraînement en orthographe et en rédaction.
+                  </Paragraph>
+                  <Paragraph>
+                    Son problème principal était son accessibilité. Le service
+                    n&apos;était présent que sous forme d’application sur
+                    smartphone. Ma mission était donc de le rendre disponible
+                    sur la plateforme éducative Educadhoc tout en prenant en
+                    compte les contraintes imposées par sa mise en page.
+                  </Paragraph>
+                </section>
+                <section>
+                  <Heading>Contribution</Heading>
+                  <Paragraph>
+                    Le problème de Mon coach Bescherelle est son accessibilité.
+                    En effet, elle n’est présente que sous forme d’application
+                    sur smartphone. Ma mission était donc de rendre Mon Coach
+                    Bescherelle disponible sur la plateforme Educadhoc tout en
+                    prenant en compte les contraintes posées par celle-ci.
+                  </Paragraph>
+                </section>
+              </div>
 
               <Link
                 href='#'
-                className='p-4 rounded inline-block leading-none font-[350] -tracking-[.02em] text-[#F9F9F9] bg-[#161616] dark:bg-[#F9F9F9] dark:text-[#161616]'
+                className='p-4 mt-10 rounded inline-block leading-none font-[350] -tracking-[.02em] text-[#F9F9F9] bg-[#161616] dark:bg-[#F9F9F9] dark:text-[#161616]'
               >
                 Accéder à la démo
               </Link>
             </div>
 
-            <footer className='flex justify-between items-center'>
+            <footer className='flex justify-between items-center mt-10'>
               <ul className='inline-flex gap-2 flex-wrap list-none p-0'>
                 <ProjectTag name='UX' />
                 <ProjectTag name='UI' />
@@ -148,7 +150,7 @@ export default async function ProjectPage({ params }: PageProps) {
       </main>
 
       <aside
-        className='bg-white dark:bg-black flex-[8] flex flex-col gap-10 px-8 pt-16 pb-12 xl:px-20 xl:pt-20 xl:pb-20 xl:mt-2'
+        className='bg-white dark:bg-black flex-[8] flex flex-col gap-10 px-8 pt-16 pb-12 xl:px-20 xl:pt-20 xl:pb-20 xl:mt-2 relative'
         role='complementary'
       >
         <Image
