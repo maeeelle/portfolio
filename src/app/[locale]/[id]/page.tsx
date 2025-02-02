@@ -151,7 +151,7 @@ export default async function ProjectPage({ params }: PageProps) {
       </main>
 
       <aside
-        className='bg-white dark:bg-black flex-[8] flex flex-col gap-10 px-8 pt-16 pb-12 xl:px-20 xl:pt-20 xl:pb-20 xl:mt-2 relative'
+        className='bg-white dark:bg-black flex-[8] flex flex-col gap-10 px-8 pt-16 pb-12 xl:px-20 xl:pt-20 xl:pb-20 relative'
         role='complementary'
       >
         <Image
