@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation'
 import { getMessages, setRequestLocale } from 'next-intl/server'
 import { NextIntlClientProvider } from 'next-intl'
 import { ThemeProvider } from '@/components/ThemeToggle'
+import { Analytics } from '@vercel/analytics/next'
 
 const overusedGR = localFont({
   src: '../fonts/OverusedGroteskRoman-VF.ttf',
@@ -82,6 +83,8 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider>{children}</ThemeProvider>
         </NextIntlClientProvider>
+
+        <Analytics />
       </body>
     </html>
   )
