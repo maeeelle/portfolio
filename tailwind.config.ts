@@ -19,6 +19,9 @@ export default {
       maxWidth: {
         'screen-lg': '1112px',
       },
+      screens: {
+        xl: '1200px',
+      },
       fontSize: {
         xs: ['0.625rem', '0.75rem'],
         '3xl': ['2rem', '2.5rem'],
