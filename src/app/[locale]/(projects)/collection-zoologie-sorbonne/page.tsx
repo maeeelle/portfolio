@@ -10,6 +10,7 @@ import { Main } from '../_components/Main'
 import { ProjectFooter } from '../_components/Footer'
 import { Aside } from '../_components/Aside'
 import { ProjectArticle } from '../_components/ProjectArticle'
+import { ReferenceLink } from '../_components/ReferenceLink'
 
 type PageProps = {
   params: Promise<{
@@ -47,19 +48,33 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               <section>
                 <Heading>Contexte</Heading>
                 <Paragraph>
-                  Lorem ipsum dolor sit amet consectetur. Malesuada a et aliquam
-                  iaculis luctus. Et cursus in fermentum suspendisse lobortis
-                  pharetra consequat varius lorem. Egestas a blandit id non. Id
-                  lectus aliquam vulputate auctor.
+                  La Collection de Zoologie de{' '}
+                  <ReferenceLink
+                    href='https://www.sorbonne-universite.fr/actualites/immersion-dans-la-collection-de-zoologie'
+                    className='underline-offset-[3px]'
+                  >
+                    Santiago Aragon
+                  </ReferenceLink>{' '}
+                  est un patrimoine scientifique unique, rassemblant plusieurs
+                  milliers de spécimens, dont des animaux naturalisés et des
+                  pièces anatomiques historiques.
+                </Paragraph>
+                <Paragraph>
+                  Dans le cadre de ce projet, l’objectif était de valoriser
+                  cette collection à travers une approche immersive et
+                  pédagogique, facilitant son accessibilité au grand public et
+                  aux étudiants. En s’appuyant sur des outils numériques, le
+                  projet visait à moderniser la transmission du savoir, tout en
+                  préservant l’héritage scientifique et culturel de cette
+                  collection.
                 </Paragraph>
               </section>
               <section>
                 <Heading>Contribution</Heading>
                 <Paragraph>
-                  Lorem ipsum dolor sit amet consectetur. Malesuada a et aliquam
-                  iaculis luctus. Et cursus in fermentum suspendisse lobortis
-                  pharetra consequat varius lorem. Egestas a blandit id non. Id
-                  lectus aliquam vulputate auctor.
+                  Pour ce projet mon rôle s’est davantage porté sur l’idéation
+                  et la définition des solutions ainsi que la réflexion autour
+                  des user journeys.
                 </Paragraph>
               </section>
               <section>
@@ -67,23 +82,12 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
 
                 <ul className='text-base text-pretty leading-normal xl:leading-[25px] font-[350] text-[#282828] dark:text-[#D3D3D3]'>
                   <li>
-                    <a className='text-[#4F32FF] dark:text-[#B2FF5D]'>
-                      Anthony Reungère
-                    </a>{' '}
-                    - UX/UI Designer
+                    <ReferenceLink>Anthony Reungère</ReferenceLink> - UX/UI
+                    Designer
                   </li>
                   <li>
-                    <a className='text-[#4F32FF] dark:text-[#B2FF5D]'>
-                      Léonie Nollevalle
-                    </a>{' '}
-                    - UX/UI Designer
-                  </li>
-
-                  <li>
-                    <a className='text-[#4F32FF] dark:text-[#B2FF5D]'>
-                      Maëlle Moisis
-                    </a>{' '}
-                    - UX/UI Designer
+                    <ReferenceLink>Léonie Nollevalle</ReferenceLink> - UX/UI
+                    Designer
                   </li>
                 </ul>
               </section>
