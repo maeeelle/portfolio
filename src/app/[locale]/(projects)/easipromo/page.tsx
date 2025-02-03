@@ -80,8 +80,8 @@ export default async function ProjectPage({ params }: PageProps) {
       <Aside>
         <section className='space-y-10'>
           <ProjectImage
-            width={1512}
-            height={3709}
+            width={2880}
+            height={2620}
             src='/images/projects/easipromo/image-64.webp'
             alt=''
             unoptimized
@@ -89,8 +89,8 @@ export default async function ProjectPage({ params }: PageProps) {
           />
 
           <ProjectImage
-            width={1512}
-            height={2890}
+            width={2880}
+            height={2620}
             src='/images/projects/easipromo/image-65.webp'
             alt=''
             unoptimized
