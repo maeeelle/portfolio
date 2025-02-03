@@ -76,7 +76,9 @@ export default async function ProjectPage({ params }: PageProps) {
               </section>
             </div>
 
-            <ExternalLink href=''>Accéder à la démo</ExternalLink>
+            <ExternalLink href='https://mesmanuels.fr/demo/9782401037151'>
+              Accéder à la démo
+            </ExternalLink>
           </div>
 
           <ProjectFooter year='2020'>
