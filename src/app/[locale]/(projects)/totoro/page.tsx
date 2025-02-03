@@ -11,6 +11,7 @@ import { ProjectFooter } from '../_components/Footer'
 import { Aside } from '../_components/Aside'
 import { ProjectArticle } from '../_components/ProjectArticle'
 import { ExternalLink } from '../_components/ExternalLink'
+import { TeamMemberLink } from '../_components/TeamMemberLink'
 
 type PageProps = {
   params: Promise<{
@@ -70,30 +71,32 @@ export default async function ProjectPage({ params }: PageProps) {
               <section>
                 <Heading>Equipe</Heading>
 
-                <ul className='text-base text-pretty leading-normal xl:leading-[25px] font-[350] text-[#282828] dark:text-[#D3D3D3]'>
+                <ul className='text-base text-pretty leading-normal xl:leading-5 space-y-1 font-[350] text-[#282828] dark:text-[#D3D3D3]'>
                   <li>
-                    <a className='text-[#4F32FF] dark:text-[#B2FF5D]'>
+                    <TeamMemberLink
+                      href='https://www.linkedin.com/in/jarceb'
+                      className='text-[#4F32FF] dark:text-[#B2FF5D]'
+                    >
                       Jarce Boukoro
-                    </a>{' '}
+                    </TeamMemberLink>{' '}
                     - Développeur Fullstack
                   </li>
                   <li>
-                    <a className='text-[#4F32FF] dark:text-[#B2FF5D]'>
-                      Maëlle Moisis
-                    </a>{' '}
-                    - UX/UI Designer
-                  </li>
-
-                  <li>
-                    <a className='text-[#4F32FF] dark:text-[#B2FF5D]'>
+                    <TeamMemberLink
+                      href='https://www.maxencewolff.com'
+                      className='text-[#4F32FF] dark:text-[#B2FF5D]'
+                    >
                       Maxence Wolff
-                    </a>{' '}
+                    </TeamMemberLink>{' '}
                     - UI Designer + Développeur Front-End
                   </li>
                   <li>
-                    <a className='text-[#4F32FF] dark:text-[#B2FF5D]'>
+                    <TeamMemberLink
+                      href='https://www.linkedin.com/in/teolugat'
+                      className='text-[#4F32FF] dark:text-[#B2FF5D]'
+                    >
                       Téo Lugat
-                    </a>{' '}
+                    </TeamMemberLink>{' '}
                     - Développeur Fullstack
                   </li>
                 </ul>
