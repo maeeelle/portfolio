@@ -25,7 +25,7 @@ function ProjectImage({ src, alt }: { src: string; alt: string }) {
       alt={alt}
       width={1920}
       height={1080}
-      className='rounded-lg w-full select-none border border-black/10 dark:border-white/10'
+      className='rounded w-full select-none border border-black/10 dark:border-white/10'
     />
   )
 }
