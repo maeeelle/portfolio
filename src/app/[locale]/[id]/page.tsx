@@ -7,7 +7,7 @@ import { setRequestLocale } from 'next-intl/server'
 
 function Heading({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className='font-bold text-xs text-[#AEAEAE] dark:text-[#4C4C4C] mb-2 sm:mb-1 uppercase'>
+    <h2 className='font-bold text-xs text-[#AEAEAE] dark:text-[#4C4C4C] mb-2 xl:mb-1 uppercase'>
       {children}
     </h2>
   )
@@ -15,7 +15,7 @@ function Heading({ children }: { children: React.ReactNode }) {
 
 function Paragraph({ children }: { children: React.ReactNode }) {
   return (
-    <p className='text-base text-pretty leading-normal sm:leading-[21px] font-[350] text-[#282828] dark:text-[#D3D3D3] has-[+p]:mb-1'>
+    <p className='text-base text-pretty leading-normal xl:leading-[21px] font-[350] text-[#282828] dark:text-[#D3D3D3] has-[+p]:mb-1'>
       {children}
     </p>
   )
@@ -43,11 +43,11 @@ export default async function ProjectPage({ params }: PageProps) {
   }
 
   return (
-    <div className='max-w-screen-2xl mx-auto min-h-screen flex flex-col lg:flex-row text-[#161616] dark:text-[#D3D3D3] tracking-[-.02em]'>
+    <div className='max-w-screen-2xl mx-auto min-h-screen flex flex-col xl:flex-row text-[#161616] dark:text-[#D3D3D3] tracking-[-.02em]'>
       <div className='absolute top-0 bottom-0 right-0 bg-white dark:bg-black w-7/12' />
 
       <main
-        className='bg-[#F9F9F9] dark:bg-[#0F0F0F] flex-[6] px-8 sm:px-20 pt-5 pb-16 sm:pb-5 flex min-h-[inherit] h-full relative lg:sticky top-0'
+        className='bg-[#F9F9F9] dark:bg-[#0F0F0F] flex-[6] px-8 xl:px-20 pt-5 pb-16 xl:pb-5 flex min-h-[inherit] h-full relative xl:sticky top-0'
         role='main'
       >
         <div className='flex-1 flex flex-col'>
@@ -78,7 +78,7 @@ export default async function ProjectPage({ params }: PageProps) {
           <article className='mt-[3.75rem] flex flex-col justify-between flex-1'>
             <div>
               <header>
-                <div className='text-base mb-2 sm:mb-4 inline-flex items-center gap-2 font-[350]'>
+                <div className='text-base mb-2 xl:mb-4 inline-flex items-center gap-2 font-[350]'>
                   <Image
                     src={project.organization.image}
                     alt={`${project.organization.name} logo`}
@@ -92,7 +92,7 @@ export default async function ProjectPage({ params }: PageProps) {
                   <h1 className='font-medium'>
                     <span>{project.project.title}</span>
                     <span> - </span>
-                    <span className='font-normal sm:font-[350]'>
+                    <span className='font-normal xl:font-[350]'>
                       Repenser une application mobile en une solution web
                       adaptée aux contraintes de la plateforme Educadhoc
                     </span>
@@ -100,7 +100,7 @@ export default async function ProjectPage({ params }: PageProps) {
                 </div>
               </header>
 
-              <div className='mt-8 space-y-10 sm:space-y-8'>
+              <div className='mt-8 space-y-10 xl:space-y-8'>
                 <section>
                   <Heading>Contexte</Heading>
                   <Paragraph>
@@ -151,7 +151,7 @@ export default async function ProjectPage({ params }: PageProps) {
       </main>
 
       <aside
-        className='bg-white dark:bg-black flex-[8] flex flex-col gap-10 px-8 pt-16 pb-12 sm:px-20 sm:pt-20 sm:pb-20 relative'
+        className='bg-white dark:bg-black flex-[8] flex flex-col gap-10 px-8 pt-16 pb-12 xl:px-20 xl:pt-20 xl:pb-20 relative'
         role='complementary'
       >
         <Image
