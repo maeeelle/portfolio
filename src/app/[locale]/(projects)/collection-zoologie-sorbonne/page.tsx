@@ -11,6 +11,7 @@ import { ProjectFooter } from '../_components/Footer'
 import { Aside } from '../_components/Aside'
 import { ProjectArticle } from '../_components/ProjectArticle'
 import { ReferenceLink } from '../_components/ReferenceLink'
+import clsx from 'clsx'
 
 type PageProps = {
   params: Promise<{
@@ -18,10 +19,10 @@ type PageProps = {
   }>
 }
 
-function ProjectImage(props: ImageProps) {
+function ProjectImage({ className, ...props }: ImageProps) {
   return (
     // eslint-disable-next-line jsx-a11y/alt-text
-    <Image {...props} className='rounded-lg w-full select-none' />
+    <Image {...props} className={clsx('select-none', className)} />
   )
 }
 
@@ -104,45 +105,105 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
       </Main>
 
       <Aside>
-        <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] before:right-0 before:top-1/2 before:-translate-y-1/2'>
-          <span className='bg-white relative pr-4'>01. Identité visuelle</span>
-        </h2>
+        <section>
+          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] before:right-0 before:top-1/2 before:-translate-y-1/2'>
+            <span className='bg-white relative pr-4'>
+              01. Identité visuelle
+            </span>
+          </h2>
 
-        <ProjectImage
-          width={3840}
-          height={2160}
-          src='/images/projects/totoro/cover.webp'
-          alt=''
-        />
-        <ProjectImage
-          width={3240}
-          height={1317}
-          src='/images/projects/totoro/styleguide.webp'
-          alt=''
-        />
+          <div className='flex flex-col xl:flex-row gap-2.5 max-w-full mt-8'>
+            <ProjectImage
+              width={4096}
+              height={2371}
+              src='/images/projects/collection-zoologie-sorbonne/DSC01915-1.webp'
+              alt=''
+              className='min-w-0 object-cover object-center xl:h-60'
+            />
+            <ProjectImage
+              width={3000}
+              height={3000}
+              src='/images/projects/collection-zoologie-sorbonne/Porte-1.webp'
+              alt=''
+              className='min-w-0 object-cover object-center xl:h-60'
+            />
+          </div>
 
-        <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] mt-8 relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] before:right-0 before:top-1/2 before:-translate-y-1/2'>
-          <span className='bg-white relative pr-4'>02. Interfaces</span>
-        </h2>
+          <div className='flex flex-col xl:flex-row gap-2.5 max-w-full mt-2.5'>
+            <ProjectImage
+              width={4096}
+              height={2734}
+              src='/images/projects/collection-zoologie-sorbonne/mur-1.webp'
+              alt=''
+              className='min-w-0 object-cover object-center xl:h-56'
+            />
+            <ProjectImage
+              width={4096}
+              height={2731}
+              src='/images/projects/collection-zoologie-sorbonne/DSC01971-1.webp'
+              alt=''
+              className='min-w-0 object-cover object-center xl:h-56'
+            />
+          </div>
 
-        <ProjectImage
-          width={2466}
-          height={1624}
-          src='/images/projects/totoro/pages-1.webp'
-          alt=''
-        />
-        <ProjectImage
-          width={2388}
-          height={1624}
-          src='/images/projects/totoro/pages-2.webp'
-          alt=''
-        />
-        <ProjectImage
-          width={2410}
-          height={1624}
-          src='/images/projects/totoro/pages-3.webp'
-          alt=''
-        />
+          <div className='mt-2.5'>
+            <ProjectImage
+              width={4096}
+              height={2731}
+              src='/images/projects/collection-zoologie-sorbonne/DSC01889-1.webp'
+              alt=''
+              className='w-full'
+            />
+          </div>
+        </section>
+
+        <section className='mt-8'>
+          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] before:right-0 before:top-1/2 before:-translate-y-1/2'>
+            <span className='bg-white relative pr-4'>02. Interfaces</span>
+          </h2>
+
+          <div className='space-y-10 mt-8'>
+            <ProjectImage
+              width={1512}
+              height={3709}
+              src='/images/projects/collection-zoologie-sorbonne/image-55.png'
+              alt=''
+              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+            />
+
+            <ProjectImage
+              width={1512}
+              height={2890}
+              src='/images/projects/collection-zoologie-sorbonne/image-58.png'
+              alt=''
+              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+            />
+
+            <ProjectImage
+              width={1512}
+              height={1857}
+              src='/images/projects/collection-zoologie-sorbonne/image-59.png'
+              alt=''
+              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+            />
+
+            <ProjectImage
+              width={1512}
+              height={3627}
+              src='/images/projects/collection-zoologie-sorbonne/image-60.png'
+              alt=''
+              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+            />
+
+            <ProjectImage
+              width={3024}
+              height={2172}
+              src='/images/projects/collection-zoologie-sorbonne/image-61.png'
+              alt=''
+              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+            />
+          </div>
+        </section>
       </Aside>
     </Container>
   )
