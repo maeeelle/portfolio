@@ -5,7 +5,7 @@ export function BackButton() {
     <nav aria-label='Back navigation' className='inline-flex'>
       <Link
         href='/'
-        className='flex gap-2 items-center text-base/none font-normal tracking-normal text-[#161616] dark:text-[#D3D3D3]'
+        className='flex gap-2 items-center text-sm uppercase font-normal tracking-normal text-[#161616] dark:text-[#D3D3D3]'
         aria-label='Return to home page'
       >
         <svg
@@ -22,7 +22,7 @@ export function BackButton() {
             d='M5.217 8.667 8.95 12.4l-.95.933L2.667 8 8 2.667l.95.933-3.733 3.733h8.116v1.334H5.217Z'
           />
         </svg>
-        Retour
+        <span className='leading-[0.7]'>Retour</span>
       </Link>
     </nav>
   )
