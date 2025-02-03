@@ -28,7 +28,7 @@ export function ProjectHeader({
         <span>{company}</span>
       </div>
       <div className='text-3xl/[2.25rem]'>
-        <h1 className='font-medium'>
+        <h1 className='font-medium text-balance'>
           <span>{title}</span>
           <span> - </span>
           <span className='font-normal xl:font-[350]'>{subtitle}</span>
