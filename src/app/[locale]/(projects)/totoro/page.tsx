@@ -21,7 +21,7 @@ type PageProps = {
 function ProjectImage(props: ImageProps) {
   return (
     // eslint-disable-next-line jsx-a11y/alt-text
-    <Image {...props} className='rounded-lg w-full select-none' />
+    <Image {...props} className='w-full select-none' />
   )
 }
 
