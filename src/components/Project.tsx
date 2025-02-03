@@ -14,6 +14,12 @@ export function ProjectTag({ name }: ProjectTagProps) {
   )
 }
 
+export function ProjectTagList({ children }: { children: React.ReactNode }) {
+  return (
+    <ul className='inline-flex gap-2 flex-wrap list-none p-0'>{children}</ul>
+  )
+}
+
 function ArrowIcon({ className }: { className?: string }) {
   return (
     <svg
@@ -69,14 +75,11 @@ export function Project({ organization, project, tags, id }: Project) {
         </header>
 
         <footer className='mt-4 sm:mt-6'>
-          <ul
-            className='inline-flex gap-2 flex-wrap list-none p-0'
-            aria-label='Project technologies'
-          >
+          <ProjectTagList>
             {tags.map((tag) => (
               <ProjectTag key={tag} name={tag} />
             ))}
-          </ul>
+          </ProjectTagList>
         </footer>
       </article>
     </Link>
