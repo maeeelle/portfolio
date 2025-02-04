@@ -11,7 +11,7 @@ export default function Layout({ children }: LayoutProps) {
     <div className='min-h-dvh flex flex-col relative overflow-hidden'>
       <header className='max-w-screen-2xl mx-auto w-full flex justify-between items-center p-8 sm:px-20 font-normal text-[#282828] dark:text-[#D3D3D3] text-sm'>
         <div className='flex gap-2 items-center'>
-          <h1>MAËLLE.WORKS</h1>
+          <Link href='/'>MAËLLE.WORKS</Link>
           <span>•</span>
           <Link
             href='/doc/cv_maelle.pdf'
