@@ -75,34 +75,34 @@ export default async function BuddyPage({ params }: PageProps) {
       </Main>
 
       <Aside>
-        <section className='flex flex-wrap gap-6 justify-center'>
+        <section className='flex flex-wrap gap-9 justify-center'>
           <ProjectImage
-            width={3432}
-            height={3432}
-            src='/images/projects/buddy/image-1.webp'
+            width={1716}
+            height={1644}
+            src='/images/projects/buddy/Pensif.webp'
             alt=''
-            className='w-auto h-80 xl:h-[18.25rem]'
+            className='h-auto w-full max-w-80 xl:max-w-[18.75rem] outline -outline-offset-1 outline-1 outline-black/10 rounded'
           />
           <ProjectImage
-            width={3432}
-            height={3432}
-            src='/images/projects/buddy/image-2.webp'
+            width={1716}
+            height={1644}
+            src='/images/projects/buddy/Heureux.webp'
             alt=''
-            className='w-auto h-80 xl:h-[18.25rem]'
+            className='h-auto w-full max-w-80 xl:max-w-[18.75rem] outline -outline-offset-1 outline-1 outline-black/10 rounded'
           />
           <ProjectImage
-            width={3432}
-            height={3432}
-            src='/images/projects/buddy/image-3.webp'
+            width={1716}
+            height={1644}
+            src='/images/projects/buddy/Triste.webp'
             alt=''
-            className='w-auto h-80 xl:h-[18.25rem]'
+            className='h-auto w-full max-w-80 xl:max-w-[18.75rem] outline -outline-offset-1 outline-1 outline-black/10 rounded'
           />
           <ProjectImage
-            width={3432}
-            height={3432}
-            src='/images/projects/buddy/image-4.webp'
+            width={1716}
+            height={1644}
+            src='/images/projects/buddy/Gêné.webp'
             alt=''
-            className='w-auto h-80 xl:h-[18.25rem]'
+            className='h-auto w-full max-w-80 xl:max-w-[18.75rem] outline -outline-offset-1 outline-1 outline-black/10 rounded'
           />
         </section>
       </Aside>
