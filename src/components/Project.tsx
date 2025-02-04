@@ -8,7 +8,7 @@ type ProjectTagProps = {
 
 export function ProjectTag({ name }: ProjectTagProps) {
   return (
-    <li className='text-[#838383] dark:text-[#6D6D6D] text-base/none px-2 py-1.5 rounded-sm border border-[#DBDBDB] dark:border-[#3C3C3C] font-[350]'>
+    <li className='text-[#838383] dark:text-[#6D6D6D] text-base/[.7] -tracking-[.02em] px-2 py-1.5 rounded-sm border border-[#DBDBDB] dark:border-[#3C3C3C] font-[350]'>
       {name}
     </li>
   )
@@ -46,7 +46,7 @@ export function Project({ organization, project, tags, id }: Project) {
     <Link href={`/${id}`} aria-labelledby={titleId} className='block group'>
       <article aria-labelledby={titleId} className='font-[350]'>
         <header className='relative'>
-          <div className='text-[#161616] dark:text-[#D3D3D3] text-base mb-3 sm:mb-4 inline-flex items-center gap-2'>
+          <div className='text-[#161616] dark:text-[#D3D3D3] text-base -tracking-[.02em] mb-5 sm:mb-6 inline-flex items-center gap-2'>
             <Image
               src={organization.image}
               alt={`${organization.name} logo`}
@@ -56,25 +56,29 @@ export function Project({ organization, project, tags, id }: Project) {
             />
             <div>
               <span>{organization.name}</span>
-              <span> - </span>
-              <span>{organization.year}</span>
             </div>
           </div>
           <div>
             <h2
               id={titleId}
-              className='text-3xl/none sm:text-4.5xl/none text-[#282828] dark:text-[#D3D3D3] mb-2 inline-flex items-center gap-2 group-hover:text-[#4F32FF] dark:group-hover:text-[#B2FF5D] transition-colors duration-150'
+              className='text-3xl/none sm:text-4.5xl/none text-[#282828] dark:text-[#D3D3D3] inline-flex mb-3 sm:mb-2 items-center gap-2 group-hover:text-[#4F32FF] dark:group-hover:text-[#B2FF5D] transition-colors duration-150 leading-[.7]'
             >
               {project.title}
               <ArrowIcon className='hidden shrink-0 sm:inline-block transition-all duration-300 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0' />
             </h2>
-            <p className='text-[#8E8E8E] dark:text-[#6D6D6D] text-xl/none sm:text-2xl/none'>
+            <p className='text-[#8E8E8E] dark:text-[#6D6D6D] text-xl/[22px] sm:text-2xl/7'>
               {project.subtitle}
             </p>
           </div>
         </header>
 
-        <footer className='mt-4 sm:mt-6'>
+        <footer className='mt-5 sm:mt-7 text-[#8E8E8E] -tracking-[.02em] flex flex-col sm:flex-row gap-4 sm:items-center'>
+          <small className='font-[350] text-base leading-[.7]'>
+            {organization.year}
+          </small>
+
+          <span className='hidden sm:inline-block'>•</span>
+
           <ProjectTagList>
             {tags.map((tag) => (
               <ProjectTag key={tag} name={tag} />
