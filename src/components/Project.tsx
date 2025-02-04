@@ -95,7 +95,7 @@ export function Project({
             >
               {project.title}
               {isLocked ? (
-                <LockIcon className='shrink-0 group-hover:animate-wiggle text-[#DBDBDB] dark:text-[#3C3C3C] group-hover:text-red-500 transform-cpu transition-colors duration-75' />
+                <LockIcon className='shrink-0 group-hover:animate-wiggle text-[#DBDBDB] dark:text-[#3C3C3C] group-hover:text-red-500 dark:group-hover:text-red-400 transition-colors duration-75' />
               ) : (
                 <ArrowIcon className='hidden shrink-0 sm:inline-block transition-all duration-300 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0' />
               )}
