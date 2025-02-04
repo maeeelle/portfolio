@@ -29,6 +29,17 @@ export default {
         '5xl': '3.25rem',
         '5.5xl': '3.5rem',
       },
+      keyframes: {
+        wiggle: {
+          '0%': { transform: 'rotate(0deg)' },
+          '25%': { transform: 'rotate(8deg)' },
+          '50%': { transform: 'rotate(-8deg)' },
+          '100%': { transform: 'rotate(0deg)' },
+        },
+      },
+      animation: {
+        wiggle: 'wiggle 0.5s ease-in-out forwards',
+      },
     },
   },
   plugins: [],
