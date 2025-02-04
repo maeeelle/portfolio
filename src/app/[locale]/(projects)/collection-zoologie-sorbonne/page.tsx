@@ -83,12 +83,16 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
 
                 <ul className='text-base text-pretty leading-normal xl:leading-[25px] font-[350] text-[#282828] dark:text-[#D3D3D3]'>
                   <li>
-                    <ReferenceLink>Anthony Reungère</ReferenceLink> - UX/UI
-                    Designer
+                    <ReferenceLink href='https://www.linkedin.com/in/anthonyreungere/'>
+                      Anthony Reungère
+                    </ReferenceLink>{' '}
+                    - UX/UI Designer
                   </li>
                   <li>
-                    <ReferenceLink>Léonie Nollevalle</ReferenceLink> - UX/UI
-                    Designer
+                    <ReferenceLink href='https://www.linkedin.com/in/l%C3%A9onie-nollevalle-9310731b0/'>
+                      Léonie Nollevalle
+                    </ReferenceLink>{' '}
+                    - Identité visuelle + UX/UI Designer
                   </li>
                 </ul>
               </section>
