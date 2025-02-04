@@ -121,7 +121,7 @@ export default async function ProjectPage({ params }: PageProps) {
       <Aside>
         <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
           <span className='bg-white dark:bg-black relative pr-4'>
-            01. Identité visuelles
+            Identité visuelles
           </span>
         </h2>
 
@@ -140,7 +140,7 @@ export default async function ProjectPage({ params }: PageProps) {
 
         <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] mt-8 relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
           <span className='bg-white dark:bg-black relative pr-4'>
-            02. Interfaces
+            Interfaces
           </span>
         </h2>
 
