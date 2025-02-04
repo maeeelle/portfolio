@@ -11,7 +11,6 @@ import { ProjectFooter } from '../_components/Footer'
 import { Aside } from '../_components/Aside'
 import { ProjectArticle } from '../_components/ProjectArticle'
 import clsx from 'clsx'
-import { ExternalLink } from '../_components/ExternalLink'
 import { ReferenceLink } from '../_components/ReferenceLink'
 
 type PageProps = {
@@ -52,24 +51,50 @@ export default async function QSMPShopPage({ params }: PageProps) {
                 <Paragraph>
                   QSMP est un serveur Minecraft multijoueur, créé par le
                   créateur de contenu{' '}
-                  <ReferenceLink href='#' className='underline-offset-[3px]'>
+                  <ReferenceLink
+                    href='https://www.twitch.tv/quackity'
+                    className='underline-offset-[3px]'
+                  >
                     Quackity
                   </ReferenceLink>
                   , qui réunit des streamers du monde entier, parlant
                   différentes langues, grâce à un système de traduction en temps
                   réel.
                 </Paragraph>
+                <Paragraph>
+                  <ReferenceLink
+                    href='https://qsmp.shop/'
+                    className='underline-offset-[3px]'
+                  >
+                    QSMP.shop
+                  </ReferenceLink>{' '}
+                  est le site e-commerce de QSMP, sur lequel sont mis en vente
+                  des produits dérivés en lien avec le projet. Ce design n’a
+                  malheureusement jamais été mis en ligne, mais le design avait
+                  tout de même été finalisé.
+                </Paragraph>
               </section>
               <section>
                 <Heading>Contribution</Heading>
                 <Paragraph>
-                  Lorem ipsum dolor sit amet consectetur. Sit morbi rhoncus
-                  lorem tincidunt nec sed. Etiam ipsum et quis tincidunt
-                  tristique sed adipiscing dolor lobortis.
+                  J’ai été commissionné pour concevoir l’ensemble du design d’un
+                  site Shopify dédié à la première collection de figurines
+                  inspirées des personnages de la série. Chaque personnage ayant
+                  une identité et une histoire uniques, j’ai veillé à refléter
+                  leur singularité à travers les product cards et les pages
+                  détails.
+                </Paragraph>
+              </section>
+              <section>
+                <Heading>Equipe</Heading>
+                <Paragraph>
+                  <ReferenceLink href='https://www.instagram.com/foxie_fern_/'>
+                    Foxie Fern
+                  </ReferenceLink>{' '}
+                  - 3D Designer
                 </Paragraph>
               </section>
             </div>
-            <ExternalLink href='#'>Accéder au prototype</ExternalLink>
           </div>
 
           <ProjectFooter year='2024'>
