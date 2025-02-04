@@ -1,12 +1,17 @@
 import { Separator } from '@/components/Separator'
 import { ToggleThemeButton } from '@/components/ThemeToggle'
 import { Link } from '@/i18n/routing'
+import { setRequestLocale } from 'next-intl/server'
 
 type LayoutProps = {
   children: React.ReactNode
+  params: Promise<{ locale: string }>
 }
 
-export default function Layout({ children }: LayoutProps) {
+export default async function Layout({ children, params }: LayoutProps) {
+  const { locale } = await params
+  setRequestLocale(locale)
+
   return (
     <div className='min-h-dvh flex flex-col relative overflow-hidden'>
       <header className='max-w-screen-2xl mx-auto w-full flex justify-between items-center p-8 sm:px-20 font-normal text-[#282828] dark:text-[#D3D3D3] text-sm'>
