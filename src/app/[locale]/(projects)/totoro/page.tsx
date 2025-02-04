@@ -10,7 +10,6 @@ import { Main } from '../_components/Main'
 import { ProjectFooter } from '../_components/Footer'
 import { Aside } from '../_components/Aside'
 import { ProjectArticle } from '../_components/ProjectArticle'
-import { ExternalLink } from '../_components/ExternalLink'
 import { ReferenceLink } from '../_components/ReferenceLink'
 
 type PageProps = {
@@ -62,10 +61,14 @@ export default async function ProjectPage({ params }: PageProps) {
               <section>
                 <Heading>Contribution</Heading>
                 <Paragraph>
-                  Lors de ce projet, j’ai eu l’occasion de réaliser l’identité
-                  visuelle. J’ai également co-construit, en binôme avec le
-                  second designer, le parcours utilisateur ainsi qu’un design
-                  kit et l’ensemble des écrans de l’application.
+                  Lors de ce projet, j’ai activement participé au process
+                  d’idéation.
+                </Paragraph>
+                <Paragraph>
+                  J’ai ensuite eu l’occasion de réaliser l’identité visuelle et
+                  ai co-construit, en binôme avec le second designer, le
+                  parcours utilisateur ainsi qu’un design kit et l’ensemble des
+                  écrans de l’application.
                 </Paragraph>
               </section>
               <section>
@@ -102,8 +105,6 @@ export default async function ProjectPage({ params }: PageProps) {
                 </ul>
               </section>
             </div>
-
-            <ExternalLink href=''>Accéder au Figma</ExternalLink>
           </div>
 
           <ProjectFooter year='2022'>
