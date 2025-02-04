@@ -10,6 +10,7 @@ export type Project = {
     subtitle: string
   }
   tags: string[]
+  isLocked?: boolean
 }
 
 export const projects: Project[] = [
@@ -39,6 +40,7 @@ export const projects: Project[] = [
         'Unifier toutes les promotions en un seul outil pour une gestion centralisée et simplifiée',
     },
     tags: ['User Research', 'UX', 'UI', 'Web Application'],
+    isLocked: true,
   },
   {
     id: 'buddy',

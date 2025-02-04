@@ -57,17 +57,13 @@ function ArrowIcon({ className }: { className?: string }) {
   )
 }
 
-type ProjectProps = {
-  isLocked?: boolean
-} & Project
-
 export function Project({
   organization,
   project,
   tags,
   id,
   isLocked,
-}: ProjectProps) {
+}: Project) {
   const titleId = `project-${id}-title`
 
   return (
