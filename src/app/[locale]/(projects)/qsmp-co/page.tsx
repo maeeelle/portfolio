@@ -52,7 +52,10 @@ export default async function QSMPCoPage({ params }: PageProps) {
                 <Paragraph>
                   QSMP est un serveur Minecraft multijoueur, créé par le
                   créateur de contenu{' '}
-                  <ReferenceLink className='underline-offset-[3px]' href='#'>
+                  <ReferenceLink
+                    className='underline-offset-[3px]'
+                    href='https://www.twitch.tv/quackity'
+                  >
                     Quackity
                   </ReferenceLink>
                   , qui réunit des streamers du monde entier, parlant
@@ -76,18 +79,6 @@ export default async function QSMPCoPage({ params }: PageProps) {
                   de m’assurer de la cohérence entre les maquettes et le produit
                   final.
                 </Paragraph>
-              </section>
-              <section>
-                <Heading>Equipe</Heading>
-
-                <ul className='text-base text-pretty leading-normal xl:leading-[25px] font-[350] text-[#282828] dark:text-[#D3D3D3]'>
-                  <li>
-                    <ReferenceLink href='https://erickgust.vercel.app/'>
-                      Erick Gustavo
-                    </ReferenceLink>{' '}
-                    - Développeur front-end
-                  </li>
-                </ul>
               </section>
             </div>
 
