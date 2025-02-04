@@ -84,29 +84,71 @@ export default async function QSMPShopPage({ params }: PageProps) {
       </Main>
 
       <Aside>
-        <section className='space-y-20'>
-          <ProjectImage
-            width={1512}
-            height={4647}
-            src='/images/projects/qsmp-shop/QSMP.shop-Homepage.webp'
-            alt=''
-            className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
-          />
+        <section>
+          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] before:right-0 before:top-1/2 before:-translate-y-1/2'>
+            <span className='bg-white relative pr-4'>
+              01. Visuels des produits
+            </span>
+          </h2>
 
-          <ProjectImage
-            width={1513}
-            height={5270}
-            src='/images/projects/qsmp-shop/QSMP.shop-Catalog.webp'
-            alt=''
-            className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
-          />
-          <ProjectImage
-            width={1512}
-            height={3609}
-            src='/images/projects/qsmp-shop/QSMP.shop-PDP.webp'
-            alt=''
-            className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
-          />
+          <div className='mt-8'>
+            <ProjectImage
+              width={3864}
+              height={2863}
+              src='/images/projects/qsmp-shop/QSMP.shop-Product-Cards.webp'
+              alt=''
+              className='w-full'
+            />
+          </div>
+        </section>
+
+        <section className='mt-8'>
+          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] before:right-0 before:top-1/2 before:-translate-y-1/2'>
+            <span className='bg-white relative pr-4'>02. Interfaces</span>
+          </h2>
+
+          <div className='space-y-20 mt-8'>
+            <ProjectImage
+              width={1512}
+              height={4647}
+              src='/images/projects/qsmp-shop/QSMP.shop-Homepage.webp'
+              alt=''
+              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+            />
+
+            <ProjectImage
+              width={1513}
+              height={5270}
+              src='/images/projects/qsmp-shop/QSMP.shop-Catalog.webp'
+              alt=''
+              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+            />
+            <ProjectImage
+              width={1512}
+              height={3609}
+              src='/images/projects/qsmp-shop/QSMP.shop-PDP.webp'
+              alt=''
+              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+            />
+          </div>
+        </section>
+
+        <section className='mt-8'>
+          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] before:right-0 before:top-1/2 before:-translate-y-1/2'>
+            <span className='bg-white relative pr-4'>
+              03. Hero personnalisé des pages détails des produits
+            </span>
+          </h2>
+
+          <div className='mt-8'>
+            <ProjectImage
+              width={4776}
+              height={4096}
+              src='/images/projects/qsmp-shop/QSMP.shop-PDP-Tops.webp'
+              alt=''
+              className='w-full\'
+            />
+          </div>
         </section>
       </Aside>
     </Container>
