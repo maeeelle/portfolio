@@ -63,25 +63,50 @@ export default async function Home({ params }: HomeProps) {
       </main>
 
       <Separator className='relative left-1/2 -translate-x-1/2 w-screen' />
-      <footer className='max-w-screen-2xl mx-auto w-full flex flex-col gap-4 sm:flex-row sm:gap-0 sm:justify-between sm:items-center px-8 sm:px-20 pb-12 sm:pb-6 pt-8 sm:pt-5 font-normal text-[#282828] dark:text-[#D3D3D3] text-base'>
-        <span>
-          Développé par{' '}
+      <footer className='max-w-screen-2xl mx-auto w-full px-8 sm:px-20 font-normal text-[#282828] dark:text-[#D3D3D3] text-sm uppercase'>
+        <div className='py-8 flex flex-col gap-4 sm:items-center'>
+          <p>Travaillons ensemble!</p>
+
+          <div className='flex gap-2 items-center'>
+            <a
+              href='https://www.linkedin.com/in/maellems'
+              className='no-underline text-[#4F32FF] dark:text-[#B2FF5D] transition-all duration-150 sm:underline decoration-from-font decoration-wavy underline-offset-4 decoration-[#4F32FF]/0 dark:decoration-[#B2FF5D]/0 hover:decoration-[#4F32FF]/100 dark:hover:decoration-[#B2FF5D]/100'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              LinkedIn
+            </a>
+            <span>•</span>
+            <a
+              href='mailto:moisismaelle@gmail.com'
+              className='no-underline text-[#4F32FF] dark:text-[#B2FF5D] transition-all duration-150 sm:underline decoration-from-font decoration-wavy underline-offset-4 decoration-[#4F32FF]/0 dark:decoration-[#B2FF5D]/0 hover:decoration-[#4F32FF]/100 dark:hover:decoration-[#B2FF5D]/100'
+            >
+              moisismaelle@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <Separator className='relative left-1/2 -translate-x-1/2 w-screen' />
+
+        <div className='py-8 flex flex-col gap-4 sm:flex-row sm:gap-0 sm:justify-between sm:items-center'>
+          <span>
+            Développé par{' '}
+            <a
+              href='https://erickgust.vercel.app/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='no-underline text-[#4F32FF] dark:text-[#B2FF5D] transition-all duration-150 hover:text-[#4F32FF] dark:hover:text-[#B2FF5D] sm:underline decoration-from-font decoration-wavy underline-offset-4 decoration-[#4F32FF]/0 dark:decoration-[#B2FF5D]/0 hover:decoration-[#4F32FF]/100 dark:hover:decoration-[#B2FF5D]/100'
+            >
+              Erick
+            </a>
+          </span>
           <a
-            href='https://erickgust.vercel.app/'
-            target='_blank'
-            rel='noopener noreferrer'
-            className='no-underline text-[#4F32FF] dark:text-[#B2FF5D] transition-all duration-150 hover:text-[#4F32FF] dark:hover:text-[#B2FF5D] sm:underline decoration-from-font decoration-wavy underline-offset-4 decoration-[#4F32FF]/0 dark:decoration-[#B2FF5D]/0 hover:decoration-[#4F32FF]/100 dark:hover:decoration-[#B2FF5D]/100'
+            href='#'
+            className='no-underline text-[#4F32FF] dark:text-[#B2FF5D] transition-all duration-150 sm:underline decoration-from-font decoration-wavy underline-offset-4 decoration-[#4F32FF]/0 dark:decoration-[#B2FF5D]/0 hover:decoration-[#4F32FF]/100 dark:hover:decoration-[#B2FF5D]/100'
           >
-            Erick
+            mentions légales
           </a>
-        </span>
-        <a
-          href='#'
-          className='no-underline text-[#4F32FF] dark:text-[#B2FF5D] transition-all duration-150 hover:text-[#4F32FF] dark:hover:text-[#B2FF5D] sm:underline decoration-from-font decoration-wavy underline-offset-4 decoration-[#4F32FF]/0 dark:decoration-[#B2FF5D]/0 hover:decoration-[#4F32FF]/100 dark:hover:decoration-[#B2FF5D]/100'
-        >
-          Crédits
-        </a>
-        <span>Mis à jour : Février 2025</span>
+        </div>
       </footer>
     </div>
   )
