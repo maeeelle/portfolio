@@ -15,17 +15,19 @@ export default async function Home({ params }: HomeProps) {
 
   return (
     <div className='min-h-dvh flex flex-col relative overflow-hidden'>
-      <header className='max-w-screen-2xl mx-auto w-full flex flex-wrap justify-between items-center px-8 sm:px-20 pb-5 pt-5 font-normal text-[#282828] dark:text-[#D3D3D3] text-base'>
-        <Link
-          href='/doc/cv_maelle.pdf'
-          className='max-sm:text-[#4F32FF] dark:max-sm:text-[#B2FF5D]'
-        >
-          CV
-        </Link>
-
-        <h1 className='max-sm:-order-1 w-full sm:w-auto mb-1.5 sm:mb-0'>
-          Maëlle - Digital Product Designer
-        </h1>
+      <header className='max-w-screen-2xl mx-auto w-full flex justify-between items-center p-8 sm:px-20 font-normal text-[#282828] dark:text-[#D3D3D3] text-base'>
+        <div className='flex gap-2 items-center'>
+          <h1 className='max-sm:-order-1 w-full sm:w-auto mb-1.5 sm:mb-0'>
+            MAËLLE.WORKS
+          </h1>
+          <span>•</span>
+          <Link
+            href='/doc/cv_maelle.pdf'
+            className='text-[#4F32FF] dark:text-[#B2FF5D]'
+          >
+            CV
+          </Link>
+        </div>
 
         <div className='flex gap-5 items-center'>
           <Link
