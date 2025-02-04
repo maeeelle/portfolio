@@ -15,7 +15,7 @@ export default async function Home({ params }: HomeProps) {
 
   return (
     <div className='min-h-dvh flex flex-col relative overflow-hidden'>
-      <header className='max-w-screen-2xl mx-auto w-full flex justify-between items-center p-8 sm:px-20 font-normal text-[#282828] dark:text-[#D3D3D3] text-base'>
+      <header className='max-w-screen-2xl mx-auto w-full flex justify-between items-center p-8 sm:px-20 font-normal text-[#282828] dark:text-[#D3D3D3] text-sm'>
         <div className='flex gap-2 items-center'>
           <h1 className='max-sm:-order-1 w-full sm:w-auto mb-1.5 sm:mb-0'>
             MAËLLE.WORKS
@@ -33,14 +33,14 @@ export default async function Home({ params }: HomeProps) {
           <Link
             // href={`/${locale === 'en' ? 'fr' : 'en'}`}
             href='/fr'
-            className='w-6 h-5 relative group overflow-hidden flex'
+            className='size-5 relative group overflow-hidden flex'
             aria-label='Toggle language'
           >
-            <span className='absolute inset-0 transition-all duration-300 group-hover:translate-y-5 opacity-100 group-hover:opacity-0 leading-tight'>
+            <span className='absolute inset-0 transition-all duration-300 group-hover:translate-y-5 opacity-100 group-hover:opacity-0 leading-none self-center text-center'>
               {/* {locale === 'en' ? 'EN' : 'FR'} */}
               FR
             </span>
-            <span className='absolute inset-0 transition-all duration-300 -translate-y-5 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 leading-tight'>
+            <span className='absolute inset-0 transition-all duration-300 -translate-y-5 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 leading-none self-center text-center'>
               {/* {locale === 'en' ? 'FR' : 'EN'} */}
               EN
             </span>
