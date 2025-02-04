@@ -89,10 +89,10 @@ export default async function QSMPCoPage({ params }: PageProps) {
 
           <ProjectFooter year='2023'>
             <ProjectTagList>
-              <ProjectTag name='User Research' />
               <ProjectTag name='UX' />
               <ProjectTag name='UI' />
               <ProjectTag name='Site vitrine' />
+              <ProjectTag name='Identité visuelle' />
             </ProjectTagList>
           </ProjectFooter>
         </ProjectArticle>

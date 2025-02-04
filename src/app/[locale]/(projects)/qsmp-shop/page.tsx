@@ -74,7 +74,6 @@ export default async function QSMPShopPage({ params }: PageProps) {
 
           <ProjectFooter year='2024'>
             <ProjectTagList>
-              <ProjectTag name='User Research' />
               <ProjectTag name='UX' />
               <ProjectTag name='UI' />
               <ProjectTag name='E-commerce' />
