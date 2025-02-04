@@ -67,11 +67,11 @@ export default async function ProjectPage({ params }: PageProps) {
               <section>
                 <Heading>Contribution</Heading>
                 <Paragraph>
-                  Le problème de Mon coach Bescherelle est son accessibilité. En
-                  effet, elle n’est présente que sous forme d’application sur
-                  smartphone. Ma mission était donc de rendre Mon Coach
-                  Bescherelle disponible sur la plateforme Educadhoc tout en
-                  prenant en compte les contraintes posées par celle-ci.
+                  Après avoir analysé l’ensemble des contenus de l’application
+                  mobile ainsi que les différentes possibilités de la plateforme
+                  Educadhoc, j’ai pu commencé à itérer sur les interfaces
+                  nécessaires grâce aux retours des équipes internes, jusqu’à
+                  cette version finale.
                 </Paragraph>
               </section>
             </div>
