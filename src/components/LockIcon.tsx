@@ -10,16 +10,10 @@ export function LockIcon({ className }: { className?: string }) {
       viewBox='0 0 28 28'
       className={className}
       onAnimationStart={(event) => {
-        event.currentTarget.classList.add(
-          'group-focus:text-red-500',
-          'dark:group-focus:text-red-400',
-        )
+        event.currentTarget.classList.add('group-focus:text-red-500')
       }}
       onAnimationEnd={(event) => {
-        event.currentTarget.classList.remove(
-          'group-focus:text-red-500',
-          'dark:group-focus:text-red-400',
-        )
+        event.currentTarget.classList.remove('group-focus:text-red-500')
       }}
     >
       <path
