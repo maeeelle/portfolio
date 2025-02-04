@@ -107,7 +107,7 @@ export default async function QSMPShopPage({ params }: PageProps) {
             <span className='bg-white relative pr-4'>02. Interfaces</span>
           </h2>
 
-          <div className='space-y-20 mt-8'>
+          <div className='space-y-10 mt-8'>
             <ProjectImage
               width={1512}
               height={4647}
