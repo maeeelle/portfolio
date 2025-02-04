@@ -79,7 +79,7 @@ export function Project({
     >
       <article aria-labelledby={titleId} className='font-[350]'>
         <header className='relative'>
-          <div className='text-[#161616] dark:text-[#D3D3D3] text-base -tracking-[.02em] mb-5 sm:mb-6 inline-flex items-center gap-2'>
+          <div className='text-[#161616] dark:text-[#D3D3D3] text-base -tracking-[.02em] mb-4 sm:mb-5 inline-flex items-center gap-2'>
             <Image
               src={organization.image}
               alt={`${organization.name} logo`}
@@ -94,7 +94,7 @@ export function Project({
           <div>
             <h2
               id={titleId}
-              className='text-3xl/none sm:text-4.5xl/none text-[#282828] dark:text-[#D3D3D3] inline-flex mb-3 sm:mb-2 items-center gap-2 group-data-[locked=false]:group-hover:text-[#4F32FF] dark:group-data-[locked=false]:group-hover:text-[#B2FF5D] transition-colors duration-150 leading-[.7]'
+              className='text-3xl/none sm:text-4.5xl/none text-[#282828] dark:text-[#D3D3D3] inline-flex mb-3 sm:mb-2 items-center gap-2 group-data-[locked=false]:group-hover:text-[#4F32FF] dark:group-data-[locked=false]:group-hover:text-[#B2FF5D] transition-colors duration-150'
             >
               {project.title}
               {isLocked ? (
