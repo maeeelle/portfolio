@@ -48,19 +48,28 @@ export default async function BuddyPage({ params }: PageProps) {
               <section>
                 <Heading>Contexte</Heading>
                 <Paragraph>
-                  Lorem ipsum dolor sit amet consectetur. Malesuada a et aliquam
-                  iaculis luctus. Et cursus in fermentum suspendisse lobortis
-                  pharetra consequat varius lorem. Egestas a blandit id non. Id
-                  lectus aliquam vulputate auctor.
+                  Le Data Supermarket est un outil développé par Carrefour
+                  visant à simplifier l’accès aux données métiers via un
+                  catalogue structuré. Il intègre un chatbot permettant
+                  d’obtenir des informations en interagissant directement avec
+                  lui.
                 </Paragraph>
               </section>
               <section>
                 <Heading>Contribution</Heading>
                 <Paragraph>
-                  Lorem ipsum dolor sit amet consectetur. Malesuada a et aliquam
-                  iaculis luctus. Et cursus in fermentum suspendisse lobortis
-                  pharetra consequat varius lorem. Egestas a blandit id non. Id
-                  lectus aliquam vulputate auctor.
+                  J’ai été chargé de concevoir une illustration et de donner une
+                  identité visuelle à ce chatbot. L’objectif était de s’éloigner
+                  des codes des assistants d’appel classiques en adoptant une
+                  approche plus informelle, jeune et conviviale, en accord avec
+                  l’interface déjà conçue.
+                </Paragraph>
+                <Paragraph>
+                  Pour concevoir ces illustrations, je me suis inspirée de la
+                  palette d’émotions des Memoji d’Apple, tout en intégrant les
+                  couleurs emblématiques de Carrefour, le bleu et le rouge,
+                  ainsi que les teintes pastel de l’interface du Data
+                  Supermarket.
                 </Paragraph>
               </section>
             </div>
