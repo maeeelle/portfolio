@@ -100,8 +100,8 @@ export default async function QSMPCoPage({ params }: PageProps) {
 
       <Aside>
         <section>
-          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] before:right-0 before:top-1/2 before:-translate-y-1/2'>
-            <span className='bg-white relative pr-4'>
+          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
+            <span className='bg-white dark:bg-black relative pr-4'>
               01. Identité visuelle
             </span>
           </h2>
@@ -119,8 +119,10 @@ export default async function QSMPCoPage({ params }: PageProps) {
         </section>
 
         <section className='mt-8'>
-          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] before:right-0 before:top-1/2 before:-translate-y-1/2'>
-            <span className='bg-white relative pr-4'>02. Interfaces</span>
+          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
+            <span className='bg-white dark:bg-black relative pr-4'>
+              02. Interfaces
+            </span>
           </h2>
 
           <div className='mt-8'>
@@ -136,8 +138,8 @@ export default async function QSMPCoPage({ params }: PageProps) {
         </section>
 
         <section className='mt-8'>
-          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] before:right-0 before:top-1/2 before:-translate-y-1/2'>
-            <span className='bg-white relative pr-4'>
+          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
+            <span className='bg-white dark:bg-black relative pr-4'>
               03. Color palette exploration
             </span>
           </h2>
