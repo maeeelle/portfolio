@@ -30,7 +30,7 @@ export default function LegalPage() {
               Overused Grotesk
             </ReferenceLink>{' '}
             par{' '}
-            <ReferenceLink href='https://www.instagram.com/randommaerks/?ref=uncut.wtf'>
+            <ReferenceLink href='https://www.instagram.com/randommaerks'>
               RandomMaerks
             </ReferenceLink>
           </p>
