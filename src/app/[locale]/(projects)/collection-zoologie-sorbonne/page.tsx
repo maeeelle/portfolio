@@ -112,6 +112,87 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
         <section>
           <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
             <span className='bg-white dark:bg-black relative pr-4'>
+              Étude du contexte et des enjeux
+            </span>
+          </h2>
+
+          <div className='mt-8'>
+            <Paragraph>
+              Après avoir échangé avec Santiago Aragon et visité le site, nous
+              avons identifié plusieurs enjeux liés à la Collection Zoologique.
+              Son approche narrative, centrée sur l’histoire individuelle de
+              chaque animal, offre une expérience immersive et empathique, rare
+              dans les musées traditionnels.
+            </Paragraph>
+            <Paragraph>
+              Santiago souhaite également utiliser la collection pour ouvrir des
+              discussions sur l’anthropocène, dépassant ainsi son simple rôle
+              scientifique. Cependant, son emplacement au sein de l’université
+              limite sa visibilité et sa reconnaissance.
+            </Paragraph>
+            <Paragraph>
+              L’absence d’informations écrites, compensée par l’interaction
+              directe avec Santiago, pose la question de la transmission du
+              savoir. Enfin, son rôle central dans l’expérience des visiteurs
+              souligne la nécessité de préserver et pérenniser son impact sur la
+              collection.
+            </Paragraph>
+          </div>
+        </section>
+
+        <section>
+          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
+            <span className='bg-white dark:bg-black relative pr-4'>
+              Problématiques identifiées
+            </span>
+          </h2>
+
+          <div className='mt-8 rounded space-y-4'>
+            <article className='bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
+              <h3 className='font-medium text-base/tight text-[#282828] dark:text-[#D3D3D3]'>
+                Visibilité
+              </h3>
+
+              <p className='text-base/tight text-pretty font-[350] text-[#818181] dark:text-[#D3D3D3]'>
+                La collection souffre d’un manque de visibilité, sans
+                signalétique sur place ni réelle présence en ligne, ce qui
+                complique son accès. Elle ne dispose pas non plus d’une identité
+                propre la rendant identifiable.
+              </p>
+            </article>
+
+            <article className='bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
+              <h3 className='font-medium text-base/tight text-[#282828] dark:text-[#D3D3D3]'>
+                Scénographie
+              </h3>
+
+              <p className='text-base/tight text-pretty font-[350] text-[#818181] dark:text-[#D3D3D3]'>
+                La scénographie est inégale : certains objets sont mis en valeur
+                tandis que d’autres restent cachés. L’absence de cartels
+                informatifs complique la visite, surtout pour un public non
+                initié.
+              </p>
+            </article>
+
+            <article className='bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
+              <h3 className='font-medium text-base/tight text-[#282828] dark:text-[#D3D3D3]'>
+                Informations
+              </h3>
+
+              <p className='text-base/tight text-pretty font-[350] text-[#818181] dark:text-[#D3D3D3]'>
+                Santiago Aragon est au cœur de la transmission du savoir,
+                rendant la collection dépendante de sa présence. Assurer la
+                pérennité de son expertise et offrir un accès minimal aux
+                informations sur les spécimens pourraient enrichir l’expérience
+                des visiteurs.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section className='mt-8'>
+          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
+            <span className='bg-white dark:bg-black relative pr-4'>
               Identité visuelle
             </span>
           </h2>
