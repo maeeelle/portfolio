@@ -148,7 +148,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
           </h2>
 
           <div className='mt-8 rounded space-y-4'>
-            <article className='bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
+            <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
               <h3 className='font-medium text-base/tight text-[#282828] dark:text-[#D3D3D3]'>
                 Visibilité
               </h3>
@@ -161,7 +161,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               </p>
             </article>
 
-            <article className='bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
+            <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
               <h3 className='font-medium text-base/tight text-[#282828] dark:text-[#D3D3D3]'>
                 Scénographie
               </h3>
@@ -174,7 +174,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               </p>
             </article>
 
-            <article className='bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
+            <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
               <h3 className='font-medium text-base/tight text-[#282828] dark:text-[#D3D3D3]'>
                 Informations
               </h3>
@@ -198,7 +198,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
           </h2>
 
           <div className='mt-8 rounded space-y-4'>
-            <article className='bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
+            <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='24'
@@ -218,7 +218,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               </p>
             </article>
 
-            <article className='bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
+            <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='24'
@@ -239,7 +239,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               </p>
             </article>
 
-            <article className='bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
+            <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='24'
@@ -260,7 +260,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               </p>
             </article>
 
-            <article className='bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
+            <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='24'
@@ -282,7 +282,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               </p>
             </article>
 
-            <article className='bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
+            <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='24'
@@ -302,7 +302,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               </p>
             </article>
 
-            <article className='bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
+            <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='24'
@@ -321,7 +321,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
                 Informations de contact près de la porte
               </p>
             </article>
-            <article className='bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
+            <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='24'
@@ -340,7 +340,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
                 Créer une signalétique au sein de l’Université
               </p>
             </article>
-            <article className='bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
+            <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='24'
