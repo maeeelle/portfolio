@@ -81,7 +81,7 @@ export default async function THSTrackerPage({ params }: PageProps) {
               </section>
             </div>
 
-            <ExternalLink href='https://www.figma.com/design/5qmv136HtPbx48h0Gh6eXY/THS-Tracker---Ma%C3%ABlle?node-id=0-1'>
+            <ExternalLink href='https://www.figma.com/design/5qmv136HtPbx48h0Gh6eXY/THS-Tracker---Maëlle?node-id=1-448'>
               Accéder au fichier Figma
             </ExternalLink>
           </div>
