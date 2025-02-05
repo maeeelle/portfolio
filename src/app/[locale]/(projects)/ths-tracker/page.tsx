@@ -220,7 +220,7 @@ export default async function THSTrackerPage({ params }: PageProps) {
               height={1624}
               src='/images/projects/ths-tracker/onboarding.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full'
               unoptimized
             />
 
@@ -229,7 +229,7 @@ export default async function THSTrackerPage({ params }: PageProps) {
               height={1624}
               src='/images/projects/ths-tracker/taux-hormonaux.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full'
               unoptimized
             />
 
@@ -238,7 +238,7 @@ export default async function THSTrackerPage({ params }: PageProps) {
               height={1624}
               src='/images/projects/ths-tracker/journal-rappels.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full'
               quality={95}
             />
           </div>
