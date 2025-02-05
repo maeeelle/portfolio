@@ -40,16 +40,20 @@ export default function LegalPage() {
           <H2>Éléments Graphiques</H2>
 
           <p className='font-[350]'>
-            <ReferenceLink href=''>Léonie Nollevalle</ReferenceLink> pour les
-            photographies et mockups pour la{' '}
-            <ReferenceLink href=''>
+            <ReferenceLink href='https://www.linkedin.com/in/l%C3%A9onie-nollevalle-9310731b0/'>
+              Léonie Nollevalle
+            </ReferenceLink>{' '}
+            pour les photographies et mockups pour la{' '}
+            <ReferenceLink href='/collection-zoologie-sorbonne'>
               Collection Zoologique de Sorbonne Université
             </ReferenceLink>
           </p>
           <p className='font-[350]'>
-            <ReferenceLink href=''>Tukimice</ReferenceLink> pour les modèles 3D
-            des skins Minecraft pour{' '}
-            <ReferenceLink href=''>QSMP.co</ReferenceLink>
+            <ReferenceLink href='https://x.com/TukimiceTK'>
+              Tukimice
+            </ReferenceLink>{' '}
+            pour les modèles 3D des skins Minecraft pour{' '}
+            <ReferenceLink href='/qsmp-co'>QSMP.co</ReferenceLink>
           </p>
         </div>
       </section>
