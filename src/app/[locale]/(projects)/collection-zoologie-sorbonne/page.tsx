@@ -425,7 +425,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
             <ProjectImage
               width={1512}
               height={3709}
-              src='/images/projects/collection-zoologie-sorbonne/image-55.png'
+              src='/images/projects/collection-zoologie-sorbonne/home-page.png'
               alt=''
               className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
             />
@@ -433,7 +433,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
             <ProjectImage
               width={1512}
               height={2890}
-              src='/images/projects/collection-zoologie-sorbonne/image-58.png'
+              src='/images/projects/collection-zoologie-sorbonne/base-de-donnée-page-passerelle.png'
               alt=''
               className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
             />
@@ -441,7 +441,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
             <ProjectImage
               width={1512}
               height={1857}
-              src='/images/projects/collection-zoologie-sorbonne/image-59.png'
+              src='/images/projects/collection-zoologie-sorbonne/base-de-donnée-généraliste.png'
               alt=''
               className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
             />
@@ -449,17 +449,43 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
             <ProjectImage
               width={1512}
               height={3627}
-              src='/images/projects/collection-zoologie-sorbonne/image-60.png'
+              src='/images/projects/collection-zoologie-sorbonne/page-spécimens.png'
               alt=''
               className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
             />
 
             <ProjectImage
-              width={3024}
-              height={2172}
-              src='/images/projects/collection-zoologie-sorbonne/image-61.png'
+              width={1512}
+              height={1086}
+              src='/images/projects/collection-zoologie-sorbonne/réserver.png'
               alt=''
               className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+            />
+          </div>
+        </section>
+
+        <section className='mt-8'>
+          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
+            <span className='bg-white dark:bg-black relative pr-4'>
+              ébauches d’expérience immersive
+            </span>
+          </h2>
+
+          <div className='space-y-10 mt-8'>
+            <ProjectImage
+              width={1512}
+              height={982}
+              src='/images/projects/collection-zoologie-sorbonne/frise-chronologique.png'
+              alt=''
+              className='w-full'
+            />
+
+            <ProjectImage
+              width={1512}
+              height={982}
+              src='/images/projects/collection-zoologie-sorbonne/carte.png'
+              alt=''
+              className='w-full'
             />
           </div>
         </section>
