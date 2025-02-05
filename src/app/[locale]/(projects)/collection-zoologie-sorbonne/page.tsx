@@ -282,7 +282,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               </p>
             </article>
 
-            <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
+            <article className='rounded border border-[#F9F9F9] dark:border-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='24'
@@ -302,7 +302,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               </p>
             </article>
 
-            <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
+            <article className='rounded border border-[#F9F9F9] dark:border-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='24'
@@ -321,7 +321,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
                 Informations de contact près de la porte
               </p>
             </article>
-            <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
+            <article className='rounded border border-[#F9F9F9] dark:border-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='24'
@@ -340,7 +340,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
                 Créer une signalétique au sein de l’Université
               </p>
             </article>
-            <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
+            <article className='rounded border border-[#F9F9F9] dark:border-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='24'
