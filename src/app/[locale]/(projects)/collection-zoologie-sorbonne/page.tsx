@@ -369,37 +369,37 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
             </span>
           </h2>
 
-          <div className='flex flex-col xl:flex-row gap-2.5 max-w-full mt-8'>
+          <div className='flex flex-col sm:flex-row gap-2.5 max-w-full mt-8'>
             <ProjectImage
               width={2992}
               height={1996}
               src='/images/projects/collection-zoologie-sorbonne/DSC01915-1.webp'
               alt=''
-              className='object-cover object-center xl:h-60'
+              className='min-w-0 object-cover object-center xl:h-60'
             />
             <ProjectImage
               width={2580}
               height={1996}
               src='/images/projects/collection-zoologie-sorbonne/Porte-1.webp'
               alt=''
-              className='object-cover object-center xl:h-60'
+              className='min-w-0 object-cover object-center xl:h-60'
             />
           </div>
 
-          <div className='flex flex-col xl:flex-row gap-2.5 max-w-full mt-2.5'>
+          <div className='flex flex-col sm:flex-row gap-2.5 max-w-full mt-2.5'>
             <ProjectImage
               width={2712}
               height={2024}
               src='/images/projects/collection-zoologie-sorbonne/mur-1.webp'
               alt=''
-              className='object-cover object-center xl:h-56'
+              className='min-w-0 object-cover object-center xl:h-56'
             />
             <ProjectImage
               width={2748}
               height={2024}
               src='/images/projects/collection-zoologie-sorbonne/DSC01971-1.webp'
               alt=''
-              className='object-cover object-center xl:h-56'
+              className='min-w-0 object-cover object-center xl:h-56'
             />
           </div>
 
