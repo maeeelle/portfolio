@@ -477,7 +477,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               height={982}
               src='/images/projects/collection-zoologie-sorbonne/frise-chronologique.png'
               alt=''
-              className='w-full'
+              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
             />
 
             <ProjectImage
@@ -485,7 +485,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               height={982}
               src='/images/projects/collection-zoologie-sorbonne/carte.png'
               alt=''
-              className='w-full'
+              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
             />
           </div>
         </section>
