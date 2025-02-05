@@ -117,8 +117,8 @@ export default async function QSMPShopPage({ params }: PageProps) {
 
           <div className='mt-8'>
             <ProjectImage
-              width={3864}
-              height={2863}
+              width={1932}
+              height={1432}
               src='/images/projects/qsmp-shop/QSMP.shop-Product-Cards.webp'
               alt=''
               className='w-full'
@@ -168,11 +168,11 @@ export default async function QSMPShopPage({ params }: PageProps) {
 
           <div className='mt-8'>
             <ProjectImage
-              width={4776}
-              height={4096}
-              src='/images/projects/qsmp-shop/QSMP.shop-PDP-Tops.webp'
+              width={1512}
+              height={934}
+              src='/images/projects/qsmp-shop/QSMPshop_PDP_Tops.gif'
               alt=''
-              className='w-full\'
+              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
             />
           </div>
         </section>
