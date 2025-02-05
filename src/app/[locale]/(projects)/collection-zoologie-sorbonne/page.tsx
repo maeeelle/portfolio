@@ -147,7 +147,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
             </span>
           </h2>
 
-          <div className='mt-8 rounded space-y-4'>
+          <div className='mt-8 space-y-4'>
             <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
               <h3 className='font-medium text-base/tight text-[#282828] dark:text-[#D3D3D3]'>
                 Visibilité
@@ -197,7 +197,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
             </span>
           </h2>
 
-          <div className='mt-8 rounded space-y-4'>
+          <div className='mt-8 space-y-4'>
             <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
