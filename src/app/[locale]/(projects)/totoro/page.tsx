@@ -173,6 +173,7 @@ export default async function ProjectPage({ params }: PageProps) {
             <ProjectImage
               width={375}
               height={812}
+              unoptimized
               src='/images/projects/totoro/Explications.webp'
               alt=''
               className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
@@ -180,6 +181,7 @@ export default async function ProjectPage({ params }: PageProps) {
             <ProjectImage
               width={375}
               height={812}
+              unoptimized
               src='/images/projects/totoro/Explications-1.webp'
               alt=''
               className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
@@ -187,6 +189,7 @@ export default async function ProjectPage({ params }: PageProps) {
             <ProjectImage
               width={375}
               height={812}
+              unoptimized
               src='/images/projects/totoro/Explications-2.webp'
               alt=''
               className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
@@ -194,6 +197,7 @@ export default async function ProjectPage({ params }: PageProps) {
             <ProjectImage
               width={375}
               height={812}
+              unoptimized
               src='/images/projects/totoro/Missions.webp'
               alt=''
               className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
@@ -201,6 +205,7 @@ export default async function ProjectPage({ params }: PageProps) {
             <ProjectImage
               width={375}
               height={812}
+              unoptimized
               src='/images/projects/totoro/Filtres.webp'
               alt=''
               className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
@@ -208,6 +213,7 @@ export default async function ProjectPage({ params }: PageProps) {
             <ProjectImage
               width={375}
               height={812}
+              unoptimized
               src='/images/projects/totoro/Mission.webp'
               alt=''
               className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
@@ -215,6 +221,7 @@ export default async function ProjectPage({ params }: PageProps) {
             <ProjectImage
               width={375}
               height={812}
+              unoptimized
               src='/images/projects/totoro/Boutiques.webp'
               alt=''
               className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
@@ -222,6 +229,7 @@ export default async function ProjectPage({ params }: PageProps) {
             <ProjectImage
               width={375}
               height={818}
+              unoptimized
               src='/images/projects/totoro/Profile.webp'
               alt=''
               className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
@@ -229,6 +237,7 @@ export default async function ProjectPage({ params }: PageProps) {
             <ProjectImage
               width={375}
               height={818}
+              unoptimized
               src='/images/projects/totoro/Profile2.webp'
               alt=''
               className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
