@@ -11,6 +11,7 @@ import { ProjectFooter } from '../_components/Footer'
 import { Aside } from '../_components/Aside'
 import { ProjectArticle } from '../_components/ProjectArticle'
 import { ReferenceLink } from '../_components/ReferenceLink'
+import clsx from 'clsx'
 
 type PageProps = {
   params: Promise<{
@@ -18,10 +19,10 @@ type PageProps = {
   }>
 }
 
-function ProjectImage(props: ImageProps) {
+function ProjectImage({ className, ...props }: ImageProps) {
   return (
     // eslint-disable-next-line jsx-a11y/alt-text
-    <Image {...props} className='w-full select-none' />
+    <Image quality={90} {...props} className={clsx('select-none', className)} />
   )
 }
 
@@ -119,49 +120,121 @@ export default async function ProjectPage({ params }: PageProps) {
       </Main>
 
       <Aside>
-        <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
-          <span className='bg-white dark:bg-black relative pr-4'>
-            Identité visuelles
-          </span>
-        </h2>
+        <section>
+          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
+            <span className='bg-white dark:bg-black relative pr-4'>
+              Identité visuelle
+            </span>
+          </h2>
 
-        <ProjectImage
-          width={3840}
-          height={2160}
-          src='/images/projects/totoro/cover.webp'
-          alt=''
-        />
-        <ProjectImage
-          width={3240}
-          height={1317}
-          src='/images/projects/totoro/styleguide.webp'
-          alt=''
-        />
+          <div className='space-y-8 mt-8'>
+            <ProjectImage
+              width={1920}
+              height={1080}
+              src='/images/projects/totoro/Brand.webp'
+              alt=''
+            />
+            <ProjectImage
+              width={1620}
+              height={656}
+              src='/images/projects/totoro/Brand-Colors.webp'
+              unoptimized
+              alt=''
+            />
+          </div>
+        </section>
 
-        <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] mt-8 relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
-          <span className='bg-white dark:bg-black relative pr-4'>
-            Interfaces
-          </span>
-        </h2>
+        <section className='mt-8'>
+          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
+            <span className='bg-white dark:bg-black relative pr-4'>
+              Design kit
+            </span>
+          </h2>
 
-        <ProjectImage
-          width={2466}
-          height={1624}
-          src='/images/projects/totoro/pages-1.webp'
-          alt=''
-        />
-        <ProjectImage
-          width={2388}
-          height={1624}
-          src='/images/projects/totoro/pages-2.webp'
-          alt=''
-        />
-        <ProjectImage
-          width={2410}
-          height={1624}
-          src='/images/projects/totoro/pages-3.webp'
-          alt=''
-        />
+          <div className='space-y-8 mt-8'>
+            <ProjectImage
+              width={1177}
+              height={1359}
+              src='/images/projects/totoro/Components.webp'
+              unoptimized
+              alt=''
+            />
+          </div>
+        </section>
+
+        <section className='mt-8'>
+          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
+            <span className='bg-white dark:bg-black relative pr-4'>
+              Interfaces
+            </span>
+          </h2>
+
+          <div className='mt-8 grid grid-cols-[repeat(auto-fill,minmax(13.25rem,1fr))] gap-6 justify-start items-start'>
+            <ProjectImage
+              width={375}
+              height={812}
+              src='/images/projects/totoro/Explications.webp'
+              alt=''
+              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+            />
+            <ProjectImage
+              width={375}
+              height={812}
+              src='/images/projects/totoro/Explications-1.webp'
+              alt=''
+              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+            />
+            <ProjectImage
+              width={375}
+              height={812}
+              src='/images/projects/totoro/Explications-2.webp'
+              alt=''
+              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+            />
+            <ProjectImage
+              width={375}
+              height={812}
+              src='/images/projects/totoro/Missions.webp'
+              alt=''
+              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+            />
+            <ProjectImage
+              width={375}
+              height={812}
+              src='/images/projects/totoro/Filtres.webp'
+              alt=''
+              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+            />
+            <ProjectImage
+              width={375}
+              height={812}
+              src='/images/projects/totoro/Mission.webp'
+              alt=''
+              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+            />
+            <ProjectImage
+              width={375}
+              height={812}
+              src='/images/projects/totoro/Boutiques.webp'
+              alt=''
+              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+            />
+            <ProjectImage
+              width={375}
+              height={818}
+              src='/images/projects/totoro/Profile.webp'
+              alt=''
+              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+            />
+            <ProjectImage
+              width={375}
+              height={818}
+              src='/images/projects/totoro/Profile2.webp'
+              alt=''
+              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+            />
+          </div>
+        </section>
       </Aside>
     </Container>
   )
