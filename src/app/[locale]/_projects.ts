@@ -102,7 +102,7 @@ export const projects: Project[] = [
     id: 'ths-tracker',
     organization: {
       name: 'Projet personnel',
-      image: '/images/projects/ths.png',
+      image: '/images/projects/personnel.png',
       year: '2022',
     },
     project: {
