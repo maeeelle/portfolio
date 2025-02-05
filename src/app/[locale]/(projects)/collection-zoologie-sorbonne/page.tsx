@@ -371,16 +371,16 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
 
           <div className='flex flex-col xl:flex-row gap-2.5 max-w-full mt-8'>
             <ProjectImage
-              width={4096}
-              height={2371}
-              src='/images/projects/collection-zoologie-sorbonne/DSC01915-1.webp'
+              width={474}
+              height={316}
+              src='/images/projects/collection-zoologie-sorbonne/DSC01915.png'
               alt=''
               className='min-w-0 object-cover object-center xl:h-60'
             />
             <ProjectImage
-              width={3000}
-              height={3000}
-              src='/images/projects/collection-zoologie-sorbonne/Porte-1.webp'
+              width={409}
+              height={316}
+              src='/images/projects/collection-zoologie-sorbonne/porte.png'
               alt=''
               className='min-w-0 object-cover object-center xl:h-60'
             />
