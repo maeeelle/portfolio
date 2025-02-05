@@ -371,42 +371,42 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
 
           <div className='flex flex-col xl:flex-row gap-2.5 max-w-full mt-8'>
             <ProjectImage
-              width={474}
-              height={316}
-              src='/images/projects/collection-zoologie-sorbonne/DSC01915.png'
+              width={2992}
+              height={1996}
+              src='/images/projects/collection-zoologie-sorbonne/DSC01915-1.webp'
               alt=''
-              className='min-w-0 object-cover object-center xl:h-60'
+              className='object-cover object-center xl:h-60'
             />
             <ProjectImage
-              width={409}
-              height={316}
-              src='/images/projects/collection-zoologie-sorbonne/porte.png'
+              width={2580}
+              height={1996}
+              src='/images/projects/collection-zoologie-sorbonne/Porte-1.webp'
               alt=''
-              className='min-w-0 object-cover object-center xl:h-60'
+              className='object-cover object-center xl:h-60'
             />
           </div>
 
           <div className='flex flex-col xl:flex-row gap-2.5 max-w-full mt-2.5'>
             <ProjectImage
-              width={4096}
-              height={2734}
+              width={2712}
+              height={2024}
               src='/images/projects/collection-zoologie-sorbonne/mur-1.webp'
               alt=''
-              className='min-w-0 object-cover object-center xl:h-56'
+              className='object-cover object-center xl:h-56'
             />
             <ProjectImage
-              width={4096}
-              height={2731}
+              width={2748}
+              height={2024}
               src='/images/projects/collection-zoologie-sorbonne/DSC01971-1.webp'
               alt=''
-              className='min-w-0 object-cover object-center xl:h-56'
+              className='object-cover object-center xl:h-56'
             />
           </div>
 
           <div className='mt-2.5'>
             <ProjectImage
-              width={4096}
-              height={2731}
+              width={3056}
+              height={1996}
               src='/images/projects/collection-zoologie-sorbonne/DSC01889-1.webp'
               alt=''
               className='w-full'
