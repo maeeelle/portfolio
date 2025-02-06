@@ -1,3 +1,4 @@
+import { LanguageToggleButton } from '@/components/LanguageToggle'
 import { Separator } from '@/components/Separator'
 import { ToggleThemeButton } from '@/components/ThemeToggle'
 import { Link } from '@/i18n/routing'
@@ -27,19 +28,7 @@ export default async function Layout({ children, params }: LayoutProps) {
         </div>
 
         <div className='flex gap-4 items-stretch h-4.5'>
-          <Link
-            href={`/${locale === 'en' ? 'fr' : 'en'}`}
-            className='size-5 relative group overflow-hidden flex'
-            aria-label='Toggle language'
-          >
-            <span className='absolute inset-0 transition-all duration-300 group-hover:translate-y-5 opacity-100 group-hover:opacity-0 leading-none self-center text-center'>
-              {locale === 'en' ? 'EN' : 'FR'}
-            </span>
-            <span className='absolute inset-0 transition-all duration-300 -translate-y-5 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 leading-none self-center text-center'>
-              {locale === 'en' ? 'FR' : 'EN'}
-            </span>
-          </Link>
-
+          <LanguageToggleButton defaultLocale={locale} />
           <ToggleThemeButton />
         </div>
       </header>
