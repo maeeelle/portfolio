@@ -50,7 +50,7 @@
       "sections": {
         "product_visuals": "Visuels des produits",
         "interfaces": "Interfaces",
-        "custom_hero": "Hero personnalisé des pages détails des produits"
+        "custom_hero": "Headers des pages produits"
       }
     },
     "buddy": {
