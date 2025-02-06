@@ -6,7 +6,7 @@
     "qsmp": {
       "subtitle": "Design an informative website reflecting the atmosphere of the QSMP Minecraft server",
       "context": {
-        "title": "Contexte",
+        "title": "Context",
         "description1": "QSMP is a multiplayer Minecraft server, created by the content creator <creator>Quackity</creator>, which brings together streamers from all over the world, speaking different languages, thanks to a real-time translation system.",
         "description2": "Their QSMP.co website was designed to bring together all the server's main information: online streamers, a countdown to the next server event, the list of members and their various social networks."
       },
