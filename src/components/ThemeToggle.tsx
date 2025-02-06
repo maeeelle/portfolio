@@ -59,6 +59,10 @@ export function useTheme() {
 export function ToggleThemeButton() {
   const { theme, setTheme } = useTheme()
 
+  try {
+    window._updateTheme(theme)
+  } catch {}
+
   return (
     <button
       type='button'
