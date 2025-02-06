@@ -52,6 +52,21 @@
         "interfaces": "Interfaces",
         "custom_hero": "Hero personnalisé des pages détails des produits"
       }
+    },
+    "buddy": {
+      "subtitle": "Créer une mascotte amicale pour incarner un chatbot d'accès aux données",
+      "context": {
+        "title": "Contexte",
+        "description": "Le Data Supermarket est un outil développé par Carrefour visant à simplifier l'accès aux données métiers via un catalogue structuré. Il intègre un chatbot permettant d'obtenir des informations en interagissant directement avec lui."
+      },
+      "contribution": {
+        "title": "Contribution",
+        "description1": "J'ai été chargé de concevoir une illustration et de donner une identité visuelle à ce chatbot. L'objectif était de s'éloigner des codes des assistants d'appel classiques en adoptant une approche plus informelle, jeune et conviviale, en accord avec l'interface déjà conçue.",
+        "description2": "Pour concevoir ces illustrations, je me suis inspirée de la palette d'émotions des Memoji d'Apple, tout en intégrant les couleurs emblématiques de Carrefour, le bleu et le rouge, ainsi que les teintes pastel de l'interface du Data Supermarket."
+      },
+      "tags": {
+        "illustration": "Illustration"
+      }
     }
   }
 }

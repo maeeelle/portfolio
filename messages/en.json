@@ -52,6 +52,21 @@
         "interfaces": "Interfaces",
         "custom_hero": "Hero personnalisé des pages détails des produits"
       }
+    },
+    "buddy": {
+      "subtitle": "Create a friendly mascot to embody a data access chatbot",
+      "context": {
+        "title": "Context",
+        "description": "Data Supermarket is a tool developed by Carrefour to simplify access to business data via a structured catalog. It integrates a chatbot that allows users to obtain information by interacting directly with it."
+      },
+      "contribution": {
+        "title": "Contribution",
+        "description1": "I was asked to design an illustration and give a visual identity to this chatbot. The aim was to move away from the codes of classic call assistants, adopting a more informal, youthful and friendly approach, in line with the interface already designed.",
+        "description2": "To create these illustrations, I was inspired by the emotional palette of Apple's Memoji, while integrating Carrefour's emblematic colors, blue and red, as well as the pastel hues of the Data Supermarket interface."
+      },
+      "tags": {
+        "illustration": "Illustration"
+      }
     }
   }
 }

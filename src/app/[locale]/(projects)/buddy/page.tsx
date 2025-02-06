@@ -1,6 +1,6 @@
 import Image, { ImageProps } from 'next/image'
 import { ProjectTag, ProjectTagList } from '@/components/Project'
-import { setRequestLocale } from 'next-intl/server'
+import { setRequestLocale, getTranslations } from 'next-intl/server'
 import { Heading } from '../_components/Heading'
 import { Paragraph } from '../_components/Paragraph'
 import { BackButton } from '../_components/BackButton'
@@ -28,6 +28,7 @@ function ProjectImage({ className, ...props }: ImageProps) {
 export default async function BuddyPage({ params }: PageProps) {
   const { locale } = await params
   setRequestLocale(locale)
+  const t = await getTranslations('projects.buddy')
 
   return (
     <Container>
@@ -41,43 +42,25 @@ export default async function BuddyPage({ params }: PageProps) {
               logoAlt='Carrefour logo'
               company='Carrefour'
               title='Data Supermarket'
-              subtitle='Créer une mascotte amicale pour incarner un chatbot d’accès aux données'
+              subtitle={t('subtitle')}
             />
 
             <div className='mt-8 space-y-10 xl:space-y-8'>
               <section>
-                <Heading>Contexte</Heading>
-                <Paragraph>
-                  Le Data Supermarket est un outil développé par Carrefour
-                  visant à simplifier l’accès aux données métiers via un
-                  catalogue structuré. Il intègre un chatbot permettant
-                  d’obtenir des informations en interagissant directement avec
-                  lui.
-                </Paragraph>
+                <Heading>{t('context.title')}</Heading>
+                <Paragraph>{t('context.description')}</Paragraph>
               </section>
               <section>
-                <Heading>Contribution</Heading>
-                <Paragraph>
-                  J’ai été chargé de concevoir une illustration et de donner une
-                  identité visuelle à ce chatbot. L’objectif était de s’éloigner
-                  des codes des assistants d’appel classiques en adoptant une
-                  approche plus informelle, jeune et conviviale, en accord avec
-                  l’interface déjà conçue.
-                </Paragraph>
-                <Paragraph>
-                  Pour concevoir ces illustrations, je me suis inspirée de la
-                  palette d’émotions des Memoji d’Apple, tout en intégrant les
-                  couleurs emblématiques de Carrefour, le bleu et le rouge,
-                  ainsi que les teintes pastel de l’interface du Data
-                  Supermarket.
-                </Paragraph>
+                <Heading>{t('contribution.title')}</Heading>
+                <Paragraph>{t('contribution.description1')}</Paragraph>
+                <Paragraph>{t('contribution.description2')}</Paragraph>
               </section>
             </div>
           </div>
 
           <ProjectFooter year='2024'>
             <ProjectTagList>
-              <ProjectTag name='Illustration' />
+              <ProjectTag name={t('tags.illustration')} />
             </ProjectTagList>
           </ProjectFooter>
         </ProjectArticle>
