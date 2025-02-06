@@ -44,9 +44,9 @@ type ProjectProps = {
   organization: {
     name: string
     image: string
-    year: string
   }
   project: {
+    year: string
     title: string
     subtitle: string
   }
@@ -105,7 +105,7 @@ export function Project({
 
         <footer className='mt-5 sm:mt-7 text-[#8E8E8E] -tracking-[.02em] flex flex-col sm:flex-row gap-4 sm:items-center'>
           <small className='font-[350] text-base leading-[.7]'>
-            {organization.year}
+            {project.year}
           </small>
 
           <span className='hidden sm:inline-block'>•</span>

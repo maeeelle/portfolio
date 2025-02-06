@@ -18,9 +18,9 @@ export default async function Home({ params }: HomeProps) {
           organization={{
             name: 'Université Sorbonne Paris Nord',
             image: '/images/projects/sorbonne.png',
-            year: '2024',
           }}
           project={{
+            year: '2024',
             title: 'Collection de Zoologie de Sorbonne Université',
             subtitle:
               'Allier transmission et réflexion autour de l’anthropocène',
@@ -36,9 +36,9 @@ export default async function Home({ params }: HomeProps) {
           organization={{
             name: 'Carrefour',
             image: '/images/projects/carrefour.png',
-            year: '2024',
           }}
           project={{
+            year: '2024',
             title: 'EasiPromo',
             subtitle:
               'Unifier toutes les promotions en un seul outil pour une gestion centralisée et simplifiée',
@@ -55,9 +55,9 @@ export default async function Home({ params }: HomeProps) {
           organization={{
             name: 'Carrefour',
             image: '/images/projects/carrefour.png',
-            year: '2024',
           }}
           project={{
+            year: '2024',
             title: 'Buddy',
             subtitle:
               'Créer une mascotte amicale pour incarner un chatbot d’accès aux données',
@@ -73,9 +73,9 @@ export default async function Home({ params }: HomeProps) {
           organization={{
             name: 'Quackity Studios',
             image: '/images/projects/quackity.png',
-            year: '2024',
           }}
           project={{
+            year: '2024',
             title: 'QSMP.Shop',
             subtitle:
               'Mettre en valeur la première collection de figurines QSMP sur une boutique en ligne',
@@ -91,9 +91,9 @@ export default async function Home({ params }: HomeProps) {
           organization={{
             name: 'Quackity Studios',
             image: '/images/projects/quackity.png',
-            year: '2023',
           }}
           project={{
+            year: '2023',
             title: 'QSMP.co',
             subtitle:
               'Concevoir une vitrine informative reflétant l’atmosphère du serveur Minecraft QSMP',
@@ -109,9 +109,9 @@ export default async function Home({ params }: HomeProps) {
           organization={{
             name: 'Université Sorbonne Paris Nord',
             image: '/images/projects/sorbonne.png',
-            year: '2023',
           }}
           project={{
+            year: '2023',
             title: 'Maison Laurentine',
             subtitle:
               'Guider le visiteur et encourager les échanges au sein d’une exposition',
@@ -127,9 +127,9 @@ export default async function Home({ params }: HomeProps) {
           organization={{
             name: 'Projet personnel',
             image: '/images/projects/personnel.png',
-            year: '2022',
           }}
           project={{
+            year: '2022',
             title: 'THS Tracker',
             subtitle:
               'Développer un outil tout-en-un pour accompagner le parcours des personnes transgenres',
@@ -145,9 +145,9 @@ export default async function Home({ params }: HomeProps) {
           organization={{
             name: 'HETIC',
             image: '/images/projects/hetic.png',
-            year: '2022',
           }}
           project={{
+            year: '2022',
             title: 'Totoro',
             subtitle: 'Recréer du lien à travers l’entraide entre voisins',
           }}
@@ -167,9 +167,9 @@ export default async function Home({ params }: HomeProps) {
           organization={{
             name: 'Editions Hatier',
             image: '/images/projects/hatier.png',
-            year: '2020',
           }}
           project={{
+            year: '2020',
             title: 'Mon Coach Bescherelle',
             subtitle: 'Repenser une application mobile en une solution web',
           }}
