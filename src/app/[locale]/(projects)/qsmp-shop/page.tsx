@@ -1,6 +1,6 @@
 import Image, { ImageProps } from 'next/image'
 import { ProjectTag, ProjectTagList } from '@/components/Project'
-import { setRequestLocale } from 'next-intl/server'
+import { setRequestLocale, getTranslations } from 'next-intl/server'
 import { Heading } from '../_components/Heading'
 import { Paragraph } from '../_components/Paragraph'
 import { BackButton } from '../_components/BackButton'
@@ -29,6 +29,7 @@ function ProjectImage({ className, ...props }: ImageProps) {
 export default async function QSMPShopPage({ params }: PageProps) {
   const { locale } = await params
   setRequestLocale(locale)
+  const t = await getTranslations('projects.qsmp_shop')
 
   return (
     <Container>
@@ -42,56 +43,51 @@ export default async function QSMPShopPage({ params }: PageProps) {
               logoAlt='Quackity Studios logo'
               company='Quackity Studios'
               title='QSMP.shop'
-              subtitle='Mettre en valeur la première collection de figurines QSMP sur une boutique en ligne'
+              subtitle={t('subtitle')}
             />
 
             <div className='mt-8 space-y-10 xl:space-y-8'>
               <section>
-                <Heading>Contexte</Heading>
+                <Heading>{t('context.title')}</Heading>
                 <Paragraph>
-                  QSMP est un serveur Minecraft multijoueur, créé par le
-                  créateur de contenu{' '}
-                  <ReferenceLink
-                    href='https://www.twitch.tv/quackity'
-                    className='underline-offset-[3px]'
-                  >
-                    Quackity
-                  </ReferenceLink>
-                  , qui réunit des streamers du monde entier, parlant
-                  différentes langues, grâce à un système de traduction en temps
-                  réel.
+                  {t.rich('context.description1', {
+                    creator: (chunk) => (
+                      <ReferenceLink
+                        href='https://www.twitch.tv/quackity'
+                        className='underline-offset-[3px]'
+                      >
+                        {chunk}
+                      </ReferenceLink>
+                    ),
+                  })}
                 </Paragraph>
                 <Paragraph>
-                  <ReferenceLink
-                    href='https://qsmp.shop/'
-                    className='underline-offset-[3px]'
-                  >
-                    QSMP.shop
-                  </ReferenceLink>{' '}
-                  est le site e-commerce de QSMP, sur lequel sont mis en vente
-                  des produits dérivés en lien avec le projet. Ce design n’a
-                  malheureusement jamais été mis en ligne, mais le design avait
-                  tout de même été finalisé.
-                </Paragraph>
-              </section>
-              <section>
-                <Heading>Contribution</Heading>
-                <Paragraph>
-                  J’ai été commissionné pour concevoir l’ensemble du design d’un
-                  site Shopify dédié à la première collection de figurines
-                  inspirées des personnages de la série. Chaque personnage ayant
-                  une identité et une histoire uniques, j’ai veillé à refléter
-                  leur singularité à travers les product cards et les pages
-                  détails.
+                  {t.rich('context.description2', {
+                    shop: (chunk) => (
+                      <ReferenceLink
+                        href='https://qsmp.shop/'
+                        className='underline-offset-[3px]'
+                      >
+                        {chunk}
+                      </ReferenceLink>
+                    ),
+                  })}
                 </Paragraph>
               </section>
               <section>
-                <Heading>Equipe</Heading>
+                <Heading>{t('contribution.title')}</Heading>
+                <Paragraph>{t('contribution.description')}</Paragraph>
+              </section>
+              <section>
+                <Heading>{t('team.title')}</Heading>
                 <Paragraph>
-                  <ReferenceLink href='https://www.instagram.com/foxie_fern_/'>
-                    Foxie Fern
-                  </ReferenceLink>{' '}
-                  - 3D Designer
+                  {t.rich('team.foxie', {
+                    designer: (chunk) => (
+                      <ReferenceLink href='https://www.instagram.com/foxie_fern_/'>
+                        {chunk}
+                      </ReferenceLink>
+                    ),
+                  })}
                 </Paragraph>
               </section>
             </div>
@@ -99,9 +95,9 @@ export default async function QSMPShopPage({ params }: PageProps) {
 
           <ProjectFooter year='2024'>
             <ProjectTagList>
-              <ProjectTag name='UX' />
-              <ProjectTag name='UI' />
-              <ProjectTag name='E-commerce' />
+              <ProjectTag name={t('tags.ux')} />
+              <ProjectTag name={t('tags.ui')} />
+              <ProjectTag name={t('tags.ecommerce')} />
             </ProjectTagList>
           </ProjectFooter>
         </ProjectArticle>
@@ -111,7 +107,7 @@ export default async function QSMPShopPage({ params }: PageProps) {
         <section>
           <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
             <span className='bg-white dark:bg-black relative pr-4'>
-              Visuels des produits
+              {t('sections.product_visuals')}
             </span>
           </h2>
 
@@ -129,7 +125,7 @@ export default async function QSMPShopPage({ params }: PageProps) {
         <section className='mt-8'>
           <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
             <span className='bg-white dark:bg-black relative pr-4'>
-              Interfaces
+              {t('sections.interfaces')}
             </span>
           </h2>
 
@@ -162,7 +158,7 @@ export default async function QSMPShopPage({ params }: PageProps) {
         <section className='mt-8'>
           <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
             <span className='bg-white dark:bg-black relative pr-4'>
-              Hero personnalisé des pages détails des produits
+              {t('sections.custom_hero')}
             </span>
           </h2>
 

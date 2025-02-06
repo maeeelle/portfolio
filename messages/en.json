@@ -26,6 +26,32 @@
         "interfaces": "Interface",
         "color_palette": "Color palette exploration"
       }
+    },
+    "qsmp_shop": {
+      "subtitle": "Showcasing the first QSMP figurine collection on an online store",
+      "context": {
+        "title": "Context",
+        "description1": "QSMP is a multiplayer Minecraft server, created by the content creator <creator>Quackity</creator>, which brings together streamers from all over the world, speaking different languages, thanks to a real-time translation system.",
+        "description2": "<shop>QSMP.shop</shop> is the QSMP e-commerce site, selling merchandise related to the project. Unfortunately, this design was never put online, but it was nevertheless finalized."
+      },
+      "contribution": {
+        "title": "Contribution",
+        "description": "I was commissioned to design an entire Shopify site dedicated to the first collection of figurines inspired by the series' characters. As each character has a unique identity and story, I took care to reflect their uniqueness through the product cards and details pages."
+      },
+      "team": {
+        "title": "Team",
+        "foxie": "<designer>Foxie Fern</designer> - 3D Designer"
+      },
+      "tags": {
+        "ux": "UX",
+        "ui": "UI",
+        "ecommerce": "E-commerce"
+      },
+      "sections": {
+        "product_visuals": "Product visuals",
+        "interfaces": "Interfaces",
+        "custom_hero": "Hero personnalisé des pages détails des produits"
+      }
     }
   }
 }
