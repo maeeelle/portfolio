@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://maelle.works/sitemap.xml',
+    sitemap: 'https://www.maelle.works/sitemap.xml',
   }
 }
