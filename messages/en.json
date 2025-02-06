@@ -176,6 +176,55 @@
         "terminal": "Terminal’s wireframes ",
         "website": "Website's wireframes"
       }
+    },
+    "ths_tracker": {
+      "subtitle": "Developing an all-in-one tool to support transgender people's journey",
+      "context": {
+        "title": "Context",
+        "description": "In 2023, I witnessed a wave of requests from transgender people on Twitter for a tool that would make it easier to track hormone intake. With this in mind, a developer friend and I decided to work on a tool to address this need."
+      },
+      "contribution": {
+        "title": "Contribution",
+        "description": "This project is still ongoing. We have begun to create a user journey and wireframes based on the results of a quantitative survey. These screens, once completed, will then be tested by potential users during interviews."
+      },
+      "team": {
+        "title": "Team",
+        "maxence": "Maxence Wolff - Fullstack Developer"
+      },
+      "research": {
+        "title": "User research",
+        "intro": "After conducting a survey of over 170 people, we identified the key needs of our future users.",
+        "needs": {
+          "symptoms": "Monitor the evolution of their symptoms and moods",
+          "reminders": "Have a reminder of their hormone intake",
+          "appointments": "Record their medical appointments"
+        },
+        "architecture": {
+          "intro": "Based on this data, I identified the essential functionalities to be included in V1 and drew up an initial architecture for the application, <link>which can be accessed at this link</link>.",
+          "sections_intro": "It is structured around the following main sections.",
+          "tracking": {
+            "title": "My tracking",
+            "description": "Get an overview of my upcoming reminders and hormone levels."
+          },
+          "journal": {
+            "title": "Journal",
+            "description": "Record my current symptoms and moods, as well as personal notes."
+          },
+          "reminders": {
+            "title": "Reminders",
+            "description": "Create and edit reminders with a wide range of customization options."
+          }
+        }
+      },
+      "wireframes": {
+        "title": "Wireframes"
+      },
+      "cta": "Access the Figma file",
+      "tags": {
+        "research": "User Research",
+        "ux": "UX",
+        "mobile": "Mobile application"
+      }
     }
   }
 }

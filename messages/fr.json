@@ -176,6 +176,55 @@
         "terminal": "Wireframes de la borne",
         "website": "wireframes du Site web"
       }
+    },
+    "ths_tracker": {
+      "subtitle": "Développer un outil tout-en-un pour accompagner le parcours des personnes transgenres",
+      "context": {
+        "title": "Contexte",
+        "description": "En 2023, j'ai été témoin d'une vague de demandes de la part de personnes transgenres sur Twitter d'un outil permettant de faciliter le suivi de prise d'hormones. Suite à ce constat, j'ai décidé avec un ami développeur de travailler sur un outil permettant de répondre à ce besoin."
+      },
+      "contribution": {
+        "title": "Contribution",
+        "description": "Ce projet est aujourd'hui toujours en cours. Nous avons commencé à réaliser un parcours utilisateur et des wireframes à partir de réponses à une enquête quantitative. Ces écrans, une fois terminés, seront ensuite testés par des utilisateurs potentiels au cours d'interviews."
+      },
+      "team": {
+        "title": "Equipe",
+        "maxence": "Maxence Wolff - Développeur Fullstack"
+      },
+      "research": {
+        "title": "User research",
+        "intro": "Après avoir réalisé un sondage auprès de plus de 170 personnes, nous avons identifié les principaux besoins de nos futur·e·s utilisateur·rice·s.",
+        "needs": {
+          "symptoms": "Suivre l'évolution de leurs symptômes et humeurs",
+          "reminders": "Avoir un rappel de leur prise d'hormones",
+          "appointments": "Enregistrer leurs rendez-vous médicaux"
+        },
+        "architecture": {
+          "intro": "À partir de ces données, j'ai identifié les fonctionnalités essentielles à inclure dès la V1 et élaboré une première architecture de l'application, <link>accessible à ce lien</link>.",
+          "sections_intro": "Celle-ci s'articule autour des sections principales suivantes.",
+          "tracking": {
+            "title": "Mon suivi",
+            "description": "Consulter un aperçu de mes rappels à venir et de mes taux hormonaux."
+          },
+          "journal": {
+            "title": "Journal",
+            "description": "Enregistrer mes symptômes et humeurs du moment, ainsi que des notes personnelles."
+          },
+          "reminders": {
+            "title": "Rappels",
+            "description": "Créer et modifier des rappels avec un large choix d'options de personnalisation."
+          }
+        }
+      },
+      "wireframes": {
+        "title": "Wireframes"
+      },
+      "cta": "Accéder au fichier Figma",
+      "tags": {
+        "research": "User Research",
+        "ux": "UX",
+        "mobile": "Application mobile"
+      }
     }
   }
 }

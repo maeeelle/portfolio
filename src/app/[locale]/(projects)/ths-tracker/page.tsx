@@ -1,6 +1,6 @@
 import Image, { ImageProps } from 'next/image'
 import { ProjectTag, ProjectTagList } from '@/components/Project'
-import { setRequestLocale } from 'next-intl/server'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { Heading } from '../_components/Heading'
 import { Paragraph } from '../_components/Paragraph'
 import { BackButton } from '../_components/BackButton'
@@ -30,6 +30,7 @@ function ProjectImage({ className, ...props }: ImageProps) {
 export default async function THSTrackerPage({ params }: PageProps) {
   const { locale } = await params
   setRequestLocale(locale)
+  const t = await getTranslations('projects.ths_tracker')
 
   return (
     <Container>
@@ -43,32 +44,20 @@ export default async function THSTrackerPage({ params }: PageProps) {
               logoAlt='Centered white circle with a black background'
               company='Projet personnel'
               title='THS Tracker'
-              subtitle='Développer un outil tout-en-un pour accompagner le parcours des personnes transgenres'
+              subtitle={t('subtitle')}
             />
 
             <div className='mt-8 space-y-10 xl:space-y-8'>
               <section>
-                <Heading>Contexte</Heading>
-                <Paragraph>
-                  En 2023, j’ai été témoin d’une vague de demandes de la part de
-                  personnes transgenres sur Twitter d’un outil permettant de
-                  faciliter le suivi de prise d’hormones. Suite à ce constat,
-                  j’ai décidé avec un ami développeur de travailler sur un outil
-                  permettant de répondre à ce besoin.
-                </Paragraph>
+                <Heading>{t('context.title')}</Heading>
+                <Paragraph>{t('context.description')}</Paragraph>
               </section>
               <section>
-                <Heading>Contribution</Heading>
-                <Paragraph>
-                  Ce projet est aujourd’hui toujours en cours. Nous avons
-                  commencé à réaliser un parcours utilisateur et des wireframes
-                  à partir de réponses à une enquête quantitative. Ces écrans,
-                  une fois terminés, seront ensuite testés par des utilisateurs
-                  potentiels au cours d’interviews.
-                </Paragraph>
+                <Heading>{t('contribution.title')}</Heading>
+                <Paragraph>{t('contribution.description')}</Paragraph>
               </section>
               <section>
-                <Heading>Equipe</Heading>
+                <Heading>{t('team.title')}</Heading>
 
                 <ul className='text-base text-pretty leading-normal xl:leading-[25px] font-[350] text-[#282828] dark:text-[#D3D3D3]'>
                   <li>
@@ -82,15 +71,15 @@ export default async function THSTrackerPage({ params }: PageProps) {
             </div>
 
             <ExternalLink href='https://www.figma.com/design/5qmv136HtPbx48h0Gh6eXY/THS-Tracker---Maëlle?node-id=1-448'>
-              Accéder au fichier Figma
+              {t('cta')}
             </ExternalLink>
           </div>
 
           <ProjectFooter year='2022'>
             <ProjectTagList>
-              <ProjectTag name='User Research' />
-              <ProjectTag name='UX' />
-              <ProjectTag name='Application mobile' />
+              <ProjectTag name={t('tags.research')} />
+              <ProjectTag name={t('tags.ux')} />
+              <ProjectTag name={t('tags.mobile')} />
             </ProjectTagList>
           </ProjectFooter>
         </ProjectArticle>
@@ -100,16 +89,12 @@ export default async function THSTrackerPage({ params }: PageProps) {
         <section>
           <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
             <span className='bg-white dark:bg-black relative pr-4'>
-              User research
+              {t('research.title')}
             </span>
           </h2>
 
           <div className='mt-8'>
-            <Paragraph>
-              Après avoir réalisé un sondage auprès de plus de 170 personnes,
-              nous avons identifié les principaux besoins de nos futur·e·s
-              utilisateur·rice·s.
-            </Paragraph>
+            <Paragraph>{t('research.intro')}</Paragraph>
 
             <div className='mt-6 space-y-4'>
               <article className='rounded bg-[#FFCADE] dark:bg-[#3C1721] px-6 py-6 sm:py-4 text-[#6E001F] dark:text-[#FFCADE] flex flex-col sm:flex-row sm:items-center gap-4'>
@@ -122,7 +107,7 @@ export default async function THSTrackerPage({ params }: PageProps) {
                 />
 
                 <p className='text-base/tight text-pretty font-[350]'>
-                  Suivre l’évolution de leurs symptômes et humeurs
+                  {t('research.needs.symptoms')}
                 </p>
               </article>
 
@@ -136,7 +121,7 @@ export default async function THSTrackerPage({ params }: PageProps) {
                 />
 
                 <p className='text-base/tight text-pretty font-[350]'>
-                  Avoir un rappel de leur prise d’hormones
+                  {t('research.needs.reminders')}
                 </p>
               </article>
 
@@ -150,7 +135,7 @@ export default async function THSTrackerPage({ params }: PageProps) {
                 />
 
                 <p className='text-base/tight text-pretty font-[350]'>
-                  Enregistrer leurs rendez-vous médicaux
+                  {t('research.needs.appointments')}
                 </p>
               </article>
             </div>
@@ -158,49 +143,41 @@ export default async function THSTrackerPage({ params }: PageProps) {
 
           <div className='mt-8'>
             <Paragraph>
-              À partir de ces données, j’ai identifié les fonctionnalités
-              essentielles à inclure dès la V1 et élaboré une première
-              architecture de l’application,{' '}
-              <ReferenceLink href='https://www.figma.com/design/5qmv136HtPbx48h0Gh6eXY/THS-Tracker---Ma%C3%ABlle?node-id=0-1'>
-                accessible à ce lien
-              </ReferenceLink>
-              .
+              {t.rich('research.architecture.intro', {
+                link: (chunk) => (
+                  <ReferenceLink href='https://www.figma.com/design/5qmv136HtPbx48h0Gh6eXY/THS-Tracker---Ma%C3%ABlle?node-id=0-1'>
+                    {chunk}
+                  </ReferenceLink>
+                ),
+              })}
             </Paragraph>
-            <Paragraph>
-              Celle-ci s’articule autour des sections principales suivantes.
-            </Paragraph>
+            <Paragraph>{t('research.architecture.sections_intro')}</Paragraph>
 
             <div className='mt-6 space-y-4'>
               <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
                 <h3 className='font-medium text-base/tight text-[#282828] dark:text-[#D3D3D3]'>
-                  Mon suivi
+                  {t('research.architecture.tracking.title')}
                 </h3>
-
                 <p className='text-base/tight text-pretty font-[350] text-[#818181] dark:text-[#D3D3D3]'>
-                  Consulter un aperçu de mes rappels à venir et de mes taux
-                  hormonaux.
+                  {t('research.architecture.tracking.description')}
                 </p>
               </article>
 
               <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
                 <h3 className='font-medium text-base/tight text-[#282828] dark:text-[#D3D3D3]'>
-                  Journal
+                  {t('research.architecture.journal.title')}
                 </h3>
-
                 <p className='text-base/tight text-pretty font-[350] text-[#818181] dark:text-[#D3D3D3]'>
-                  Enregistrer mes symptômes et humeurs du moment, ainsi que des
-                  notes personnelles.
+                  {t('research.architecture.journal.description')}
                 </p>
               </article>
 
               <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
                 <h3 className='font-medium text-base/tight text-[#282828] dark:text-[#D3D3D3]'>
-                  Rappels
+                  {t('research.architecture.reminders.title')}
                 </h3>
-
                 <p className='text-base/tight text-pretty font-[350] text-[#818181] dark:text-[#D3D3D3]'>
-                  Créer et modifier des rappels avec un large choix
-                  d&apos;options de personnalisation.
+                  {t('research.architecture.reminders.description')}
                 </p>
               </article>
             </div>
@@ -210,7 +187,7 @@ export default async function THSTrackerPage({ params }: PageProps) {
         <section className='mt-8'>
           <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
             <span className='bg-white dark:bg-black relative pr-4'>
-              Wireframes
+              {t('wireframes.title')}
             </span>
           </h2>
 
