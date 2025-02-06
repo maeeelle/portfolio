@@ -342,5 +342,58 @@
       }
     }
   },
-  "backButton": "Back"
+  "backButton": "Back",
+  "legal": {
+    "credits": {
+      "title": "Credits",
+      "typography": {
+        "title": "Fonts",
+        "font": "Overused Grotesk",
+        "by": "by",
+        "author": "RandomMaerks"
+      },
+      "graphics": {
+        "title": "Graphic elements",
+        "first": "<name>Léonie Nollevalle</name> for the photographs and mockups for the <project>Collection Zoologique de Sorbonne Université</project>",
+        "second": "<name>Tukimice</name> for 3D models of the Minecraft skins for <project>QSMP.co</project>"
+      }
+    },
+    "legal": {
+      "title": "Legal notice",
+      "intro": {
+        "first": "In accordance with the provisions of French law no. 2004-575 of June 21, 2004 concerning confidence in the digital economy, users and visitors (hereinafter referred to as the \"User\") to the <site>maelle.works</site> website (hereinafter referred to as the \"Site\") are hereby informed of the present legal notice.",
+        "second": "Browsing the Site implies the User's full and unreserved acceptance of the present legal notice."
+      },
+      "publication": {
+        "title": "01. Site edition",
+        "text": "The Site is edited and published by Maëlle Moisis, a self-employed entrepreneur registered under SIRET number 851 131 656 00015 (hereinafter the \"Publisher\")."
+      },
+      "hosting": {
+        "title": "02. Hosting",
+        "text": "This site is hosted by Vercel Inc. located at 340 S Lemon Ave #4133 Walnut, CA 91789, and can be reached at (559) 288-7060."
+      },
+      "contact": {
+        "title": "03. Contact",
+        "text": "If you have any questions or requests, please contact Maëlle Moisis by e-mail at <email>moisismaelle@gmail.com</email>."
+      },
+      "access": {
+        "title": "04. Site access",
+        "text": "The Site is normally accessible to the User at all times. However, the Publisher may, at any time, suspend, limit or interrupt the Site in order, in particular, to update or modify its content. The Publisher shall in no event be held liable for any consequences of such unavailability on the User's activities."
+      },
+      "intellectual_property": {
+        "title": "05. Intellectual property",
+        "first": "The Site and its contents (texts, videos, images, etc.) are the exclusive property of Maëlle Moisis, unless stated otherwise.",
+        "second": "Any use, reproduction, distribution, commercialization, modification of all or part of the Site, without the express authorization of the Publisher, is prohibited and may result in legal action and proceedings as provided for by the regulations in force."
+      },
+      "external_links": {
+        "title": "06. External links",
+        "text": "The Site may contain links to external sites. The Site editor cannot be held responsible for the content of these sites, nor for any damage resulting from their use. Access to these external sites is at the user's own risk."
+      },
+      "jurisdiction": {
+        "title": "07. Applicable law and jurisdiction",
+        "text": "This legal notice is governed by French law. In case of dispute, the French courts will have jurisdiction."
+      },
+      "last_updated": "Date of last update: 03/02/2025."
+    }
+  }
 }

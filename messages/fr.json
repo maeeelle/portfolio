@@ -342,5 +342,58 @@
       }
     }
   },
-  "backButton": "Retour"
+  "backButton": "Retour",
+  "legal": {
+    "credits": {
+      "title": "Crédits",
+      "typography": {
+        "title": "Typographies",
+        "font": "Overused Grotesk",
+        "by": "par",
+        "author": "RandomMaerks"
+      },
+      "graphics": {
+        "title": "Éléments Graphiques",
+        "first": "<name>Léonie Nollevalle</name> pour les photographies et mockups pour la <project>Collection Zoologique de Sorbonne Université</project>",
+        "second": "<name>Tukimice</name> pour les modèles 3D des skins Minecraft pour <project>QSMP.co</project>"
+      }
+    },
+    "legal": {
+      "title": "Mentions légales",
+      "intro": {
+        "first": "Conformément aux dispositions de la loi n°2004-575 du 21 juin 2004 pour la Confiance en l'économie numérique, il est porté à la connaissance des utilisateurs et visiteurs (ci-après l'\"Utilisateur\"), du site <site>maelle.works</site> (ci-après le \"Site\"), les présentes mentions légales.",
+        "second": "La navigation sur le Site par l'Utilisateur implique acceptation intégrale et sans réserve des présentes mentions légales."
+      },
+      "publication": {
+        "title": "01. Edition du site",
+        "text": "L'édition et la direction de la publication du Site est assurée par Maëlle Moisis, auto-entrepreneuse enregistrée sous le numéro SIRET 851 131 656 00015 (ci-après l'\"Editeur\")."
+      },
+      "hosting": {
+        "title": "02. Hébergement",
+        "text": "Ce site est hébergé par la société Vercel Inc., située 340 S Lemon Ave #4133 Walnut, CA 91789, et joignable au (559) 288-7060."
+      },
+      "contact": {
+        "title": "03. Contact",
+        "text": "Pour toute question ou demande, veuillez contacter Maëlle Moisis par e-mail à <email>moisismaelle@gmail.com</email>."
+      },
+      "access": {
+        "title": "04. Accès au site",
+        "text": "Le Site est normalement accessible, à tout moment, à l'Utilisateur. Toutefois, l'Editeur pourra, à tout moment, suspendre, limiter ou interrompre le Site afin de procéder, notamment, à des mises à jour ou des modifications de son contenu. L'Editeur ne pourra en aucun cas être tenu responsable des conséquences éventuelles de cette indisponibilité sur les activités de l'Utilisateur."
+      },
+      "intellectual_property": {
+        "title": "05. Propriété intellectuelle",
+        "first": "Le Site ainsi que son contenu (textes, vidéos, images...) sont la propriété exclusive de Maëlle Moisis, sauf mentions contraires.",
+        "second": "Toute utilisation, reproduction, diffusion, commercialisation, modification de toute ou partie du Site, sans autorisation expresse de l'Editeur est prohibée et pourra entraîner des actions et poursuites judiciaires telles que prévues par la règlementation en vigueur."
+      },
+      "external_links": {
+        "title": "06. Liens externes",
+        "text": "Le Site peut contenir des liens vers des sites externes. L'éditeur du Site ne peut être tenu responsable du contenu de ces sites ni des dommages résultant de leur utilisation. L'accès à ces sites externes se fait sous la responsabilité de l'utilisateur."
+      },
+      "jurisdiction": {
+        "title": "07. Droit applicable et juridiction compétente",
+        "text": "Les présentes mentions légales sont soumises au droit français. En cas de litige, les tribunaux français seront compétents."
+      },
+      "last_updated": "Date de dernière mise à jour : 03/02/2025."
+    }
+  }
 }
