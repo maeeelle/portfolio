@@ -1,7 +1,4 @@
 {
-  "home": {
-    "header": "Portfolio update coming soon, 2022's book is available <book>here</book>."
-  },
   "projects": {
     "qsmp": {
       "subtitle": "Design an informative website reflecting the atmosphere of the QSMP Minecraft server",
@@ -285,6 +282,63 @@
       "tags": {
         "research": "User Research",
         "ux": "UX"
+      }
+    }
+  },
+  "home": {
+    "sorbonne": "Université Sorbonne Paris Nord",
+    "carrefour": "Carrefour",
+    "quackity": "Quackity Studios",
+    "hetic": "HETIC",
+    "hatier": "Editions Hatier",
+    "personal": "Personal project",
+    "tags": {
+      "research": "User Research",
+      "ux": "UX",
+      "ui": "UI",
+      "web": "Web Application",
+      "mobile": "Mobile application",
+      "illustration": "Illustration",
+      "ecommerce": "E-commerce",
+      "showcase": "Showcase site",
+      "branding": "Visual identity"
+    },
+    "projects": {
+      "zoologie": {
+        "title": "Collection de Zoologie de Sorbonne Université",
+        "subtitle": "Bringing together transmission and discussion around the Anthropocene"
+      },
+      "easipromo": {
+        "title": "EasiPromo",
+        "subtitle": "Unify all promotions in a single tool for simplified, centralized management"
+      },
+      "buddy": {
+        "title": "Buddy",
+        "subtitle": "Create a friendly mascot to embody a data access chatbot"
+      },
+      "qsmp_shop": {
+        "title": "QSMP.Shop",
+        "subtitle": "Showcasing the first QSMP figurine collection on an online store"
+      },
+      "qsmp_co": {
+        "title": "QSMP.co",
+        "subtitle": "Design an informative website reflecting the atmosphere of the QSMP Minecraft server"
+      },
+      "laurentine": {
+        "title": "Maison Laurentine",
+        "subtitle": "Guiding visitors and encouraging discussion"
+      },
+      "ths": {
+        "title": "THS Tracker",
+        "subtitle": "Developing an all-in-one tool to support transgender people's journey"
+      },
+      "totoro": {
+        "title": "Totoro",
+        "subtitle": "Reconnecting neighbors through mutual aid"
+      },
+      "bescherelle": {
+        "title": "Mon Coach Bescherelle",
+        "subtitle": "Rethinking a mobile application into a web solution"
       }
     }
   }

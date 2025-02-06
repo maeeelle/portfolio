@@ -1,7 +1,4 @@
 {
-  "home": {
-    "header": "Mise à jour du portfolio à venir, le livre de 2022 est disponible <book>ici</book>."
-  },
   "projects": {
     "qsmp": {
       "subtitle": "Concevoir une vitrine informative reflétant l'atmosphère du serveur Minecraft QSMP",
@@ -91,7 +88,7 @@
       "tags": {
         "ux": "UX",
         "ui": "UI",
-        "mobile": "Mobile application",
+        "mobile": "Application mobile",
         "branding": "Branding"
       },
       "sections": {
@@ -101,7 +98,7 @@
       }
     },
     "bescherelle": {
-      "subtitle": "Repenser une application mobile en une solution web",
+      "subtitle": "Repenser une Application mobile en une solution web",
       "context": {
         "title": "Contexte",
         "description1": "Mon Coach Bescherelle est un outil développé par Hatier proposant un entraînement en orthographe et en rédaction.",
@@ -109,7 +106,7 @@
       },
       "contribution": {
         "title": "Contribution",
-        "description": "Après avoir analysé l'ensemble des contenus de l'application mobile ainsi que les différentes possibilités de la plateforme Educadhoc, j'ai pu commencé à itérer sur les interfaces nécessaires grâce aux retours des équipes internes, jusqu'à cette version finale."
+        "description": "Après avoir analysé l'ensemble des contenus de l'Application mobile ainsi que les différentes possibilités de la plateforme Educadhoc, j'ai pu commencé à itérer sur les interfaces nécessaires grâce aux retours des équipes internes, jusqu'à cette version finale."
       },
       "cta": "Accéder à la démo",
       "tags": {
@@ -285,6 +282,63 @@
       "tags": {
         "research": "User Research",
         "ux": "UX"
+      }
+    }
+  },
+  "home": {
+    "sorbonne": "Université Sorbonne Paris Nord",
+    "carrefour": "Carrefour",
+    "quackity": "Quackity Studios",
+    "hetic": "HETIC",
+    "hatier": "Editions Hatier",
+    "personal": "Projet personnel",
+    "tags": {
+      "research": "User Research",
+      "ux": "UX",
+      "ui": "UI",
+      "web": "Web Application",
+      "mobile": "Application mobile",
+      "illustration": "Illustration",
+      "ecommerce": "E-commerce",
+      "showcase": "Site vitrine",
+      "branding": "Identité visuelle"
+    },
+    "projects": {
+      "zoologie": {
+        "title": "Collection de Zoologie de Sorbonne Université",
+        "subtitle": "Allier transmission et réflexion autour de l'anthropocène"
+      },
+      "easipromo": {
+        "title": "EasiPromo",
+        "subtitle": "Unifier toutes les promotions en un seul outil pour une gestion centralisée et simplifiée"
+      },
+      "buddy": {
+        "title": "Buddy",
+        "subtitle": "Créer une mascotte amicale pour incarner un chatbot d'accès aux données"
+      },
+      "qsmp_shop": {
+        "title": "QSMP.Shop",
+        "subtitle": "Mettre en valeur la première collection de figurines QSMP sur une boutique en ligne"
+      },
+      "qsmp_co": {
+        "title": "QSMP.co",
+        "subtitle": "Concevoir une vitrine informative reflétant l'atmosphère du serveur Minecraft QSMP"
+      },
+      "laurentine": {
+        "title": "Maison Laurentine",
+        "subtitle": "Guider le visiteur et encourager les échanges au sein d'une exposition"
+      },
+      "ths": {
+        "title": "THS Tracker",
+        "subtitle": "Développer un outil tout-en-un pour accompagner le parcours des personnes transgenres"
+      },
+      "totoro": {
+        "title": "Totoro",
+        "subtitle": "Recréer du lien à travers l'entraide entre voisins"
+      },
+      "bescherelle": {
+        "title": "Mon Coach Bescherelle",
+        "subtitle": "Repenser une Application mobile en une solution web"
       }
     }
   }

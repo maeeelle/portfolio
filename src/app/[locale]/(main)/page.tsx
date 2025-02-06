@@ -1,5 +1,5 @@
 import { Project } from '@/components/Project'
-import { setRequestLocale } from 'next-intl/server'
+import { setRequestLocale, getTranslations } from 'next-intl/server'
 import { Separator } from '@/components/Separator'
 
 type HomeProps = {
@@ -9,6 +9,7 @@ type HomeProps = {
 export default async function Home({ params }: HomeProps) {
   const { locale } = await params
   setRequestLocale(locale)
+  const t = await getTranslations('home')
 
   return (
     <main className='relative flex flex-col gap-y-20 px-8 sm:px-20 py-10 max-w-screen-2xl mx-auto flex-1 w-full'>
@@ -16,164 +17,155 @@ export default async function Home({ params }: HomeProps) {
         <Project
           id='collection-zoologie-sorbonne'
           organization={{
-            name: 'Université Sorbonne Paris Nord',
+            name: t('sorbonne'),
             image: '/images/projects/sorbonne.png',
           }}
           project={{
             year: '2024',
-            title: 'Collection de Zoologie de Sorbonne Université',
-            subtitle:
-              'Allier transmission et réflexion autour de l’anthropocène',
+            title: t('projects.zoologie.title'),
+            subtitle: t('projects.zoologie.subtitle'),
           }}
-          tags={['User Research', 'UX']}
+          tags={[t('tags.research'), t('tags.ux')]}
         />
         <Separator className='mt-10 absolute left-1/2 -translate-x-1/2 w-screen' />
       </div>
-
       <div>
         <Project
           id='easipromo'
           organization={{
-            name: 'Carrefour',
+            name: t('carrefour'),
             image: '/images/projects/carrefour.png',
           }}
           project={{
             year: '2024',
-            title: 'EasiPromo',
-            subtitle:
-              'Unifier toutes les promotions en un seul outil pour une gestion centralisée et simplifiée',
+            title: t('projects.easipromo.title'),
+            subtitle: t('projects.easipromo.subtitle'),
           }}
-          tags={['User Research', 'UX', 'UI', 'Web Application']}
+          tags={[t('tags.research'), t('tags.ux'), t('tags.ui'), t('tags.web')]}
           isLocked
         />
         <Separator className='mt-10 absolute left-1/2 -translate-x-1/2 w-screen' />
       </div>
-
       <div>
         <Project
           id='buddy'
           organization={{
-            name: 'Carrefour',
+            name: t('carrefour'),
             image: '/images/projects/carrefour.png',
           }}
           project={{
             year: '2024',
-            title: 'Buddy',
-            subtitle:
-              'Créer une mascotte amicale pour incarner un chatbot d’accès aux données',
+            title: t('projects.buddy.title'),
+            subtitle: t('projects.buddy.subtitle'),
           }}
-          tags={['Illustration']}
+          tags={[t('tags.illustration')]}
         />
         <Separator className='mt-10 absolute left-1/2 -translate-x-1/2 w-screen' />
       </div>
-
       <div>
         <Project
           id='qsmp-shop'
           organization={{
-            name: 'Quackity Studios',
+            name: t('quackity'),
             image: '/images/projects/quackity.png',
           }}
           project={{
             year: '2024',
-            title: 'QSMP.Shop',
-            subtitle:
-              'Mettre en valeur la première collection de figurines QSMP sur une boutique en ligne',
+            title: t('projects.qsmp_shop.title'),
+            subtitle: t('projects.qsmp_shop.subtitle'),
           }}
-          tags={['UX', 'UI', 'E-commerce']}
+          tags={[t('tags.ux'), t('tags.ui'), t('tags.ecommerce')]}
         />
         <Separator className='mt-10 absolute left-1/2 -translate-x-1/2 w-screen' />
       </div>
-
       <div>
         <Project
           id='qsmp-co'
           organization={{
-            name: 'Quackity Studios',
+            name: t('quackity'),
             image: '/images/projects/quackity.png',
           }}
           project={{
             year: '2023',
-            title: 'QSMP.co',
-            subtitle:
-              'Concevoir une vitrine informative reflétant l’atmosphère du serveur Minecraft QSMP',
-          }}
-          tags={['UX', 'UI', 'Site vitrine', 'Identité visuelle']}
-        />
-        <Separator className='mt-10 absolute left-1/2 -translate-x-1/2 w-screen' />
-      </div>
-
-      <div>
-        <Project
-          id='maison-laurentine'
-          organization={{
-            name: 'Université Sorbonne Paris Nord',
-            image: '/images/projects/sorbonne.png',
-          }}
-          project={{
-            year: '2023',
-            title: 'Maison Laurentine',
-            subtitle:
-              'Guider le visiteur et encourager les échanges au sein d’une exposition',
-          }}
-          tags={['User Research', 'UX', 'UI', 'Web Application']}
-        />
-        <Separator className='mt-10 absolute left-1/2 -translate-x-1/2 w-screen' />
-      </div>
-
-      <div>
-        <Project
-          id='ths-tracker'
-          organization={{
-            name: 'Projet personnel',
-            image: '/images/projects/personnel.png',
-          }}
-          project={{
-            year: '2022',
-            title: 'THS Tracker',
-            subtitle:
-              'Développer un outil tout-en-un pour accompagner le parcours des personnes transgenres',
-          }}
-          tags={['User Research', 'UX', 'Application mobile']}
-        />
-        <Separator className='mt-10 absolute left-1/2 -translate-x-1/2 w-screen' />
-      </div>
-
-      <div>
-        <Project
-          id='totoro'
-          organization={{
-            name: 'HETIC',
-            image: '/images/projects/hetic.png',
-          }}
-          project={{
-            year: '2022',
-            title: 'Totoro',
-            subtitle: 'Recréer du lien à travers l’entraide entre voisins',
+            title: t('projects.qsmp_co.title'),
+            subtitle: t('projects.qsmp_co.subtitle'),
           }}
           tags={[
-            'User Research',
-            'UX',
-            'Application mobile',
-            'Identité visuelle',
+            t('tags.ux'),
+            t('tags.ui'),
+            t('tags.showcase'),
+            t('tags.branding'),
           ]}
         />
         <Separator className='mt-10 absolute left-1/2 -translate-x-1/2 w-screen' />
       </div>
-
+      <div>
+        <Project
+          id='maison-laurentine'
+          organization={{
+            name: t('sorbonne'),
+            image: '/images/projects/sorbonne.png',
+          }}
+          project={{
+            year: '2023',
+            title: t('projects.laurentine.title'),
+            subtitle: t('projects.laurentine.subtitle'),
+          }}
+          tags={[t('tags.research'), t('tags.ux'), t('tags.ui'), t('tags.web')]}
+        />
+        <Separator className='mt-10 absolute left-1/2 -translate-x-1/2 w-screen' />
+      </div>
+      personnel
+      <div>
+        <Project
+          id='ths-tracker'
+          organization={{
+            name: t('personal'),
+            image: '/images/projects/personnel.png',
+          }}
+          project={{
+            year: '2022',
+            title: t('projects.ths.title'),
+            subtitle: t('projects.ths.subtitle'),
+          }}
+          tags={[t('tags.research'), t('tags.ux'), t('tags.mobile')]}
+        />
+        <Separator className='mt-10 absolute left-1/2 -translate-x-1/2 w-screen' />
+      </div>
+      <div>
+        <Project
+          id='totoro'
+          organization={{
+            name: t('hetic'),
+            image: '/images/projects/hetic.png',
+          }}
+          project={{
+            year: '2022',
+            title: t('projects.totoro.title'),
+            subtitle: t('projects.totoro.subtitle'),
+          }}
+          tags={[
+            t('tags.research'),
+            t('tags.ux'),
+            t('tags.mobile'),
+            t('tags.branding'),
+          ]}
+        />
+        <Separator className='mt-10 absolute left-1/2 -translate-x-1/2 w-screen' />
+      </div>
       <div>
         <Project
           id='mon-coach-bescherelle'
           organization={{
-            name: 'Editions Hatier',
+            name: t('hatier'),
             image: '/images/projects/hatier.png',
           }}
           project={{
             year: '2020',
-            title: 'Mon Coach Bescherelle',
-            subtitle: 'Repenser une application mobile en une solution web',
+            title: t('projects.bescherelle.title'),
+            subtitle: t('projects.bescherelle.subtitle'),
           }}
-          tags={['UX', 'UI', 'Web Application']}
+          tags={[t('tags.ux'), t('tags.ui'), t('tags.web')]}
         />
       </div>
     </main>
