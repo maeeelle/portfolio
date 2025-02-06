@@ -1,6 +1,9 @@
 import { Link } from '@/i18n/routing'
+import { useTranslations } from 'next-intl'
 
 export function BackButton() {
+  const t = useTranslations()
+
   return (
     <nav aria-label='Back navigation' className='inline-flex'>
       <Link
@@ -22,7 +25,7 @@ export function BackButton() {
             d='M5.217 8.667 8.95 12.4l-.95.933L2.667 8 8 2.667l.95.933-3.733 3.733h8.116v1.334H5.217Z'
           />
         </svg>
-        <span className='leading-[0.7]'>Retour</span>
+        <span className='leading-[0.7]'>{t('backButton')}</span>
       </Link>
     </nav>
   )

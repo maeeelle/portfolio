@@ -341,5 +341,6 @@
         "subtitle": "Repenser une Application mobile en une solution web"
       }
     }
-  }
+  },
+  "backButton": "Retour"
 }

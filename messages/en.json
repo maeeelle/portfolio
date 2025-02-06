@@ -341,5 +341,6 @@
         "subtitle": "Rethinking a mobile application into a web solution"
       }
     }
-  }
+  },
+  "backButton": "Back"
 }
