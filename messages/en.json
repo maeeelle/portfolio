@@ -117,6 +117,65 @@
         "ui": "UI",
         "web": "Web Application"
       }
+    },
+    "laurentine": {
+      "subtitle": "Guiding visitors and encouraging discussion",
+      "context": {
+        "title": "Context",
+        "description": "La Grande Conversation is an exhibition based on 21 people interviewed about their lives and various artists' works (photographs, sculptures, installations, drawings and paintings...). Maison Laurentine's request is to allow visitors to grow out of this exhibition and be less afraid of entering into conversation with others."
+      },
+      "contribution": {
+        "title": "Contribution",
+        "description": "During this project, I took part in the ideation and definition of user journeys with my entire team. I was then in charge of designing the interactive terminal’s interfaces."
+      },
+      "team": {
+        "title": "Team",
+        "members": {
+          "britni": "<link>Britni Titus Xavier</link> - UX/UI Designer",
+          "gyeongyeon": "<link>Gyeongyeon Kim</link> - UX/UI Designer",
+          "leonie": "<link>Léonie Nollevalle</link> - UX/UI Designer"
+        }
+      },
+      "tags": {
+        "research": "User Research",
+        "ux": "UX",
+        "ui": "UI",
+        "web": "Web Application"
+      },
+      "sections": {
+        "proposal": {
+          "title": "Our proposal",
+          "description1": "To enhance the visitor experience, we suggested the idea of an interactive logbook. Its main aim is to make art more playful and accessible to all, by allowing complete personalization. Throughout their journey, visitors can record their impressions, add notes and create a unique souvenir of the exhibition.",
+          "description2": "In addition, this logbook also acts as an orientation tool, facilitating navigation between the various spaces thanks to an interactive map and a geolocation function. An intuitive and immersive way to explore the exhibition, while keeping a personal record of your visit."
+        },
+        "userflow": {
+          "title": "user flow",
+          "steps": {
+            "1": {
+              "number": "01",
+              "description": "As soon as I enter the exhibition, I come across a stand presenting the logbook experience, where I'm invited to pick up an NFC card."
+            },
+            "2": {
+              "number": "02",
+              "description": "I pick up one and begin my tour of the Maison Laurentine. Once in front of a piece of art, I scan my card on the associated terminal."
+            },
+            "3": {
+              "number": "03",
+              "description": "I discover a blank digital notebook with various personalization options (texts, photos, drawings). It contains elements linked to the artwork, such as a photo, the artist's signature or portrait."
+            },
+            "4": {
+              "number": "04",
+              "description": "Once I've filled in a few pages at the various terminals, I scan my card with my phone to consult the pieces I've discovered and track the progress of my exploration journal."
+            },
+            "5": {
+              "number": "05",
+              "description": "At the end of my visit, thanks to the unique code on my NFC card, I can share my experience with friends and family by showing them the map of my journey, available on the website."
+            }
+          }
+        },
+        "terminal": "Terminal’s wireframes ",
+        "website": "Website's wireframes"
+      }
     }
   }
 }
