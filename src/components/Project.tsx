@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import type { Project } from '@/app/[locale]/_projects'
 import { Link } from '@/i18n/routing'
 import { LockIcon } from './LockIcon'
 
@@ -40,13 +39,28 @@ function ArrowIcon({ className }: { className?: string }) {
   )
 }
 
+type ProjectProps = {
+  id: string
+  organization: {
+    name: string
+    image: string
+    year: string
+  }
+  project: {
+    title: string
+    subtitle: string
+  }
+  tags: string[]
+  isLocked?: boolean
+}
+
 export function Project({
   organization,
   project,
   tags,
   id,
   isLocked,
-}: Project) {
+}: ProjectProps) {
   const titleId = `project-${id}-title`
 
   return (
