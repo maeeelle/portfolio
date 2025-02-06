@@ -1,0 +1,412 @@
+{
+  "metadata": {
+    "title": "Maëlle - Product Designer UX/UI",
+    "description": "Product Designer spécialisée en UX/UI, je conçois des interfaces pensées pour l'humain. Mon approche allie esthétique et ergonomie pour offrir des expériences fluides et engageantes. Venez découvrir mes projets!"
+  },
+  "projects": {
+    "qsmp": {
+      "subtitle": "Concevoir une vitrine informative reflétant l'atmosphère du serveur Minecraft QSMP",
+      "context": {
+        "title": "Contexte",
+        "description1": "QSMP est un serveur Minecraft multijoueur, créé par le créateur de contenu <creator>Quackity</creator>, qui réunit des streamers du monde entier, parlant différentes langues, grâce à un système de traduction en temps réel.",
+        "description2": "Leur site QSMP.co avait pour but de réunir l'ensemble des informations principales du serveur: les streamers en ligne, un compte à rebours avant le prochain événement du serveur, la listes des membres et leurs différents réseaux sociaux."
+      },
+      "contribution": {
+        "title": "Contribution",
+        "description": "L'équipe de Quackity m'a commissionné pour concevoir entièrement ce site vitrine, de l'identité visuelle à l'interface finale. J'ai également eu l'occasion d'échanger avec le développeur tout au long de la mise en production afin de m'assurer de la cohérence entre les maquettes et le produit final."
+      },
+      "tags": {
+        "ux": "UX",
+        "ui": "UI",
+        "showcase": "Site vitrine",
+        "visual_identity": "Identité visuelle"
+      },
+      "cta": "Accéder au site",
+      "sections": {
+        "visual_identity": "Identité visuelle",
+        "interfaces": "Interfaces"
+      }
+    },
+    "qsmp_shop": {
+      "subtitle": "Mettre en valeur la première collection de figurines QSMP sur une boutique en ligne",
+      "context": {
+        "title": "Contexte",
+        "description1": "QSMP est un serveur Minecraft multijoueur, créé par le créateur de contenu <creator>Quackity</creator>, qui réunit des streamers du monde entier, parlant différentes langues, grâce à un système de traduction en temps réel.",
+        "description2": "<shop>QSMP.shop</shop> est le site e-commerce de QSMP, sur lequel sont mis en vente des produits dérivés en lien avec le projet. Ce design n'a malheureusement jamais été mis en ligne, mais le design avait tout de même été finalisé."
+      },
+      "contribution": {
+        "title": "Contribution",
+        "description": "J'ai été commissionné pour concevoir l'ensemble du design d'un site Shopify dédié à la première collection de figurines inspirées des personnages de la série. Chaque personnage ayant une identité et une histoire uniques, j'ai veillé à refléter leur singularité à travers les product cards et les pages détails."
+      },
+      "team": {
+        "title": "Equipe",
+        "foxie": "<designer>Foxie Fern</designer> - 3D Designer"
+      },
+      "tags": {
+        "ux": "UX",
+        "ui": "UI",
+        "ecommerce": "E-commerce"
+      },
+      "sections": {
+        "product_visuals": "Visuels des produits",
+        "interfaces": "Interfaces",
+        "custom_hero": "Headers des pages produits"
+      }
+    },
+    "buddy": {
+      "subtitle": "Créer une mascotte amicale pour incarner un chatbot d'accès aux données",
+      "context": {
+        "title": "Contexte",
+        "description": "Le Data Supermarket est un outil développé par Carrefour visant à simplifier l'accès aux données métiers via un catalogue structuré. Il intègre un chatbot permettant d'obtenir des informations en interagissant directement avec lui."
+      },
+      "contribution": {
+        "title": "Contribution",
+        "description1": "J'ai été chargé de concevoir une illustration et de donner une identité visuelle à ce chatbot. L'objectif était de s'éloigner des codes des assistants d'appel classiques en adoptant une approche plus informelle, jeune et conviviale, en accord avec l'interface déjà conçue.",
+        "description2": "Pour concevoir ces illustrations, je me suis inspirée de la palette d'émotions des Memoji d'Apple, tout en intégrant les couleurs emblématiques de Carrefour, le bleu et le rouge, ainsi que les teintes pastel de l'interface du Data Supermarket."
+      },
+      "tags": {
+        "illustration": "Illustration"
+      }
+    },
+    "totoro": {
+      "subtitle": "Recréer du lien à travers l'entraide entre voisins",
+      "context": {
+        "title": "Contexte",
+        "description1": "Totoro est une application visant à favoriser davantage les échanges de proximité et à redynamiser la vie en communauté.",
+        "description2": "En guise de récompense suite à la réalisation d'une mission locale, l'utilisateur gagne des tokens qu'il peut ensuite échanger contre des bons de réductions à utiliser chez les commerçants proches de chez lui."
+      },
+      "contribution": {
+        "title": "Contribution",
+        "description1": "Lors de ce projet, j'ai activement participé au process d'idéation.",
+        "description2": "J'ai ensuite eu l'occasion de réaliser l'identité visuelle et ai co-construit, en binôme avec le second designer, le parcours utilisateur ainsi qu'un design kit et l'ensemble des écrans de l'application."
+      },
+      "team": {
+        "title": "Equipe",
+        "members": {
+          "jarce": "<link>Jarce Boukoro</link> - Développeur Fullstack",
+          "maxence": "<link>Maxence Wolff</link> - UI Designer + Développeur Front-End",
+          "teo": "<link>Téo Lugat</link> - Développeur Fullstack"
+        }
+      },
+      "tags": {
+        "ux": "UX",
+        "ui": "UI",
+        "mobile": "Application mobile",
+        "branding": "Branding"
+      },
+      "sections": {
+        "visual_identity": "Identité visuelle",
+        "design_kit": "Design kit",
+        "interfaces": "Interfaces"
+      }
+    },
+    "bescherelle": {
+      "subtitle": "Repenser une Application mobile en une solution web",
+      "context": {
+        "title": "Contexte",
+        "description1": "Mon Coach Bescherelle est un outil développé par Hatier proposant un entraînement en orthographe et en rédaction.",
+        "description2": "Son problème principal était son accessibilité. Le service n'était présent que sous forme d'application sur smartphone. Ma mission était donc de le rendre disponible sur la plateforme éducative Educadhoc tout en prenant en compte les contraintes imposées par sa mise en page."
+      },
+      "contribution": {
+        "title": "Contribution",
+        "description": "Après avoir analysé l'ensemble des contenus de l'Application mobile ainsi que les différentes possibilités de la plateforme Educadhoc, j'ai pu commencé à itérer sur les interfaces nécessaires grâce aux retours des équipes internes, jusqu'à cette version finale."
+      },
+      "cta": "Accéder à la démo",
+      "tags": {
+        "ux": "UX",
+        "ui": "UI",
+        "web": "Web Application"
+      }
+    },
+    "laurentine": {
+      "subtitle": "Guider le visiteur et encourager les échanges",
+      "context": {
+        "title": "Contexte",
+        "description": "La Grande Conversation est une exposition basée sur 21 personnes interviewées sur leur vie et des œuvres d'artistes diverses (photographies, sculptures, installations, dessins et peintures…). La demande de la Maison Laurentine est de permettre aux visiteurs de sortir plus grand de cette exposition et d'avoir moins peur d'entrer en conversation avec les autres."
+      },
+      "contribution": {
+        "title": "Contribution",
+        "description": "Lors de ce projet, j'ai participé à toute la partie d'idéation et de définition des parcours utilisateur avec l'ensemble de mon équipe. J'ai ensuite été en charge de la conception des interfaces de la borne interactive."
+      },
+      "team": {
+        "title": "Equipe",
+        "members": {
+          "britni": "<link>Britni Titus Xavier</link> - UX/UI Designer",
+          "gyeongyeon": "<link>Gyeongyeon Kim</link> - UX/UI Designer",
+          "leonie": "<link>Léonie Nollevalle</link> - UX/UI Designer"
+        }
+      },
+      "tags": {
+        "research": "User Research",
+        "ux": "UX",
+        "ui": "UI",
+        "web": "Web Application"
+      },
+      "sections": {
+        "proposal": {
+          "title": "Notre proposition",
+          "description1": "Pour enrichir l'expérience des visiteurs, nous avons suggéré l'idée d'un carnet de voyage interactif. L'objectif principal de celui-ci est de rendre l'art plus ludique et accessible à tous en permettant une personnalisation complète. Tout au long de leur parcours, les visiteurs peuvent y consigner leurs impressions, ajouter des notes et ainsi créer un souvenir unique de l'exposition.",
+          "description2": "En complément, ce carnet joue également un rôle d'outil d'orientation en facilitant la navigation entre les différents espaces grâce à une carte interactive et une fonction de géolocalisation. Une manière intuitive et immersive d'explorer l'exposition tout en conservant une trace personnelle de sa visite."
+        },
+        "userflow": {
+          "title": "user flow",
+          "steps": {
+            "1": {
+              "number": "01",
+              "description": "Dès mon entrée dans l'exposition, je tombe sur un stand présentant l'expérience du carnet de voyage, où l'on m'invite à récupérer une carte NFC."
+            },
+            "2": {
+              "number": "02",
+              "description": "Je récupère ma carte et débute ma visite de la Maison Laurentine. Arrivé devant une œuvre, je la scanne sur la borne associée."
+            },
+            "3": {
+              "number": "03",
+              "description": "Je découvre un carnet numérique vierge avec diverses options de personnalisation (textes, images, dessins). Il contient notamment des éléments liés à l'œuvre, comme une photo, la signature de l'artiste ou encore son portrait."
+            },
+            "4": {
+              "number": "04",
+              "description": "Une fois quelques pages remplies au niveau des différentes bornes, je scanne ma carte avec mon téléphone pour consulter les œuvres que j'ai découvertes et suivre l'avancement de mon carnet d'exploration."
+            },
+            "5": {
+              "number": "05",
+              "description": "À la fin de ma visite, grâce au code unique de ma carte NFC, je peux partager mon expérience avec mes proches en leur montrant la carte retraçant mon parcours, disponible sur le site internet."
+            }
+          }
+        },
+        "terminal": "Wireframes de la borne",
+        "website": "wireframes du Site web"
+      }
+    },
+    "ths_tracker": {
+      "company": "Projet personnel",
+      "subtitle": "Développer un outil tout-en-un pour accompagner le parcours des personnes transgenres",
+      "context": {
+        "title": "Contexte",
+        "description": "En 2023, j'ai été témoin d'une vague de demandes de la part de personnes transgenres sur Twitter d'un outil permettant de faciliter le suivi de prise d'hormones. Suite à ce constat, j'ai décidé avec un ami développeur de travailler sur un outil permettant de répondre à ce besoin."
+      },
+      "contribution": {
+        "title": "Contribution",
+        "description": "Ce projet est aujourd'hui toujours en cours. Nous avons commencé à réaliser un parcours utilisateur et des wireframes à partir de réponses à une enquête quantitative. Ces écrans, une fois terminés, seront ensuite testés par des utilisateurs potentiels au cours d'interviews."
+      },
+      "team": {
+        "title": "Equipe",
+        "maxence": "<link>Maxence Wolff</link> - Développeur Fullstack"
+      },
+      "research": {
+        "title": "User research",
+        "intro": "Après avoir réalisé un sondage auprès de plus de 170 personnes, nous avons identifié les principaux besoins de nos futur·e·s utilisateur·rice·s.",
+        "needs": {
+          "symptoms": "Suivre l'évolution de leurs symptômes et humeurs",
+          "reminders": "Avoir un rappel de leur prise d'hormones",
+          "appointments": "Enregistrer leurs rendez-vous médicaux"
+        },
+        "architecture": {
+          "intro": "À partir de ces données, j'ai identifié les fonctionnalités essentielles à inclure dès la V1 et élaboré une première architecture de l'application, <link>accessible à ce lien</link>.",
+          "sections_intro": "Celle-ci s'articule autour des sections principales suivantes.",
+          "tracking": {
+            "title": "Mon suivi",
+            "description": "Consulter un aperçu de mes rappels à venir et de mes taux hormonaux."
+          },
+          "journal": {
+            "title": "Journal",
+            "description": "Enregistrer mes symptômes et humeurs du moment, ainsi que des notes personnelles."
+          },
+          "reminders": {
+            "title": "Rappels",
+            "description": "Créer et modifier des rappels avec un large choix d'options de personnalisation."
+          }
+        }
+      },
+      "wireframes": {
+        "title": "Wireframes"
+      },
+      "cta": "Accéder au fichier Figma",
+      "tags": {
+        "research": "User Research",
+        "ux": "UX",
+        "mobile": "Application mobile"
+      }
+    },
+    "collection_zoologie": {
+      "subtitle": "Allier transmission et réflexion autour de l'Anthropocène",
+      "context": {
+        "title": "Contexte",
+        "description1": "La Collection de Zoologie de <curator>Santiago Aragon</curator> est un patrimoine scientifique unique, rassemblant plusieurs milliers de spécimens, dont des animaux naturalisés et des pièces anatomiques historiques.",
+        "description2": "Dans le cadre de ce projet, l'objectif était de valoriser cette collection à travers une approche immersive et pédagogique, facilitant son accessibilité au grand public et aux étudiants. En s'appuyant sur des outils numériques, le projet visait à moderniser la transmission du savoir, tout en préservant l'héritage scientifique et culturel de cette collection."
+      },
+      "contribution": {
+        "title": "Contribution",
+        "description": "Pour ce projet mon rôle s'est davantage porté sur l'idéation et la définition des solutions ainsi que la réflexion autour des user journeys."
+      },
+      "team": {
+        "title": "Equipe",
+        "members": {
+          "anthony": "<link>Anthony Reungère</link> - UX/UI Designer",
+          "leonie": "<link>Léonie Nollevalle</link> - Identité visuelle + UX/UI Designer"
+        }
+      },
+      "sections": {
+        "study": {
+          "title": "Étude du contexte et des enjeux",
+          "description1": "Après avoir échangé avec Santiago Aragon et visité le site, nous avons identifié plusieurs enjeux liés à la Collection Zoologique. Son approche narrative, centrée sur l'histoire individuelle de chaque animal, offre une expérience immersive et empathique, rare dans les musées traditionnels.",
+          "description2": "Santiago souhaite également utiliser la collection pour ouvrir des discussions sur l'anthropocène, dépassant ainsi son simple rôle scientifique. Cependant, son emplacement au sein de l'université limite sa visibilité et sa reconnaissance.",
+          "description3": "L'absence d'informations écrites, compensée par l'interaction directe avec Santiago, pose la question de la transmission du savoir. Enfin, son rôle central dans l'expérience des visiteurs souligne la nécessité de préserver et pérenniser son impact sur la collection."
+        },
+        "issues": {
+          "title": "Problématiques identifiées",
+          "visibility": {
+            "title": "Visibilité",
+            "description": "La collection souffre d'un manque de visibilité, sans signalétique sur place ni réelle présence en ligne, ce qui complique son accès. Elle ne dispose pas non plus d'une identité propre la rendant identifiable."
+          },
+          "scenography": {
+            "title": "Scénographie",
+            "description": "La scénographie est inégale : certains objets sont mis en valeur tandis que d'autres restent cachés. L'absence de cartels informatifs complique la visite, surtout pour un public non initié."
+          },
+          "information": {
+            "title": "Informations",
+            "description": "Santiago Aragon est au cœur de la transmission du savoir, rendant la collection dépendante de sa présence. Assurer la pérennité de son expertise et offrir un accès minimal aux informations sur les spécimens pourraient enrichir l'expérience des visiteurs."
+          }
+        },
+        "solutions": {
+          "title": "Esquisses de solutions",
+          "solution1": "Créer une identité visuelle à la collection",
+          "solution2": "Créer une base de données de tous les spécimens, scientifique et patrimoniale",
+          "solution3": "Créer un cartelnumérique de chaque spécimens lisible sur smartphone",
+          "solution4": "Créer une frise chronologique pour organiser les informations patrimoniales et les positionner dans le contexte de l’anthropocène",
+          "solution5": "Permettre de voir les disponibilités",
+          "solution6": "Informations de contact près de la porte",
+          "solution7": "Créer une signalétique au sein de l’Université",
+          "solution8": "Créer une communication et des réseaux sociaux"
+        },
+        "visual_identity": "Identité visuelle",
+        "interfaces": "Interfaces",
+        "immersive": "ébauches d'expérience immersive"
+      },
+      "tags": {
+        "research": "User Research",
+        "ux": "UX"
+      }
+    }
+  },
+  "home": {
+    "sorbonne": "Université Sorbonne Paris Nord",
+    "carrefour": "Carrefour",
+    "quackity": "Quackity Studios",
+    "hetic": "HETIC",
+    "hatier": "Editions Hatier",
+    "personal": "Projet personnel",
+    "tags": {
+      "research": "User Research",
+      "ux": "UX",
+      "ui": "UI",
+      "web": "Web Application",
+      "mobile": "Application mobile",
+      "illustration": "Illustration",
+      "ecommerce": "E-commerce",
+      "showcase": "Site vitrine",
+      "branding": "Identité visuelle"
+    },
+    "projects": {
+      "zoologie": {
+        "title": "Collection de Zoologie de Sorbonne Université",
+        "subtitle": "Allier transmission et réflexion autour de l'anthropocène"
+      },
+      "easipromo": {
+        "title": "EasiPromo",
+        "subtitle": "Unifier toutes les promotions en un seul outil pour une gestion centralisée et simplifiée"
+      },
+      "buddy": {
+        "title": "Buddy",
+        "subtitle": "Créer une mascotte amicale pour incarner un chatbot d'accès aux données"
+      },
+      "qsmp_shop": {
+        "title": "QSMP.Shop",
+        "subtitle": "Mettre en valeur la première collection de figurines QSMP sur une boutique en ligne"
+      },
+      "qsmp_co": {
+        "title": "QSMP.co",
+        "subtitle": "Concevoir une vitrine informative reflétant l'atmosphère du serveur Minecraft QSMP"
+      },
+      "laurentine": {
+        "title": "Maison Laurentine",
+        "subtitle": "Guider le visiteur et encourager les échanges au sein d'une exposition"
+      },
+      "ths": {
+        "title": "THS Tracker",
+        "subtitle": "Développer un outil tout-en-un pour accompagner le parcours des personnes transgenres"
+      },
+      "totoro": {
+        "title": "Totoro",
+        "subtitle": "Recréer du lien à travers l'entraide entre voisins"
+      },
+      "bescherelle": {
+        "title": "Mon Coach Bescherelle",
+        "subtitle": "Repenser une Application mobile en une solution web"
+      }
+    }
+  },
+  "backButton": "Retour",
+  "legal": {
+    "credits": {
+      "title": "Crédits",
+      "typography": {
+        "title": "Typographies",
+        "font": "Overused Grotesk",
+        "by": "par",
+        "author": "RandomMaerks"
+      },
+      "graphics": {
+        "title": "Éléments Graphiques",
+        "first": "<name>Léonie Nollevalle</name> pour les photographies et mockups pour la <project>Collection Zoologique de Sorbonne Université</project>",
+        "second": "<name>Tukimice</name> pour les modèles 3D des skins Minecraft pour <project>QSMP.co</project>"
+      }
+    },
+    "legal": {
+      "title": "Mentions légales",
+      "intro": {
+        "first": "Conformément aux dispositions de la loi n°2004-575 du 21 juin 2004 pour la Confiance en l'économie numérique, il est porté à la connaissance des utilisateurs et visiteurs (ci-après l'\"Utilisateur\"), du site <site>maelle.works</site> (ci-après le \"Site\"), les présentes mentions légales.",
+        "second": "La navigation sur le Site par l'Utilisateur implique acceptation intégrale et sans réserve des présentes mentions légales."
+      },
+      "publication": {
+        "title": "01. Edition du site",
+        "text": "L'édition et la direction de la publication du Site est assurée par Maëlle Moisis, auto-entrepreneuse enregistrée sous le numéro SIRET 851 131 656 00015 (ci-après l'\"Editeur\")."
+      },
+      "hosting": {
+        "title": "02. Hébergement",
+        "text": "Ce site est hébergé par la société Vercel Inc., située 340 S Lemon Ave #4133 Walnut, CA 91789, et joignable au (559) 288-7060."
+      },
+      "contact": {
+        "title": "03. Contact",
+        "text": "Pour toute question ou demande, veuillez contacter Maëlle Moisis par e-mail à <email>moisismaelle@gmail.com</email>."
+      },
+      "access": {
+        "title": "04. Accès au site",
+        "text": "Le Site est normalement accessible, à tout moment, à l'Utilisateur. Toutefois, l'Editeur pourra, à tout moment, suspendre, limiter ou interrompre le Site afin de procéder, notamment, à des mises à jour ou des modifications de son contenu. L'Editeur ne pourra en aucun cas être tenu responsable des conséquences éventuelles de cette indisponibilité sur les activités de l'Utilisateur."
+      },
+      "intellectual_property": {
+        "title": "05. Propriété intellectuelle",
+        "first": "Le Site ainsi que son contenu (textes, vidéos, images...) sont la propriété exclusive de Maëlle Moisis, sauf mentions contraires.",
+        "second": "Toute utilisation, reproduction, diffusion, commercialisation, modification de toute ou partie du Site, sans autorisation expresse de l'Editeur est prohibée et pourra entraîner des actions et poursuites judiciaires telles que prévues par la règlementation en vigueur."
+      },
+      "external_links": {
+        "title": "06. Liens externes",
+        "text": "Le Site peut contenir des liens vers des sites externes. L'éditeur du Site ne peut être tenu responsable du contenu de ces sites ni des dommages résultant de leur utilisation. L'accès à ces sites externes se fait sous la responsabilité de l'utilisateur."
+      },
+      "jurisdiction": {
+        "title": "07. Droit applicable et juridiction compétente",
+        "text": "Les présentes mentions légales sont soumises au droit français. En cas de litige, les tribunaux français seront compétents."
+      },
+      "last_updated": "Date de dernière mise à jour : 03/02/2025."
+    }
+  },
+  "layout": {
+    "header": {
+      "cv": "CV"
+    },
+    "footer": {
+      "text": "Travaillons ensemble!",
+      "credits": "Développé par <developer>Erick</developer>",
+      "legal": "mentions légales"
+    }
+  }
+}

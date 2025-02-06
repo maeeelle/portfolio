@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 export default {
+  darkMode: 'selector',
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -18,9 +19,26 @@ export default {
       maxWidth: {
         'screen-lg': '1112px',
       },
+      screens: {
+        xl: '1200px',
+      },
       fontSize: {
+        xs: ['0.625rem', '0.75rem'],
+        '3xl': ['2rem', '2.5rem'],
+        '4.5xl': ['2.5rem', '3.5rem'],
         '5xl': '3.25rem',
         '5.5xl': '3.5rem',
+      },
+      keyframes: {
+        wiggle: {
+          '0%': { transform: 'rotate(0deg)' },
+          '25%': { transform: 'rotate(8deg)' },
+          '50%': { transform: 'rotate(-8deg)' },
+          '100%': { transform: 'rotate(0deg)' },
+        },
+      },
+      animation: {
+        wiggle: 'wiggle 0.5s ease-in-out forwards',
       },
     },
   },
