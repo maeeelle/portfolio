@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { ProjectTag, ProjectTagList } from '@/components/Project'
-import { setRequestLocale } from 'next-intl/server'
+import { setRequestLocale, getTranslations } from 'next-intl/server'
 import { Heading } from '../_components/Heading'
 import { Paragraph } from '../_components/Paragraph'
 import { BackButton } from '../_components/BackButton'
@@ -33,6 +33,7 @@ function ProjectImage({ src, alt }: { src: string; alt: string }) {
 export default async function ProjectPage({ params }: PageProps) {
   const { locale } = await params
   setRequestLocale(locale)
+  const t = await getTranslations('projects.bescherelle')
 
   return (
     <Container>
@@ -46,46 +47,31 @@ export default async function ProjectPage({ params }: PageProps) {
               logoAlt='Editions Hatier logo'
               company='Editions Hatier'
               title='Mon Coach Bescherelle'
-              subtitle='Repenser une application mobile en une solution web'
+              subtitle={t('subtitle')}
             />
 
             <div className='mt-8 space-y-10 xl:space-y-8'>
               <section>
-                <Heading>Contexte</Heading>
-                <Paragraph>
-                  Mon Coach Bescherelle est un outil développé par Hatier
-                  proposant un entraînement en orthographe et en rédaction.
-                </Paragraph>
-                <Paragraph>
-                  Son problème principal était son accessibilité. Le service
-                  n&apos;était présent que sous forme d’application sur
-                  smartphone. Ma mission était donc de le rendre disponible sur
-                  la plateforme éducative Educadhoc tout en prenant en compte
-                  les contraintes imposées par sa mise en page.
-                </Paragraph>
+                <Heading>{t('context.title')}</Heading>
+                <Paragraph>{t('context.description1')}</Paragraph>
+                <Paragraph>{t('context.description2')}</Paragraph>
               </section>
               <section>
-                <Heading>Contribution</Heading>
-                <Paragraph>
-                  Après avoir analysé l’ensemble des contenus de l’application
-                  mobile ainsi que les différentes possibilités de la plateforme
-                  Educadhoc, j’ai pu commencé à itérer sur les interfaces
-                  nécessaires grâce aux retours des équipes internes, jusqu’à
-                  cette version finale.
-                </Paragraph>
+                <Heading>{t('contribution.title')}</Heading>
+                <Paragraph>{t('contribution.description')}</Paragraph>
               </section>
             </div>
 
             <ExternalLink href='https://mesmanuels.fr/demo/9782401037151'>
-              Accéder à la démo
+              {t('cta')}
             </ExternalLink>
           </div>
 
           <ProjectFooter year='2020'>
             <ProjectTagList>
-              <ProjectTag name='UX' />
-              <ProjectTag name='UI' />
-              <ProjectTag name='Web Application' />
+              <ProjectTag name={t('tags.ux')} />
+              <ProjectTag name={t('tags.ui')} />
+              <ProjectTag name={t('tags.web')} />
             </ProjectTagList>
           </ProjectFooter>
         </ProjectArticle>

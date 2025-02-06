@@ -99,6 +99,24 @@
         "design_kit": "Design kit",
         "interfaces": "Interfaces"
       }
+    },
+    "bescherelle": {
+      "subtitle": "Repenser une application mobile en une solution web",
+      "context": {
+        "title": "Contexte",
+        "description1": "Mon Coach Bescherelle est un outil développé par Hatier proposant un entraînement en orthographe et en rédaction.",
+        "description2": "Son problème principal était son accessibilité. Le service n'était présent que sous forme d'application sur smartphone. Ma mission était donc de le rendre disponible sur la plateforme éducative Educadhoc tout en prenant en compte les contraintes imposées par sa mise en page."
+      },
+      "contribution": {
+        "title": "Contribution",
+        "description": "Après avoir analysé l'ensemble des contenus de l'application mobile ainsi que les différentes possibilités de la plateforme Educadhoc, j'ai pu commencé à itérer sur les interfaces nécessaires grâce aux retours des équipes internes, jusqu'à cette version finale."
+      },
+      "cta": "Accéder à la démo",
+      "tags": {
+        "ux": "UX",
+        "ui": "UI",
+        "web": "Web Application"
+      }
     }
   }
 }

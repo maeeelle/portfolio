@@ -99,6 +99,24 @@
         "design_kit": "Design kit",
         "interfaces": "Interfaces"
       }
+    },
+    "bescherelle": {
+      "subtitle": "Rethinking a mobile application into a web solution",
+      "context": {
+        "title": "Context",
+        "description1": "Mon Coach Bescherelle is a spelling and writing training tool created by Hatier.",
+        "description2": "Its main problem was its accessibility. The tool was only available as a smartphone application. My mission was therefore to make it available on the Educadhoc educational platform, while taking into account the constraints imposed by its layout."
+      },
+      "contribution": {
+        "title": "Contribution",
+        "description": "After analyzing all the contents of the mobile application and the various possibilities of the Educadhoc platform, I was able to start iterating on the required interfaces, through feedback from the internal teams, all the way through to this final version."
+      },
+      "cta": "Access the demo",
+      "tags": {
+        "ux": "UX",
+        "ui": "UI",
+        "web": "Web Application"
+      }
     }
   }
 }
