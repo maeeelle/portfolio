@@ -1,6 +1,6 @@
 import Image, { ImageProps } from 'next/image'
 import { ProjectTag, ProjectTagList } from '@/components/Project'
-import { setRequestLocale } from 'next-intl/server'
+import { setRequestLocale, getTranslations } from 'next-intl/server'
 import { Heading } from '../_components/Heading'
 import { Paragraph } from '../_components/Paragraph'
 import { BackButton } from '../_components/BackButton'
@@ -30,6 +30,7 @@ function ProjectImage({ className, ...props }: ImageProps) {
 export default async function QSMPCoPage({ params }: PageProps) {
   const { locale } = await params
   setRequestLocale(locale)
+  const t = await getTranslations('projects.qsmp')
 
   return (
     <Container>
@@ -43,56 +44,43 @@ export default async function QSMPCoPage({ params }: PageProps) {
               logoAlt='Quackity Studios logo'
               company='Quackity Studios'
               title='QSMP.co'
-              subtitle='Concevoir une vitrine informative reflétant l’atmosphère du serveur Minecraft QSMP'
+              subtitle={t('subtitle')}
             />
 
             <div className='mt-8 space-y-10 xl:space-y-8'>
               <section>
-                <Heading>Contexte</Heading>
+                <Heading>{t('context.title')}</Heading>
                 <Paragraph>
-                  QSMP est un serveur Minecraft multijoueur, créé par le
-                  créateur de contenu{' '}
-                  <ReferenceLink
-                    className='underline-offset-[3px]'
-                    href='https://www.twitch.tv/quackity'
-                  >
-                    Quackity
-                  </ReferenceLink>
-                  , qui réunit des streamers du monde entier, parlant
-                  différentes langues, grâce à un système de traduction en temps
-                  réel.
+                  {t.rich('context.description1', {
+                    creator: (chunk) => (
+                      <ReferenceLink
+                        className='underline-offset-[3px]'
+                        href='https://www.twitch.tv/quackity'
+                      >
+                        {chunk}
+                      </ReferenceLink>
+                    ),
+                  })}
                 </Paragraph>
-                <Paragraph>
-                  Leur site QSMP.co avait pour but de réunir l’ensemble des
-                  informations principales du serveur: les streamers en ligne,
-                  un compte à rebours avant le prochain événement du serveur, la
-                  listes des membres et leurs différents réseaux sociaux.
-                </Paragraph>
+                <Paragraph>{t('context.description2')}</Paragraph>
               </section>
               <section>
-                <Heading>Contribution</Heading>
-                <Paragraph>
-                  L’équipe de Quackity m’a commissionné pour concevoir
-                  entièrement ce site vitrine, de l’identité visuelle à
-                  l’interface finale. J’ai également eu l’occasion d’échanger
-                  avec le développeur tout au long de la mise en production afin
-                  de m’assurer de la cohérence entre les maquettes et le produit
-                  final.
-                </Paragraph>
+                <Heading>{t('contribution.title')}</Heading>
+                <Paragraph>{t('contribution.description')}</Paragraph>
               </section>
             </div>
 
             <ExternalLink href='https://qsmpco.netlify.app/'>
-              Accéder au site
+              {t('cta')}
             </ExternalLink>
           </div>
 
           <ProjectFooter year='2023'>
             <ProjectTagList>
-              <ProjectTag name='UX' />
-              <ProjectTag name='UI' />
-              <ProjectTag name='Site vitrine' />
-              <ProjectTag name='Identité visuelle' />
+              <ProjectTag name={t('tags.ux')} />
+              <ProjectTag name={t('tags.ui')} />
+              <ProjectTag name={t('tags.showcase')} />
+              <ProjectTag name={t('tags.visual_identity')} />
             </ProjectTagList>
           </ProjectFooter>
         </ProjectArticle>
@@ -102,7 +90,7 @@ export default async function QSMPCoPage({ params }: PageProps) {
         <section>
           <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
             <span className='bg-white dark:bg-black relative pr-4'>
-              Identité visuelle
+              {t('sections.visual_identity')}
             </span>
           </h2>
 
@@ -121,7 +109,7 @@ export default async function QSMPCoPage({ params }: PageProps) {
         <section className='mt-8'>
           <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
             <span className='bg-white dark:bg-black relative pr-4'>
-              Interfaces
+              {t('sections.interfaces')}
             </span>
           </h2>
 
@@ -140,7 +128,7 @@ export default async function QSMPCoPage({ params }: PageProps) {
         <section className='mt-8'>
           <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
             <span className='bg-white dark:bg-black relative pr-4'>
-              Color palette exploration
+              {t('sections.color_palette')}
             </span>
           </h2>
 

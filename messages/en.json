@@ -1,5 +1,31 @@
 {
   "home": {
     "header": "Portfolio update coming soon, 2022's book is available <book>here</book>."
+  },
+  "projects": {
+    "qsmp": {
+      "subtitle": "Design an informative website reflecting the atmosphere of the QSMP Minecraft server",
+      "context": {
+        "title": "Contexte",
+        "description1": "QSMP is a multiplayer Minecraft server, created by the content creator <creator>Quackity</creator>, which brings together streamers from all over the world, speaking different languages, thanks to a real-time translation system.",
+        "description2": "Their QSMP.co website was designed to bring together all the server's main information: online streamers, a countdown to the next server event, the list of members and their various social networks."
+      },
+      "contribution": {
+        "title": "Contribution",
+        "description": "Quackity's team commissioned me to design the entire showcase site, from visual identity to final interface. I also had the opportunity to interact with the developer throughout the production phase to ensure consistency between the mock-ups and the final product."
+      },
+      "tags": {
+        "ux": "UX",
+        "ui": "UI",
+        "showcase": "Showcase site",
+        "visual_identity": "Visual identity"
+      },
+      "cta": "Access the website",
+      "sections": {
+        "visual_identity": "Visual identity",
+        "interfaces": "Interface",
+        "color_palette": "Color palette exploration"
+      }
+    }
   }
 }
