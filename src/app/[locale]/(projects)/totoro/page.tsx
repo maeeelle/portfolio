@@ -35,7 +35,7 @@ export default async function ProjectPage({ params }: PageProps) {
   return (
     <Container>
       <Main>
-        <BackButton />
+        <BackButton id='totoro' />
 
         <ProjectArticle>
           <div>

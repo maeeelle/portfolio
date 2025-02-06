@@ -32,7 +32,7 @@ export default async function ProjectPage({ params }: PageProps) {
   return (
     <Container>
       <Main>
-        <BackButton />
+        <BackButton id='easipromo' />
 
         <ProjectArticle>
           <div>

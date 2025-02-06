@@ -34,7 +34,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
   return (
     <Container>
       <Main>
-        <BackButton />
+        <BackButton id='collection-zoologie-sorbonne' />
 
         <ProjectArticle>
           <div>

@@ -35,7 +35,7 @@ export default async function THSTrackerPage({ params }: PageProps) {
   return (
     <Container>
       <Main>
-        <BackButton />
+        <BackButton id='ths-tracker' />
 
         <ProjectArticle>
           <div>

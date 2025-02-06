@@ -34,7 +34,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
   return (
     <Container>
       <Main>
-        <BackButton />
+        <BackButton id='maison-laurentine' />
 
         <ProjectArticle>
           <div>

@@ -13,7 +13,7 @@ export default async function Home({ params }: HomeProps) {
 
   return (
     <main className='relative flex flex-col gap-y-20 px-8 sm:px-20 py-10 max-w-screen-2xl mx-auto flex-1 w-full'>
-      <div>
+      <div id='collection-zoologie-sorbonne'>
         <Project
           id='collection-zoologie-sorbonne'
           organization={{
@@ -29,7 +29,7 @@ export default async function Home({ params }: HomeProps) {
         />
         <Separator className='mt-10 absolute left-1/2 -translate-x-1/2 w-screen' />
       </div>
-      <div>
+      <div id='easipromo'>
         <Project
           id='easipromo'
           organization={{
@@ -46,7 +46,7 @@ export default async function Home({ params }: HomeProps) {
         />
         <Separator className='mt-10 absolute left-1/2 -translate-x-1/2 w-screen' />
       </div>
-      <div>
+      <div id='buddy'>
         <Project
           id='buddy'
           organization={{
@@ -62,7 +62,7 @@ export default async function Home({ params }: HomeProps) {
         />
         <Separator className='mt-10 absolute left-1/2 -translate-x-1/2 w-screen' />
       </div>
-      <div>
+      <div id='qsmp-shop'>
         <Project
           id='qsmp-shop'
           organization={{
@@ -78,7 +78,7 @@ export default async function Home({ params }: HomeProps) {
         />
         <Separator className='mt-10 absolute left-1/2 -translate-x-1/2 w-screen' />
       </div>
-      <div>
+      <div id='qsmp-co'>
         <Project
           id='qsmp-co'
           organization={{
@@ -99,7 +99,7 @@ export default async function Home({ params }: HomeProps) {
         />
         <Separator className='mt-10 absolute left-1/2 -translate-x-1/2 w-screen' />
       </div>
-      <div>
+      <div id='maison-laurentine'>
         <Project
           id='maison-laurentine'
           organization={{
@@ -115,7 +115,7 @@ export default async function Home({ params }: HomeProps) {
         />
         <Separator className='mt-10 absolute left-1/2 -translate-x-1/2 w-screen' />
       </div>
-      <div>
+      <div id='ths-tracker'>
         <Project
           id='ths-tracker'
           organization={{
@@ -131,7 +131,7 @@ export default async function Home({ params }: HomeProps) {
         />
         <Separator className='mt-10 absolute left-1/2 -translate-x-1/2 w-screen' />
       </div>
-      <div>
+      <div id='totoro'>
         <Project
           id='totoro'
           organization={{
@@ -152,7 +152,7 @@ export default async function Home({ params }: HomeProps) {
         />
         <Separator className='mt-10 absolute left-1/2 -translate-x-1/2 w-screen' />
       </div>
-      <div>
+      <div id='mon-coach-bescherelle'>
         <Project
           id='mon-coach-bescherelle'
           organization={{

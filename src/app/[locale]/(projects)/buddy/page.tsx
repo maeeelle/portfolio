@@ -33,7 +33,7 @@ export default async function BuddyPage({ params }: PageProps) {
   return (
     <Container>
       <Main>
-        <BackButton />
+        <BackButton id='buddy' />
 
         <ProjectArticle>
           <div>
