@@ -61,10 +61,13 @@ export default async function THSTrackerPage({ params }: PageProps) {
 
                 <ul className='text-base text-pretty leading-normal xl:leading-[25px] font-[350] text-[#282828] dark:text-[#D3D3D3]'>
                   <li>
-                    <ReferenceLink href='https://www.maxencewolff.com'>
-                      Maxence Wolff
-                    </ReferenceLink>{' '}
-                    - Développeur Fullstack
+                    {t.rich('team.maxence', {
+                      link: (chunk) => (
+                        <ReferenceLink href='https://www.maxencewolff.com'>
+                          {chunk}
+                        </ReferenceLink>
+                      ),
+                    })}
                   </li>
                 </ul>
               </section>
