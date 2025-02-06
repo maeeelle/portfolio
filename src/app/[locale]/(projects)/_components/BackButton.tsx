@@ -1,13 +1,15 @@
 import { Link } from '@/i18n/routing'
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 
 export function BackButton() {
   const t = useTranslations()
+  const locale = useLocale()
 
   return (
     <nav aria-label='Back navigation' className='inline-flex'>
       <Link
         href='/'
+        locale={locale}
         className='flex gap-2 items-center text-sm uppercase font-normal tracking-normal text-[#161616] dark:text-[#D3D3D3]'
         aria-label='Return to home page'
       >

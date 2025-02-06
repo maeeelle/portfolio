@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Link } from '@/i18n/routing'
 import { LockIcon } from './LockIcon'
+import { useLocale } from 'next-intl'
 
 type ProjectTagProps = {
   name: string
@@ -62,6 +63,7 @@ export function Project({
   isLocked,
 }: ProjectProps) {
   const titleId = `project-${id}-title`
+  const locale = useLocale()
 
   return (
     <Link
@@ -69,6 +71,7 @@ export function Project({
       aria-labelledby={titleId}
       data-locked={!!isLocked}
       scroll={!isLocked}
+      locale={locale}
       className='block group'
     >
       <article aria-labelledby={titleId} className='font-[350]'>
