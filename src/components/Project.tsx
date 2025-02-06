@@ -67,7 +67,7 @@ export function Project({
 
   return (
     <Link
-      href={isLocked ? '' : `/${id}`}
+      href={isLocked ? '/' : `/${id}`}
       aria-labelledby={titleId}
       data-locked={!!isLocked}
       scroll={!isLocked}

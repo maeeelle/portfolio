@@ -18,7 +18,9 @@ export default async function Layout({ children, params }: LayoutProps) {
     <div className='min-h-dvh flex flex-col relative overflow-hidden'>
       <header className='max-w-screen-2xl mx-auto w-full flex justify-between items-center p-8 sm:px-20 font-normal text-[#282828] dark:text-[#D3D3D3] text-sm'>
         <div className='flex gap-2 items-stretch h-4.5 uppercase'>
-          <Link href='/'>MAËLLE.WORKS</Link>
+          <Link locale={locale} href='/'>
+            MAËLLE.WORKS
+          </Link>
           <span>•</span>
           <Link
             href={
@@ -85,6 +87,7 @@ export default async function Layout({ children, params }: LayoutProps) {
           <Link
             href='/legal'
             className='no-underline text-[#4F32FF] dark:text-[#B2FF5D] transition-all duration-150 sm:underline decoration-from-font decoration-wavy underline-offset-4 decoration-[#4F32FF]/0 dark:decoration-[#B2FF5D]/0 hover:decoration-[#4F32FF]/100 dark:hover:decoration-[#B2FF5D]/100'
+            locale={locale}
           >
             {t('footer.legal')}
           </Link>
