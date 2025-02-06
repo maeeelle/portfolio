@@ -117,6 +117,65 @@
         "ui": "UI",
         "web": "Web Application"
       }
+    },
+    "laurentine": {
+      "subtitle": "Guider le visiteur et encourager les échanges",
+      "context": {
+        "title": "Contexte",
+        "description": "La Grande Conversation est une exposition basée sur 21 personnes interviewées sur leur vie et des œuvres d'artistes diverses (photographies, sculptures, installations, dessins et peintures…). La demande de la Maison Laurentine est de permettre aux visiteurs de sortir plus grand de cette exposition et d'avoir moins peur d'entrer en conversation avec les autres."
+      },
+      "contribution": {
+        "title": "Contribution",
+        "description": "Lors de ce projet, j'ai participé à toute la partie d'idéation et de définition des parcours utilisateur avec l'ensemble de mon équipe. J'ai ensuite été en charge de la conception des interfaces de la borne interactive."
+      },
+      "team": {
+        "title": "Equipe",
+        "members": {
+          "britni": "<link>Britni Titus Xavier</link> - UX/UI Designer",
+          "gyeongyeon": "<link>Gyeongyeon Kim</link> - UX/UI Designer",
+          "leonie": "<link>Léonie Nollevalle</link> - UX/UI Designer"
+        }
+      },
+      "tags": {
+        "research": "User Research",
+        "ux": "UX",
+        "ui": "UI",
+        "web": "Web Application"
+      },
+      "sections": {
+        "proposal": {
+          "title": "Notre proposition",
+          "description1": "Pour enrichir l'expérience des visiteurs, nous avons suggéré l'idée d'un carnet de voyage interactif. L'objectif principal de celui-ci est de rendre l'art plus ludique et accessible à tous en permettant une personnalisation complète. Tout au long de leur parcours, les visiteurs peuvent y consigner leurs impressions, ajouter des notes et ainsi créer un souvenir unique de l'exposition.",
+          "description2": "En complément, ce carnet joue également un rôle d'outil d'orientation en facilitant la navigation entre les différents espaces grâce à une carte interactive et une fonction de géolocalisation. Une manière intuitive et immersive d'explorer l'exposition tout en conservant une trace personnelle de sa visite."
+        },
+        "userflow": {
+          "title": "user flow",
+          "steps": {
+            "1": {
+              "number": "01",
+              "description": "Dès mon entrée dans l'exposition, je tombe sur un stand présentant l'expérience du carnet de voyage, où l'on m'invite à récupérer une carte NFC."
+            },
+            "2": {
+              "number": "02",
+              "description": "Je récupère ma carte et débute ma visite de la Maison Laurentine. Arrivé devant une œuvre, je la scanne sur la borne associée."
+            },
+            "3": {
+              "number": "03",
+              "description": "Je découvre un carnet numérique vierge avec diverses options de personnalisation (textes, images, dessins). Il contient notamment des éléments liés à l'œuvre, comme une photo, la signature de l'artiste ou encore son portrait."
+            },
+            "4": {
+              "number": "04",
+              "description": "Une fois quelques pages remplies au niveau des différentes bornes, je scanne ma carte avec mon téléphone pour consulter les œuvres que j'ai découvertes et suivre l'avancement de mon carnet d'exploration."
+            },
+            "5": {
+              "number": "05",
+              "description": "À la fin de ma visite, grâce au code unique de ma carte NFC, je peux partager mon expérience avec mes proches en leur montrant la carte retraçant mon parcours, disponible sur le site internet."
+            }
+          }
+        },
+        "terminal": "Wireframes de la borne",
+        "website": "wireframes du Site web"
+      }
     }
   }
 }
