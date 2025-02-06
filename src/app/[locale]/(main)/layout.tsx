@@ -15,7 +15,7 @@ export default async function Layout({ children, params }: LayoutProps) {
   return (
     <div className='min-h-dvh flex flex-col relative overflow-hidden'>
       <header className='max-w-screen-2xl mx-auto w-full flex justify-between items-center p-8 sm:px-20 font-normal text-[#282828] dark:text-[#D3D3D3] text-sm'>
-        <div className='flex gap-2 items-center'>
+        <div className='flex gap-2 items-stretch h-4.5'>
           <Link href='/'>MAËLLE.WORKS</Link>
           <span>•</span>
           <Link
@@ -26,7 +26,7 @@ export default async function Layout({ children, params }: LayoutProps) {
           </Link>
         </div>
 
-        <div className='flex gap-5 items-center'>
+        <div className='flex gap-4 items-stretch h-4.5'>
           <Link
             // href={`/${locale === 'en' ? 'fr' : 'en'}`}
             href='/fr'

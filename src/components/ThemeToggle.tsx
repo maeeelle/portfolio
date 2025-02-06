@@ -63,7 +63,7 @@ export function ToggleThemeButton() {
     <button
       type='button'
       aria-label='Toggle theme'
-      className='w-5 h-5 relative group overflow-hidden group'
+      className='size-4.5 relative group overflow-hidden flex'
       onClick={() => {
         const newTheme = theme === 'light' ? 'dark' : 'light'
         setTheme(newTheme)
@@ -78,7 +78,7 @@ export function ToggleThemeButton() {
         height='20'
         fill='none'
         viewBox='0 0 20 20'
-        className='absolute inset-0 transition-all duration-300 -translate-y-5 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 dark:translate-y-0 dark:opacity-100 dark:group-hover:translate-y-5 dark:group-hover:opacity-0'
+        className='size-4 self-center place-self-center absolute inset-0 transition-all duration-300 -translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 dark:translate-y-0 dark:opacity-100 dark:group-hover:translate-y-4 dark:group-hover:opacity-0'
         aria-hidden='true'
       >
         <path
@@ -92,7 +92,7 @@ export function ToggleThemeButton() {
         width='20'
         height='20'
         viewBox='0 0 24 24'
-        className='absolute inset-0 transition-all duration-300 translate-y-0 opacity-100 group-hover:translate-y-5 group-hover:opacity-0 dark:-translate-y-5 dark:opacity-0 dark:group-hover:translate-y-0 dark:group-hover:opacity-100'
+        className='size-4 self-center place-self-center absolute inset-0 transition-all duration-300 translate-y-0 opacity-100 group-hover:translate-y-4 group-hover:opacity-0 dark:-translate-y-4 dark:opacity-0 dark:group-hover:translate-y-0 dark:group-hover:opacity-100'
         aria-hidden='true'
       >
         <path
