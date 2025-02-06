@@ -395,5 +395,15 @@
       },
       "last_updated": "Date of last update: 03/02/2025."
     }
+  },
+  "layout": {
+    "header": {
+      "cv": "Resume"
+    },
+    "footer": {
+      "text": "Let's work together!",
+      "credits": "Developed by <developer>Erick</developer>",
+      "legal": "Legal notice"
+    }
   }
 }

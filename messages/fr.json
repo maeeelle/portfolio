@@ -395,5 +395,15 @@
       },
       "last_updated": "Date de dernière mise à jour : 03/02/2025."
     }
+  },
+  "layout": {
+    "header": {
+      "cv": "CV"
+    },
+    "footer": {
+      "text": "Travaillons ensemble!",
+      "credits": "Développé par <developer>Erick</developer>",
+      "legal": "mentions légales"
+    }
   }
 }
