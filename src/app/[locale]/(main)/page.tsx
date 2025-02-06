@@ -115,7 +115,6 @@ export default async function Home({ params }: HomeProps) {
         />
         <Separator className='mt-10 absolute left-1/2 -translate-x-1/2 w-screen' />
       </div>
-      personnel
       <div>
         <Project
           id='ths-tracker'
