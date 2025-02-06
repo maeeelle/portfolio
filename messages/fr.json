@@ -226,6 +226,66 @@
         "ux": "UX",
         "mobile": "Application mobile"
       }
+    },
+    "collection_zoologie": {
+      "subtitle": "Allier transmission et réflexion autour de l'Anthropocène",
+      "context": {
+        "title": "Contexte",
+        "description1": "La Collection de Zoologie de <curator>Santiago Aragon</curator> est un patrimoine scientifique unique, rassemblant plusieurs milliers de spécimens, dont des animaux naturalisés et des pièces anatomiques historiques.",
+        "description2": "Dans le cadre de ce projet, l'objectif était de valoriser cette collection à travers une approche immersive et pédagogique, facilitant son accessibilité au grand public et aux étudiants. En s'appuyant sur des outils numériques, le projet visait à moderniser la transmission du savoir, tout en préservant l'héritage scientifique et culturel de cette collection."
+      },
+      "contribution": {
+        "title": "Contribution",
+        "description": "Pour ce projet mon rôle s'est davantage porté sur l'idéation et la définition des solutions ainsi que la réflexion autour des user journeys."
+      },
+      "team": {
+        "title": "Equipe",
+        "members": {
+          "anthony": "<link>Anthony Reungère</link> - UX/UI Designer",
+          "leonie": "<link>Léonie Nollevalle</link> - Identité visuelle + UX/UI Designer"
+        }
+      },
+      "sections": {
+        "study": {
+          "title": "Étude du contexte et des enjeux",
+          "description1": "Après avoir échangé avec Santiago Aragon et visité le site, nous avons identifié plusieurs enjeux liés à la Collection Zoologique. Son approche narrative, centrée sur l'histoire individuelle de chaque animal, offre une expérience immersive et empathique, rare dans les musées traditionnels.",
+          "description2": "Santiago souhaite également utiliser la collection pour ouvrir des discussions sur l'anthropocène, dépassant ainsi son simple rôle scientifique. Cependant, son emplacement au sein de l'université limite sa visibilité et sa reconnaissance.",
+          "description3": "L'absence d'informations écrites, compensée par l'interaction directe avec Santiago, pose la question de la transmission du savoir. Enfin, son rôle central dans l'expérience des visiteurs souligne la nécessité de préserver et pérenniser son impact sur la collection."
+        },
+        "issues": {
+          "title": "Problématiques identifiées",
+          "visibility": {
+            "title": "Visibilité",
+            "description": "La collection souffre d'un manque de visibilité, sans signalétique sur place ni réelle présence en ligne, ce qui complique son accès. Elle ne dispose pas non plus d'une identité propre la rendant identifiable."
+          },
+          "scenography": {
+            "title": "Scénographie",
+            "description": "La scénographie est inégale : certains objets sont mis en valeur tandis que d'autres restent cachés. L'absence de cartels informatifs complique la visite, surtout pour un public non initié."
+          },
+          "information": {
+            "title": "Informations",
+            "description": "Santiago Aragon est au cœur de la transmission du savoir, rendant la collection dépendante de sa présence. Assurer la pérennité de son expertise et offrir un accès minimal aux informations sur les spécimens pourraient enrichir l'expérience des visiteurs."
+          }
+        },
+        "solutions": {
+          "title": "Esquisses de solutions",
+          "solution1": "Créer une identité visuelle à la collection",
+          "solution2": "Créer une base de données de tous les spécimens, scientifique et patrimoniale",
+          "solution3": "Créer un cartelnumérique de chaque spécimens lisible sur smartphone",
+          "solution4": "Créer une frise chronologique pour organiser les informations patrimoniales et les positionner dans le contexte de l’anthropocène",
+          "solution5": "Permettre de voir les disponibilités",
+          "solution6": "Informations de contact près de la porte",
+          "solution7": "Créer une signalétique au sein de l’Université",
+          "solution8": "Créer une communication et des réseaux sociaux"
+        },
+        "visual_identity": "Identité visuelle",
+        "interfaces": "Interfaces",
+        "immersive": "ébauches d'expérience immersive"
+      },
+      "tags": {
+        "research": "User Research",
+        "ux": "UX"
+      }
     }
   }
 }

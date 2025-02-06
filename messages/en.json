@@ -226,6 +226,66 @@
         "ux": "UX",
         "mobile": "Mobile application"
       }
+    },
+    "collection_zoologie": {
+      "subtitle": "Bringing together transmission and discussion around the Anthropocene",
+      "context": {
+        "title": "Context",
+        "description1": "The Zoology Collection of Santiago Aragon is a unique scientific heritage, bringing together several thousand specimens, including naturalized animals and historical anatomical pieces.",
+        "description2": "The aim of this project was to enhance the value of this collection through an immersive and educational approach, facilitating its access to the general public and students. Using digital tools, the project aimed to modernize the transmission of knowledge, while preserving the scientific and cultural heritage of this collection."
+      },
+      "contribution": {
+        "title": "Contribution",
+        "description": "For this project, my role was more focused on ideating and defining solutions, as well as thinking about user journeys."
+      },
+      "team": {
+        "title": "Team",
+        "members": {
+          "anthony": "<link>Anthony Reungère</link> - UX/UI Designer",
+          "leonie": "<link>Léonie Nollevalle</link> - Visual identity + UX/UI Designer"
+        }
+      },
+      "sections": {
+        "study": {
+          "title": "analysis of the context and challenges",
+          "description1": "After talking to Santiago Aragon and visiting the collection, we identified a number of challenges concerning the Zoological Collection. Its narrative approach, centered on the individual history of each specimen, offers an immersive and empathetic experience, rare in traditional museums.",
+          "description2": "Santiago also wants to use the collection to open up discussions on the Anthropocene, extending beyond its simple scientific role. However, its location within the university limits its visibility and recognition.",
+          "description3": "The absence of written information, compensated for by direct interaction with the owner, raises the question of the transmission of knowledge. Lastly, its key role in the visitor experience underlines the need to preserve and perpetuate his impact on the collection."
+        },
+        "issues": {
+          "title": "Identified issues",
+          "visibility": {
+            "title": "Visibility",
+            "description": "The collection suffers from a lack of visibility, with no on-site signage and no real online presence, making it difficult to access. Nor does it have its own identifiable identity."
+          },
+          "scenography": {
+            "title": "Scenography",
+            "description": "The scenography is uneven: some items are highlighted while others remain hidden. The absence of informative labels complicates the visit, especially for the uninitiated."
+          },
+          "information": {
+            "title": "Informations",
+            "description": "Santiago Aragon is central to the transmission of knowledge, making the collection dependent on his presence. Ensuring the continuity of his expertise and providing minimum access to specimen information could enrich the visitor experience."
+          }
+        },
+        "solutions": {
+          "title": "Suggestions of solutions",
+          "solution1": "Creating a visual identity for the collection",
+          "solution2": "Create a scientific and cultural database of all specimens",
+          "solution3": "Create a smartphone-readable digital label for each specimen",
+          "solution4": "Create a timeline to organize heritage information and position it within the context of the Anthropocene",
+          "solution5": "Display availability",
+          "solution6": "Show contact information by the door",
+          "solution7": "Create a signage system within the University",
+          "solution8": "Creating communication and social networks"
+        },
+        "visual_identity": "Visual identity",
+        "interfaces": "Interfaces",
+        "immersive": "Immersive experience sketches"
+      },
+      "tags": {
+        "research": "User Research",
+        "ux": "UX"
+      }
     }
   }
 }

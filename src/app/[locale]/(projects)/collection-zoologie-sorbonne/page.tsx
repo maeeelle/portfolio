@@ -1,6 +1,6 @@
 import Image, { ImageProps } from 'next/image'
 import { ProjectTag, ProjectTagList } from '@/components/Project'
-import { setRequestLocale } from 'next-intl/server'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { Heading } from '../_components/Heading'
 import { Paragraph } from '../_components/Paragraph'
 import { BackButton } from '../_components/BackButton'
@@ -29,6 +29,7 @@ function ProjectImage({ className, ...props }: ImageProps) {
 export default async function CollectionZoologiePage({ params }: PageProps) {
   const { locale } = await params
   setRequestLocale(locale)
+  const t = await getTranslations('projects.collection_zoologie')
 
   return (
     <Container>
@@ -42,57 +43,51 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               logoAlt='Université Sorbonne Paris Nord logo'
               company='Université Sorbonne Paris Nord'
               title='Collection de Zoologie de Sorbonne Université'
-              subtitle='Allier transmission et réflexion autour de l’Anthropocène'
+              subtitle={t('subtitle')}
             />
 
             <div className='mt-8 space-y-10 xl:space-y-8'>
               <section>
-                <Heading>Contexte</Heading>
+                <Heading>{t('context.title')}</Heading>
                 <Paragraph>
-                  La Collection de Zoologie de{' '}
-                  <ReferenceLink
-                    href='https://www.sorbonne-universite.fr/actualites/immersion-dans-la-collection-de-zoologie'
-                    className='underline-offset-[3px]'
-                  >
-                    Santiago Aragon
-                  </ReferenceLink>{' '}
-                  est un patrimoine scientifique unique, rassemblant plusieurs
-                  milliers de spécimens, dont des animaux naturalisés et des
-                  pièces anatomiques historiques.
+                  {t.rich('context.description1', {
+                    curator: (chunk) => (
+                      <ReferenceLink
+                        href='https://www.sorbonne-universite.fr/actualites/immersion-dans-la-collection-de-zoologie'
+                        className='underline-offset-[3px]'
+                      >
+                        {chunk}
+                      </ReferenceLink>
+                    ),
+                  })}
                 </Paragraph>
-                <Paragraph>
-                  Dans le cadre de ce projet, l’objectif était de valoriser
-                  cette collection à travers une approche immersive et
-                  pédagogique, facilitant son accessibilité au grand public et
-                  aux étudiants. En s’appuyant sur des outils numériques, le
-                  projet visait à moderniser la transmission du savoir, tout en
-                  préservant l’héritage scientifique et culturel de cette
-                  collection.
-                </Paragraph>
+                <Paragraph>{t('context.description2')}</Paragraph>
               </section>
               <section>
-                <Heading>Contribution</Heading>
-                <Paragraph>
-                  Pour ce projet mon rôle s’est davantage porté sur l’idéation
-                  et la définition des solutions ainsi que la réflexion autour
-                  des user journeys.
-                </Paragraph>
+                <Heading>{t('contribution.title')}</Heading>
+                <Paragraph>{t('contribution.description')}</Paragraph>
               </section>
               <section>
-                <Heading>Equipe</Heading>
+                <Heading>{t('team.title')}</Heading>
 
                 <ul className='text-base text-pretty leading-normal xl:leading-[25px] font-[350] text-[#282828] dark:text-[#D3D3D3]'>
                   <li>
-                    <ReferenceLink href='https://www.linkedin.com/in/anthonyreungere/'>
-                      Anthony Reungère
-                    </ReferenceLink>{' '}
-                    - UX/UI Designer
+                    {t.rich('team.members.anthony', {
+                      link: (chunk) => (
+                        <ReferenceLink href='https://www.linkedin.com/in/anthonyreungere/'>
+                          {chunk}
+                        </ReferenceLink>
+                      ),
+                    })}
                   </li>
                   <li>
-                    <ReferenceLink href='https://www.linkedin.com/in/l%C3%A9onie-nollevalle-9310731b0/'>
-                      Léonie Nollevalle
-                    </ReferenceLink>{' '}
-                    - Identité visuelle + UX/UI Designer
+                    {t.rich('team.members.leonie', {
+                      link: (chunk) => (
+                        <ReferenceLink href='https://www.linkedin.com/in/l%C3%A9onie-nollevalle-9310731b0/'>
+                          {chunk}
+                        </ReferenceLink>
+                      ),
+                    })}
                   </li>
                 </ul>
               </section>
@@ -101,8 +96,8 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
 
           <ProjectFooter year='2024'>
             <ProjectTagList>
-              <ProjectTag name='User Research' />
-              <ProjectTag name='UX' />
+              <ProjectTag name={t('tags.research')} />
+              <ProjectTag name={t('tags.ux')} />
             </ProjectTagList>
           </ProjectFooter>
         </ProjectArticle>
@@ -112,79 +107,52 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
         <section>
           <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
             <span className='bg-white dark:bg-black relative pr-4'>
-              Étude du contexte et des enjeux
+              {t('sections.study.title')}
             </span>
           </h2>
 
           <div className='mt-8'>
-            <Paragraph>
-              Après avoir échangé avec Santiago Aragon et visité le site, nous
-              avons identifié plusieurs enjeux liés à la Collection Zoologique.
-              Son approche narrative, centrée sur l’histoire individuelle de
-              chaque animal, offre une expérience immersive et empathique, rare
-              dans les musées traditionnels.
-            </Paragraph>
-            <Paragraph>
-              Santiago souhaite également utiliser la collection pour ouvrir des
-              discussions sur l’anthropocène, dépassant ainsi son simple rôle
-              scientifique. Cependant, son emplacement au sein de l’université
-              limite sa visibilité et sa reconnaissance.
-            </Paragraph>
-            <Paragraph>
-              L’absence d’informations écrites, compensée par l’interaction
-              directe avec Santiago, pose la question de la transmission du
-              savoir. Enfin, son rôle central dans l’expérience des visiteurs
-              souligne la nécessité de préserver et pérenniser son impact sur la
-              collection.
-            </Paragraph>
+            <Paragraph>{t('sections.study.description1')}</Paragraph>
+            <Paragraph>{t('sections.study.description2')}</Paragraph>
+            <Paragraph>{t('sections.study.description3')}</Paragraph>
           </div>
         </section>
 
         <section className='mt-8'>
           <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
             <span className='bg-white dark:bg-black relative pr-4'>
-              Problématiques identifiées
+              {t('sections.issues.title')}
             </span>
           </h2>
 
           <div className='mt-8 space-y-4'>
             <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
               <h3 className='font-medium text-base/tight text-[#282828] dark:text-[#D3D3D3]'>
-                Visibilité
+                {t('sections.issues.visibility.title')}
               </h3>
 
               <p className='text-base/tight text-pretty font-[350] text-[#818181] dark:text-[#D3D3D3]'>
-                La collection souffre d’un manque de visibilité, sans
-                signalétique sur place ni réelle présence en ligne, ce qui
-                complique son accès. Elle ne dispose pas non plus d’une identité
-                propre la rendant identifiable.
+                {t('sections.issues.visibility.description')}
               </p>
             </article>
 
             <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
               <h3 className='font-medium text-base/tight text-[#282828] dark:text-[#D3D3D3]'>
-                Scénographie
+                {t('sections.issues.scenography.title')}
               </h3>
 
               <p className='text-base/tight text-pretty font-[350] text-[#818181] dark:text-[#D3D3D3]'>
-                La scénographie est inégale : certains objets sont mis en valeur
-                tandis que d’autres restent cachés. L’absence de cartels
-                informatifs complique la visite, surtout pour un public non
-                initié.
+                {t('sections.issues.scenography.description')}
               </p>
             </article>
 
             <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
               <h3 className='font-medium text-base/tight text-[#282828] dark:text-[#D3D3D3]'>
-                Informations
+                {t('sections.issues.information.title')}
               </h3>
 
               <p className='text-base/tight text-pretty font-[350] text-[#818181] dark:text-[#D3D3D3]'>
-                Santiago Aragon est au cœur de la transmission du savoir,
-                rendant la collection dépendante de sa présence. Assurer la
-                pérennité de son expertise et offrir un accès minimal aux
-                informations sur les spécimens pourraient enrichir l’expérience
-                des visiteurs.
+                {t('sections.issues.information.description')}
               </p>
             </article>
           </div>
@@ -193,7 +161,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
         <section className='mt-8'>
           <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
             <span className='bg-white dark:bg-black relative pr-4'>
-              Esquisses de solutions
+              {t('sections.solutions.title')}
             </span>
           </h2>
 
@@ -214,7 +182,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               </svg>
 
               <p className='text-base/tight text-pretty font-[350]'>
-                Créer une identité visuelle à la collection
+                {t('sections.solutions.solution1')}
               </p>
             </article>
 
@@ -234,8 +202,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               </svg>
 
               <p className='text-base/tight text-pretty font-[350]'>
-                Créer une base de données de tous les spécimens, scientifique et
-                patrimoniale
+                {t('sections.solutions.solution2')}
               </p>
             </article>
 
@@ -255,8 +222,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               </svg>
 
               <p className='text-base/tight text-pretty font-[350]'>
-                Créer un cartelnumérique de chaque spécimens lisible sur
-                smartphone
+                {t('sections.solutions.solution3')}
               </p>
             </article>
 
@@ -276,9 +242,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               </svg>
 
               <p className='text-base/tight text-pretty font-[350]'>
-                Créer une frise chronologique pour organiser les informations
-                patrimoniales et les positionner dans le contexte de
-                l’anthropocène
+                {t('sections.solutions.solution4')}
               </p>
             </article>
 
@@ -298,7 +262,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               </svg>
 
               <p className='text-base/tight text-pretty font-[350]'>
-                Permettre de voir les disponibilités
+                {t('sections.solutions.solution5')}
               </p>
             </article>
 
@@ -318,7 +282,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               </svg>
 
               <p className='text-base/tight text-pretty font-[350]'>
-                Informations de contact près de la porte
+                {t('sections.solutions.solution6')}
               </p>
             </article>
             <article className='rounded border border-[#F9F9F9] dark:border-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
@@ -337,7 +301,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               </svg>
 
               <p className='text-base/tight text-pretty font-[350]'>
-                Créer une signalétique au sein de l’Université
+                {t('sections.solutions.solution7')}
               </p>
             </article>
             <article className='rounded border border-[#F9F9F9] dark:border-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
@@ -356,7 +320,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               </svg>
 
               <p className='text-base/tight text-pretty font-[350]'>
-                Créer une communication et des réseaux sociaux
+                {t('sections.solutions.solution8')}
               </p>
             </article>
           </div>
@@ -365,7 +329,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
         <section className='mt-8'>
           <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
             <span className='bg-white dark:bg-black relative pr-4'>
-              Identité visuelle
+              {t('sections.visual_identity')}
             </span>
           </h2>
 
@@ -417,7 +381,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
         <section className='mt-8'>
           <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
             <span className='bg-white dark:bg-black relative pr-4'>
-              Interfaces
+              {t('sections.interfaces')}
             </span>
           </h2>
 
@@ -467,7 +431,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
         <section className='mt-8'>
           <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
             <span className='bg-white dark:bg-black relative pr-4'>
-              ébauches d’expérience immersive
+              {t('sections.immersive')}
             </span>
           </h2>
 
