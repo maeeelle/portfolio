@@ -42,7 +42,7 @@ export default async function THSTrackerPage({ params }: PageProps) {
             <ProjectHeader
               logoSrc='/images/projects/personnel.png'
               logoAlt='Centered white circle with a black background'
-              company='Projet personnel'
+              company={t('company')}
               title='THS Tracker'
               subtitle={t('subtitle')}
             />
