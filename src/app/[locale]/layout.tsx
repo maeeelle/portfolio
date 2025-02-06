@@ -3,7 +3,11 @@ import localFont from 'next/font/local'
 import '../globals.css'
 import { routing } from '@/i18n/routing'
 import { notFound } from 'next/navigation'
-import { getMessages, setRequestLocale } from 'next-intl/server'
+import {
+  getMessages,
+  getTranslations,
+  setRequestLocale,
+} from 'next-intl/server'
 import { NextIntlClientProvider } from 'next-intl'
 import { ThemeProvider } from '@/components/ThemeToggle'
 import { Analytics } from '@vercel/analytics/next'
@@ -21,14 +25,21 @@ const diolce = localFont({
   variable: '--font-diolce',
 })
 
-export const metadata: Metadata = {
-  title: 'Maëlle - Digital Product Designer',
-  description:
-    'Digital Product Designer (UI & UX) spécialisée en interfaces intuitives et en solutions centrées utilisateur, venez découvrir mes projets!',
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'metadata' })
 
-  alternates: {
-    canonical: 'https://maelle.works/',
-  },
+  return {
+    title: t('title'),
+    description: t('description'),
+    alternates: {
+      canonical: 'https://www.maelle.works',
+    },
+  }
 }
 
 export function generateStaticParams() {
