@@ -67,6 +67,38 @@
       "tags": {
         "illustration": "Illustration"
       }
+    },
+    "totoro": {
+      "subtitle": "Recréer du lien à travers l'entraide entre voisins",
+      "context": {
+        "title": "Contexte",
+        "description1": "Totoro est une application visant à favoriser davantage les échanges de proximité et à redynamiser la vie en communauté.",
+        "description2": "En guise de récompense suite à la réalisation d'une mission locale, l'utilisateur gagne des tokens qu'il peut ensuite échanger contre des bons de réductions à utiliser chez les commerçants proches de chez lui."
+      },
+      "contribution": {
+        "title": "Contribution",
+        "description1": "Lors de ce projet, j'ai activement participé au process d'idéation.",
+        "description2": "J'ai ensuite eu l'occasion de réaliser l'identité visuelle et ai co-construit, en binôme avec le second designer, le parcours utilisateur ainsi qu'un design kit et l'ensemble des écrans de l'application."
+      },
+      "team": {
+        "title": "Equipe",
+        "members": {
+          "jarce": "<link>Jarce Boukoro</link> - Développeur Fullstack",
+          "maxence": "<link>Maxence Wolff</link> - UI Designer + Développeur Front-End",
+          "teo": "<link>Téo Lugat</link> - Développeur Fullstack"
+        }
+      },
+      "tags": {
+        "ux": "UX",
+        "ui": "UI",
+        "mobile": "Application mobile",
+        "branding": "Branding"
+      },
+      "sections": {
+        "visual_identity": "Identité visuelle",
+        "design_kit": "Design kit",
+        "interfaces": "Interfaces"
+      }
     }
   }
 }

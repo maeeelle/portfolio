@@ -12,6 +12,7 @@ import { Aside } from '../_components/Aside'
 import { ProjectArticle } from '../_components/ProjectArticle'
 import { ReferenceLink } from '../_components/ReferenceLink'
 import clsx from 'clsx'
+import { getTranslations } from 'next-intl/server'
 
 type PageProps = {
   params: Promise<{
@@ -29,6 +30,7 @@ function ProjectImage({ className, ...props }: ImageProps) {
 export default async function ProjectPage({ params }: PageProps) {
   const { locale } = await params
   setRequestLocale(locale)
+  const t = await getTranslations('projects.totoro')
 
   return (
     <Container>
@@ -42,66 +44,61 @@ export default async function ProjectPage({ params }: PageProps) {
               logoAlt='HETIC logo'
               company='HETIC'
               title='Totoro'
-              subtitle='Recréer du lien à travers l’entraide entre voisins'
+              subtitle={t('subtitle')}
             />
 
             <div className='mt-8 space-y-10 xl:space-y-8'>
               <section>
-                <Heading>Contexte</Heading>
-                <Paragraph>
-                  Totoro est une application visant à favoriser davantage les
-                  échanges de proximité et à redynamiser la vie en communauté.
-                </Paragraph>
-                <Paragraph>
-                  En guise de récompense suite à la réalisation d’une mission
-                  locale, l’utilisateur gagne des tokens qu’il peut ensuite
-                  échanger contre des bons de réductions à utiliser chez les
-                  commerçants proches de chez lui.
-                </Paragraph>
+                <Heading>{t('context.title')}</Heading>
+                <Paragraph>{t('context.description1')}</Paragraph>
+                <Paragraph>{t('context.description2')}</Paragraph>
               </section>
               <section>
-                <Heading>Contribution</Heading>
-                <Paragraph>
-                  Lors de ce projet, j’ai activement participé au process
-                  d’idéation.
-                </Paragraph>
-                <Paragraph>
-                  J’ai ensuite eu l’occasion de réaliser l’identité visuelle et
-                  ai co-construit, en binôme avec le second designer, le
-                  parcours utilisateur ainsi qu’un design kit et l’ensemble des
-                  écrans de l’application.
-                </Paragraph>
+                <Heading>{t('contribution.title')}</Heading>
+                <Paragraph>{t('contribution.description1')}</Paragraph>
+                {t('contribution.description2').length > 0 && (
+                  <Paragraph>{t('contribution.description2')}</Paragraph>
+                )}
               </section>
               <section>
-                <Heading>Equipe</Heading>
+                <Heading>{t('team.title')}</Heading>
 
                 <ul className='text-base text-pretty leading-normal xl:leading-5 space-y-1 font-[350] text-[#282828] dark:text-[#D3D3D3]'>
                   <li>
-                    <ReferenceLink
-                      href='https://www.linkedin.com/in/jarceb'
-                      className='text-[#4F32FF] dark:text-[#B2FF5D]'
-                    >
-                      Jarce Boukoro
-                    </ReferenceLink>{' '}
-                    - Développeur Fullstack
+                    {t.rich('team.members.jarce', {
+                      link: (chunk) => (
+                        <ReferenceLink
+                          href='https://www.linkedin.com/in/jarceb'
+                          className='text-[#4F32FF] dark:text-[#B2FF5D]'
+                        >
+                          {chunk}
+                        </ReferenceLink>
+                      ),
+                    })}
                   </li>
                   <li>
-                    <ReferenceLink
-                      href='https://www.maxencewolff.com'
-                      className='text-[#4F32FF] dark:text-[#B2FF5D]'
-                    >
-                      Maxence Wolff
-                    </ReferenceLink>{' '}
-                    - UI Designer + Développeur Front-End
+                    {t.rich('team.members.maxence', {
+                      link: (chunk) => (
+                        <ReferenceLink
+                          href='https://www.maxencewolff.com'
+                          className='text-[#4F32FF] dark:text-[#B2FF5D]'
+                        >
+                          {chunk}
+                        </ReferenceLink>
+                      ),
+                    })}
                   </li>
                   <li>
-                    <ReferenceLink
-                      href='https://www.linkedin.com/in/teolugat'
-                      className='text-[#4F32FF] dark:text-[#B2FF5D]'
-                    >
-                      Téo Lugat
-                    </ReferenceLink>{' '}
-                    - Développeur Fullstack
+                    {t.rich('team.members.teo', {
+                      link: (chunk) => (
+                        <ReferenceLink
+                          href='https://www.linkedin.com/in/teolugat'
+                          className='text-[#4F32FF] dark:text-[#B2FF5D]'
+                        >
+                          {chunk}
+                        </ReferenceLink>
+                      ),
+                    })}
                   </li>
                 </ul>
               </section>
@@ -110,10 +107,10 @@ export default async function ProjectPage({ params }: PageProps) {
 
           <ProjectFooter year='2022'>
             <ProjectTagList>
-              <ProjectTag name='UX' />
-              <ProjectTag name='UI' />
-              <ProjectTag name='Application mobile' />
-              <ProjectTag name='Branding' />
+              <ProjectTag name={t('tags.ux')} />
+              <ProjectTag name={t('tags.ui')} />
+              <ProjectTag name={t('tags.mobile')} />
+              <ProjectTag name={t('tags.branding')} />
             </ProjectTagList>
           </ProjectFooter>
         </ProjectArticle>
@@ -123,7 +120,7 @@ export default async function ProjectPage({ params }: PageProps) {
         <section>
           <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
             <span className='bg-white dark:bg-black relative pr-4'>
-              Identité visuelle
+              {t('sections.visual_identity')}
             </span>
           </h2>
 
@@ -147,7 +144,7 @@ export default async function ProjectPage({ params }: PageProps) {
         <section className='mt-8'>
           <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
             <span className='bg-white dark:bg-black relative pr-4'>
-              Design kit
+              {t('sections.design_kit')}
             </span>
           </h2>
 
@@ -164,7 +161,7 @@ export default async function ProjectPage({ params }: PageProps) {
         <section className='mt-8'>
           <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
             <span className='bg-white dark:bg-black relative pr-4'>
-              Interfaces
+              {t('sections.interfaces')}
             </span>
           </h2>
 

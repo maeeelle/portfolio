@@ -67,6 +67,38 @@
       "tags": {
         "illustration": "Illustration"
       }
+    },
+    "totoro": {
+      "subtitle": "Reconnecting neighbors through mutual aid",
+      "context": {
+        "title": "Context",
+        "description1": "Totoro is an application designed to encourage local exchanges and re-energize community life.",
+        "description2": "As a reward for completing a local mission, users earn tokens that can then be exchanged for discount vouchers to be used at local retailers."
+      },
+      "contribution": {
+        "title": "Contribution",
+        "description1": "During this project, I had the opportunity to create the visual identity. Together with the second designer, I also co-constructed the user path, a design kit and all the mobile app's screens.",
+        "description2": ""
+      },
+      "team": {
+        "title": "Equipe",
+        "members": {
+          "jarce": "<link>Jarce Boukoro</link> - Fullstack Developer",
+          "maxence": "<link>Maxence Wolff</link> - UI Designer + Front-End Developer",
+          "teo": "<link>Téo Lugat</link> - Fullstack Developer"
+        }
+      },
+      "tags": {
+        "ux": "UX",
+        "ui": "UI",
+        "mobile": "Application mobile",
+        "branding": "Branding"
+      },
+      "sections": {
+        "visual_identity": "Visual identity",
+        "design_kit": "Design kit",
+        "interfaces": "Interfaces"
+      }
     }
   }
 }
