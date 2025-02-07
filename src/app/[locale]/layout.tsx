@@ -12,7 +12,6 @@ import { NextIntlClientProvider } from 'next-intl'
 import { ThemeProvider } from '@/components/ThemeToggle'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
-import { cookies } from 'next/headers'
 
 const overusedGR = localFont({
   src: '../fonts/OverusedGroteskRoman-VF.ttf',
@@ -55,9 +54,6 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>
 }>) {
   const { locale } = await params
-  const cookieStore = await cookies()
-  const theme = cookieStore.get('theme')?.value || 'system'
-
   if (!routing.locales.includes(locale as never)) {
     notFound()
   }
@@ -66,38 +62,20 @@ export default async function RootLayout({
   const messages = await getMessages()
 
   return (
-    <html lang={locale} className={theme} suppressHydrationWarning>
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            try {
-              _updateTheme(${JSON.stringify(theme)});
-            } catch {}
-
-            function _updateTheme(theme) {
-              const classList = document.documentElement.classList;
-
-              classList.remove("light", "dark", "system");
-
-              if (theme === "system") {
-                const isDarkTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                classList.add(isDarkTheme ? "dark" : "light");
-              } else {
-                classList.add(theme);
-              }
-            }
-          `,
-          }}
-        />
-      </head>
-
+    <html lang={locale} suppressHydrationWarning>
       <body
         className={`${overusedGR.variable} ${diolce.variable} relative antialiased selection:bg-[#b2ff5d] dark:selection:bg-[#4f32ff] dark:selection:text-[#D3D3D3]`}
       >
-        <NextIntlClientProvider messages={messages}>
-          <ThemeProvider>{children}</ThemeProvider>
-        </NextIntlClientProvider>
+        <ThemeProvider
+          attribute='class'
+          defaultTheme='system'
+          enableSystem
+          disableTransitionOnChange
+        >
+          <NextIntlClientProvider locale={locale} messages={messages}>
+            {children}
+          </NextIntlClientProvider>
+        </ThemeProvider>
 
         <Analytics />
         <SpeedInsights />

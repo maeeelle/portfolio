@@ -1,62 +1,12 @@
 'use client'
 
-import {
-  createContext,
-  ReactNode,
-  useContext,
-  useEffect,
-  useMemo,
-  useState,
-} from 'react'
-import Cookies from 'js-cookie'
+import { ThemeProvider as NextThemesProvider, useTheme } from 'next-themes'
 
-declare global {
-  interface Window {
-    _updateTheme: (theme: Theme) => void
-  }
-}
-
-type Theme = 'light' | 'dark' | 'system'
-
-type ThemeContextType = {
-  theme: Theme
-  setTheme: (theme: Theme) => void
-}
-
-const ThemeContext = createContext<ThemeContextType | null>({
-  theme: 'system',
-  setTheme: () => {},
-})
-
-export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [theme, setTheme] = useState<Theme>('system')
-
-  useEffect(() => {
-    const savedTheme = Cookies.get('theme')
-
-    const isDarkTheme =
-      savedTheme === 'dark' ||
-      (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)
-
-    const theme = isDarkTheme ? 'dark' : 'light'
-
-    setTheme(theme)
-    Cookies.set('theme', theme)
-  }, [])
-
-  const value = useMemo(() => ({ theme, setTheme }), [theme])
-
-  return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
-}
-
-export function useTheme() {
-  const context = useContext(ThemeContext)
-
-  if (!context) {
-    throw new Error('useTheme must be used within a ThemeProvider')
-  }
-
-  return context
+export function ThemeProvider({
+  children,
+  ...props
+}: React.ComponentProps<typeof NextThemesProvider>) {
+  return <NextThemesProvider {...props}>{children}</NextThemesProvider>
 }
 
 export function ToggleThemeButton() {
@@ -70,9 +20,6 @@ export function ToggleThemeButton() {
       onClick={() => {
         const newTheme = theme === 'light' ? 'dark' : 'light'
         setTheme(newTheme)
-        Cookies.set('theme', newTheme)
-
-        window._updateTheme(newTheme)
       }}
     >
       <svg
