@@ -102,6 +102,7 @@ export default async function QSMPCoPage({ params }: PageProps) {
               alt=''
               unoptimized
               className='w-full'
+              priority
             />
           </div>
         </section>

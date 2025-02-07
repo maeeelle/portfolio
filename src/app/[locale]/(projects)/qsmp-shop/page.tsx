@@ -118,6 +118,7 @@ export default async function QSMPShopPage({ params }: PageProps) {
               src='/images/projects/qsmp-shop/QSMP.shop-Product-Cards.webp'
               alt=''
               className='w-full'
+              priority
             />
           </div>
         </section>

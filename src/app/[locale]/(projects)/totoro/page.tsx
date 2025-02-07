@@ -130,6 +130,7 @@ export default async function ProjectPage({ params }: PageProps) {
               height={1080}
               src='/images/projects/totoro/Brand.webp'
               alt=''
+              priority
             />
             <ProjectImage
               width={1620}
@@ -137,6 +138,7 @@ export default async function ProjectPage({ params }: PageProps) {
               src='/images/projects/totoro/Brand-Colors.webp'
               unoptimized
               alt=''
+              priority
             />
           </div>
         </section>
