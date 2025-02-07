@@ -144,8 +144,8 @@ export default async function Home({ params }: HomeProps) {
             subtitle: t('projects.totoro.subtitle'),
           }}
           tags={[
-            t('tags.research'),
             t('tags.ux'),
+            t('tags.ui'),
             t('tags.mobile'),
             t('tags.branding'),
           ]}
