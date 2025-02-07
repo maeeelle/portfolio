@@ -8,6 +8,7 @@ import {
   useMemo,
   useState,
 } from 'react'
+import Cookies from 'js-cookie'
 
 declare global {
   interface Window {
@@ -31,14 +32,16 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setTheme] = useState<Theme>('system')
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme')
+    const savedTheme = Cookies.get('theme')
 
     const isDarkTheme =
       savedTheme === 'dark' ||
-      (!('theme' in localStorage) &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches)
+      (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)
 
-    setTheme(isDarkTheme ? 'dark' : 'light')
+    const theme = isDarkTheme ? 'dark' : 'light'
+
+    setTheme(theme)
+    Cookies.set('theme', theme)
   }, [])
 
   const value = useMemo(() => ({ theme, setTheme }), [theme])
@@ -59,10 +62,6 @@ export function useTheme() {
 export function ToggleThemeButton() {
   const { theme, setTheme } = useTheme()
 
-  try {
-    window._updateTheme(theme)
-  } catch {}
-
   return (
     <button
       type='button'
@@ -71,7 +70,7 @@ export function ToggleThemeButton() {
       onClick={() => {
         const newTheme = theme === 'light' ? 'dark' : 'light'
         setTheme(newTheme)
-        localStorage.setItem('theme', newTheme)
+        Cookies.set('theme', newTheme)
 
         window._updateTheme(newTheme)
       }}

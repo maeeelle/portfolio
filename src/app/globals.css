@@ -20,3 +20,8 @@ body {
   background: var(--background);
   font-family: var(--font-overused-gr), Helvetica, sans-serif;
 }
+
+html,
+body {
+  scroll-behavior: smooth;
+}

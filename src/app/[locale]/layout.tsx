@@ -12,6 +12,7 @@ import { NextIntlClientProvider } from 'next-intl'
 import { ThemeProvider } from '@/components/ThemeToggle'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { cookies } from 'next/headers'
 
 const overusedGR = localFont({
   src: '../fonts/OverusedGroteskRoman-VF.ttf',
@@ -54,6 +55,8 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>
 }>) {
   const { locale } = await params
+  const cookieStore = await cookies()
+  const theme = cookieStore.get('theme')?.value || 'system'
 
   if (!routing.locales.includes(locale as never)) {
     notFound()
@@ -63,13 +66,13 @@ export default async function RootLayout({
   const messages = await getMessages()
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale} className={theme} suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{
             __html: `
             try {
-              _updateTheme(localStorage.getItem('theme') || 'system')
+              _updateTheme(${JSON.stringify(theme)});
             } catch {}
 
             function _updateTheme(theme) {
