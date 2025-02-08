@@ -74,7 +74,7 @@ export function Project({
       locale={locale}
       className='block group'
     >
-      <article aria-labelledby={titleId} className='font-[350]'>
+      <article className='font-[350]'>
         <header className='relative'>
           <div className='text-[#161616] dark:text-[#D3D3D3] text-base -tracking-[.02em] mb-4 sm:mb-5 inline-flex items-center gap-2'>
             <Image
@@ -84,9 +84,7 @@ export function Project({
               height={80}
               className='rounded-xs size-5'
             />
-            <div>
-              <span>{organization.name}</span>
-            </div>
+            <span>{organization.name}</span>
           </div>
           <div>
             <h2
