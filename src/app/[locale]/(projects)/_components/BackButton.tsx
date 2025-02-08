@@ -6,7 +6,7 @@ export function BackButton({ id }: { id: string }) {
   const locale = useLocale()
 
   return (
-    <nav aria-label='Back navigation' className='inline-flex'>
+    <nav aria-label='Back navigation' className='mb-[3.75rem] inline-flex'>
       <Link
         href={`/#${id}`}
         locale={locale}
