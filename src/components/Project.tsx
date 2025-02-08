@@ -114,7 +114,9 @@ export function Project({
             {project.year}
           </time>
 
-          <span className='hidden sm:inline-block'>•</span>
+          <span className='hidden sm:inline-block' aria-hidden>
+            •
+          </span>
 
           <ProjectTagList>
             {tags.map((tag) => (
