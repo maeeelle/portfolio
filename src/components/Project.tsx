@@ -91,13 +91,13 @@ export function Project({
           <div>
             <h2
               id={titleId}
-              className='text-3xl/none sm:text-4.5xl/none text-[#282828] dark:text-[#D3D3D3] inline-flex mb-3 sm:mb-2 items-center gap-2 group-hover:group-data-[locked=false]:text-[#4F32FF] dark:group-hover:group-data-[locked=false]:text-[#B2FF5D] transition-colors duration-150'
+              className='text-3xl/none sm:text-4.5xl/none text-[#282828] dark:text-[#D3D3D3] inline-flex mb-3 sm:mb-2 items-center gap-2 group-hover:group-data-[locked=false]:text-[#4F32FF] dark:group-hover:group-data-[locked=false]:text-[#B2FF5D] group-focus-visible:group-data-[locked=false]:text-[#4F32FF] dark:group-focus-visible:group-data-[locked=false]:text-[#B2FF5D] transition-colors duration-150'
             >
               {project.title}
               {isLocked ? (
-                <LockIcon className='shrink-0 group-focus:animate-wiggle group-active:animate-none text-[#DBDBDB] dark:text-[#3C3C3C] group-focus:text-red-500 transition-colors duration-75' />
+                <LockIcon className='shrink-0 group-focus-visible:animate-wiggle group-active:animate-none text-[#DBDBDB] dark:text-[#3C3C3C] group-focus-visible:text-red-500 transition-colors duration-75' />
               ) : (
-                <ArrowIcon className='hidden shrink-0 sm:inline-block transition-all duration-300 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0' />
+                <ArrowIcon className='hidden shrink-0 sm:inline-block transition-all duration-300 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 group-focus-visible:opacity-100 group-focus-visible:translate-x-0' />
               )}
             </h2>
             <p className='text-[#8E8E8E] dark:text-[#6D6D6D] text-xl/[22px] sm:text-2xl/7'>
