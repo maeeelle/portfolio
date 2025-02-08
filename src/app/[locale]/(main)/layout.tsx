@@ -22,7 +22,7 @@ export default async function Layout({ children, params }: LayoutProps) {
           <Link locale={locale} href='/'>
             MAËLLE.WORKS
           </Link>
-          <span>•</span>
+          <span aria-hidden>•</span>
           <NextLink
             hrefLang={locale}
             href={
