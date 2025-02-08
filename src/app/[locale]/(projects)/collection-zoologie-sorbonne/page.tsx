@@ -12,6 +12,7 @@ import { Aside } from '../_components/Aside'
 import { ProjectArticle } from '../_components/ProjectArticle'
 import { ReferenceLink } from '../_components/ReferenceLink'
 import clsx from 'clsx'
+import { SectionHeading } from '../_components/SectionHeading'
 
 type PageProps = {
   params: Promise<{
@@ -106,11 +107,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
 
       <Aside>
         <section>
-          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
-            <span className='bg-white dark:bg-black relative pr-4'>
-              {t('sections.study.title')}
-            </span>
-          </h2>
+          <SectionHeading>{t('sections.study.title')}</SectionHeading>
 
           <div className='mt-8'>
             <Paragraph>{t('sections.study.description1')}</Paragraph>
@@ -120,11 +117,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
         </section>
 
         <section>
-          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
-            <span className='bg-white dark:bg-black relative pr-4'>
-              {t('sections.issues.title')}
-            </span>
-          </h2>
+          <SectionHeading>{t('sections.issues.title')}</SectionHeading>
 
           <div className='mt-8 space-y-4'>
             <article className='rounded-sm bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
@@ -160,11 +153,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
         </section>
 
         <section>
-          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
-            <span className='bg-white dark:bg-black relative pr-4'>
-              {t('sections.solutions.title')}
-            </span>
-          </h2>
+          <SectionHeading>{t('sections.solutions.title')}</SectionHeading>
 
           <div className='mt-8 space-y-4'>
             <article className='rounded-sm bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
@@ -328,11 +317,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
         </section>
 
         <section>
-          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
-            <span className='bg-white dark:bg-black relative pr-4'>
-              {t('sections.visual_identity')}
-            </span>
-          </h2>
+          <SectionHeading>{t('sections.visual_identity')}</SectionHeading>
 
           <div className='flex flex-col sm:flex-row gap-2.5 max-w-full mt-8'>
             <ProjectImage
@@ -380,11 +365,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
         </section>
 
         <section>
-          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
-            <span className='bg-white dark:bg-black relative pr-4'>
-              {t('sections.interfaces')}
-            </span>
-          </h2>
+          <SectionHeading>{t('sections.interfaces')}</SectionHeading>
 
           <div className='space-y-10 mt-8'>
             <ProjectImage
@@ -430,11 +411,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
         </section>
 
         <section>
-          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
-            <span className='bg-white dark:bg-black relative pr-4'>
-              {t('sections.immersive')}
-            </span>
-          </h2>
+          <SectionHeading>{t('sections.immersive')}</SectionHeading>
 
           <div className='space-y-10 mt-8'>
             <ProjectImage

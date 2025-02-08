@@ -12,6 +12,7 @@ import { Aside } from '../_components/Aside'
 import { ProjectArticle } from '../_components/ProjectArticle'
 import { ReferenceLink } from '../_components/ReferenceLink'
 import clsx from 'clsx'
+import { SectionHeading } from '../_components/SectionHeading'
 
 type PageProps = {
   params: Promise<{
@@ -105,11 +106,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
 
       <Aside>
         <section>
-          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
-            <span className='bg-white dark:bg-black relative pr-4'>
-              {t('sections.proposal.title')}
-            </span>
-          </h2>
+          <SectionHeading>{t('sections.proposal.title')}</SectionHeading>
 
           <div className='mt-8'>
             <Paragraph>{t('sections.proposal.description1')}</Paragraph>
@@ -118,11 +115,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
         </section>
 
         <section>
-          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
-            <span className='bg-white dark:bg-black relative pr-4'>
-              {t('sections.userflow.title')}
-            </span>
-          </h2>
+          <SectionHeading>{t('sections.userflow.title')}</SectionHeading>
 
           <div className='mt-8 rounded-sm space-y-4'>
             {[1, 2, 3, 4, 5].map((step) => (
@@ -142,11 +135,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
         </section>
 
         <section>
-          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
-            <span className='bg-white dark:bg-black relative pr-4'>
-              {t('sections.terminal')}
-            </span>
-          </h2>
+          <SectionHeading>{t('sections.terminal')}</SectionHeading>
 
           <div className='space-y-10 mt-8'>
             <ProjectImage
@@ -216,11 +205,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
         </section>
 
         <section>
-          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
-            <span className='bg-white dark:bg-black relative pr-4'>
-              {t('sections.website')}
-            </span>
-          </h2>
+          <SectionHeading>{t('sections.website')}</SectionHeading>
 
           <div className='space-y-10 mt-8'>
             <ProjectImage
