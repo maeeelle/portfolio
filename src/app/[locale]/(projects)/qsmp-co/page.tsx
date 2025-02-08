@@ -92,7 +92,7 @@ export default async function QSMPCoPage({ params }: PageProps) {
         <section>
           <SectionHeading>{t('sections.visual_identity')}</SectionHeading>
 
-          <div className='mt-8'>
+          <div>
             <ProjectImage
               width={1856}
               height={1010}
@@ -108,7 +108,7 @@ export default async function QSMPCoPage({ params }: PageProps) {
         <section>
           <SectionHeading>{t('sections.interfaces')}</SectionHeading>
 
-          <div className='mt-8'>
+          <div>
             <ProjectImage
               width={2270}
               height={7104}

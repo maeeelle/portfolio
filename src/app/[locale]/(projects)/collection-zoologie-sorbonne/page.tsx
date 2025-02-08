@@ -109,7 +109,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
         <section>
           <SectionHeading>{t('sections.study.title')}</SectionHeading>
 
-          <div className='mt-8'>
+          <div>
             <Paragraph>{t('sections.study.description1')}</Paragraph>
             <Paragraph>{t('sections.study.description2')}</Paragraph>
             <Paragraph>{t('sections.study.description3')}</Paragraph>
@@ -119,7 +119,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
         <section>
           <SectionHeading>{t('sections.issues.title')}</SectionHeading>
 
-          <div className='mt-8 space-y-4'>
+          <div className='space-y-4'>
             <article className='rounded-sm bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
               <h3 className='font-medium text-base/tight text-[#282828] dark:text-[#D3D3D3]'>
                 {t('sections.issues.visibility.title')}
@@ -155,7 +155,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
         <section>
           <SectionHeading>{t('sections.solutions.title')}</SectionHeading>
 
-          <div className='mt-8 space-y-4'>
+          <div className='space-y-4'>
             <article className='rounded-sm bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -319,7 +319,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
         <section>
           <SectionHeading>{t('sections.visual_identity')}</SectionHeading>
 
-          <div className='flex flex-col sm:flex-row gap-2.5 max-w-full mt-8'>
+          <div className='flex flex-col sm:flex-row gap-2.5 max-w-full'>
             <ProjectImage
               width={2992}
               height={1996}
@@ -367,7 +367,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
         <section>
           <SectionHeading>{t('sections.interfaces')}</SectionHeading>
 
-          <div className='space-y-10 mt-8'>
+          <div className='space-y-10'>
             <ProjectImage
               width={1512}
               height={3709}
@@ -413,7 +413,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
         <section>
           <SectionHeading>{t('sections.immersive')}</SectionHeading>
 
-          <div className='space-y-10 mt-8'>
+          <div className='space-y-10'>
             <ProjectImage
               width={1512}
               height={982}

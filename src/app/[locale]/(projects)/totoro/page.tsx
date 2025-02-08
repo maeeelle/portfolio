@@ -121,7 +121,7 @@ export default async function ProjectPage({ params }: PageProps) {
         <section>
           <SectionHeading>{t('sections.visual_identity')}</SectionHeading>
 
-          <div className='space-y-8 mt-8'>
+          <div className='space-y-8'>
             <ProjectImage
               width={1920}
               height={1080}
@@ -143,7 +143,7 @@ export default async function ProjectPage({ params }: PageProps) {
         <section>
           <SectionHeading>{t('sections.design_kit')}</SectionHeading>
 
-          <div className='space-y-8 mt-8'>
+          <div className='space-y-8'>
             <ProjectImage
               width={2290}
               height={2638}
@@ -156,7 +156,7 @@ export default async function ProjectPage({ params }: PageProps) {
         <section>
           <SectionHeading>{t('sections.interfaces')}</SectionHeading>
 
-          <div className='mt-8 grid grid-cols-[repeat(auto-fill,minmax(13.25rem,1fr))] gap-6 justify-start items-start'>
+          <div className='grid grid-cols-[repeat(auto-fill,minmax(13.25rem,1fr))] gap-6 justify-start items-start'>
             <ProjectImage
               width={750}
               height={1624}

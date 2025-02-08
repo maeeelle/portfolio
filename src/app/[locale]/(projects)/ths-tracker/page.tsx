@@ -94,7 +94,7 @@ export default async function THSTrackerPage({ params }: PageProps) {
         <section>
           <SectionHeading>{t('research.title')}</SectionHeading>
 
-          <div className='mt-8'>
+          <div>
             <Paragraph>{t('research.intro')}</Paragraph>
 
             <div className='mt-6 space-y-4'>
@@ -188,7 +188,7 @@ export default async function THSTrackerPage({ params }: PageProps) {
         <section>
           <SectionHeading>{t('wireframes.title')}</SectionHeading>
 
-          <div className='space-y-10 mt-8'>
+          <div className='space-y-10'>
             <ProjectImage
               width={4102}
               height={1624}

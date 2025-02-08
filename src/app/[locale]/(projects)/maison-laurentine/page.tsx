@@ -108,7 +108,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
         <section>
           <SectionHeading>{t('sections.proposal.title')}</SectionHeading>
 
-          <div className='mt-8'>
+          <div>
             <Paragraph>{t('sections.proposal.description1')}</Paragraph>
             <Paragraph>{t('sections.proposal.description2')}</Paragraph>
           </div>
@@ -117,7 +117,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
         <section>
           <SectionHeading>{t('sections.userflow.title')}</SectionHeading>
 
-          <div className='mt-8 rounded-sm space-y-4'>
+          <div className='rounded-sm space-y-4'>
             {[1, 2, 3, 4, 5].map((step) => (
               <article
                 key={step}
@@ -137,7 +137,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
         <section>
           <SectionHeading>{t('sections.terminal')}</SectionHeading>
 
-          <div className='space-y-10 mt-8'>
+          <div className='space-y-10'>
             <ProjectImage
               width={1194}
               height={834}
@@ -207,7 +207,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
         <section>
           <SectionHeading>{t('sections.website')}</SectionHeading>
 
-          <div className='space-y-10 mt-8'>
+          <div className='space-y-10'>
             <ProjectImage
               width={1920}
               height={1080}

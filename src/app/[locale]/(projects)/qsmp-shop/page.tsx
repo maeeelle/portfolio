@@ -109,7 +109,7 @@ export default async function QSMPShopPage({ params }: PageProps) {
         <section>
           <SectionHeading>{t('sections.product_visuals')}</SectionHeading>
 
-          <div className='mt-8'>
+          <div>
             <ProjectImage
               width={1932}
               height={1432}
@@ -124,7 +124,7 @@ export default async function QSMPShopPage({ params }: PageProps) {
         <section>
           <SectionHeading>{t('sections.interfaces')}</SectionHeading>
 
-          <div className='space-y-10 mt-8'>
+          <div className='space-y-10'>
             <ProjectImage
               width={1512}
               height={4647}
@@ -153,7 +153,7 @@ export default async function QSMPShopPage({ params }: PageProps) {
         <section>
           <SectionHeading>{t('sections.custom_hero')}</SectionHeading>
 
-          <div className='mt-8'>
+          <div>
             <ProjectImage
               width={1512}
               height={934}
