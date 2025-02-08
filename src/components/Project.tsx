@@ -93,7 +93,7 @@ export function Project({
             >
               {project.title}
               {isLocked ? (
-                <LockIcon className='shrink-0 group-focus-visible:animate-wiggle group-active:animate-none text-[#DBDBDB] dark:text-[#3C3C3C] group-focus-visible:text-red-500 transition-colors duration-75' />
+                <LockIcon className='shrink-0 group-focus:animate-wiggle group-active:animate-none text-[#DBDBDB] dark:text-[#3C3C3C] group-focus:text-red-500 transition-colors duration-75' />
               ) : (
                 <ArrowIcon className='hidden shrink-0 sm:inline-block transition-all duration-300 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 group-focus-visible:opacity-100 group-focus-visible:translate-x-0' />
               )}
