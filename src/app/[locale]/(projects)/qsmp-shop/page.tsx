@@ -46,7 +46,7 @@ export default async function QSMPShopPage({ params }: PageProps) {
               subtitle={t('subtitle')}
             />
 
-            <div className='mt-8 space-y-10 xl:space-y-8'>
+            <div className='mt-8 space-y-10 xl:space-y-8 has-[+*]:mb-10'>
               <section>
                 <Heading>{t('context.title')}</Heading>
                 <Paragraph>
@@ -123,7 +123,7 @@ export default async function QSMPShopPage({ params }: PageProps) {
           </div>
         </section>
 
-        <section className='mt-8'>
+        <section>
           <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
             <span className='bg-white dark:bg-black relative pr-4'>
               {t('sections.interfaces')}
@@ -156,7 +156,7 @@ export default async function QSMPShopPage({ params }: PageProps) {
           </div>
         </section>
 
-        <section className='mt-8'>
+        <section>
           <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
             <span className='bg-white dark:bg-black relative pr-4'>
               {t('sections.custom_hero')}

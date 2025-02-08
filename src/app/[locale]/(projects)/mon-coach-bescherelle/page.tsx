@@ -54,7 +54,7 @@ export default async function ProjectPage({ params }: PageProps) {
               subtitle={t('subtitle')}
             />
 
-            <div className='mt-8 space-y-10 xl:space-y-8'>
+            <div className='mt-8 space-y-10 xl:space-y-8 has-[+*]:mb-10'>
               <section>
                 <Heading>{t('context.title')}</Heading>
                 <Paragraph>{t('context.description1')}</Paragraph>
@@ -82,44 +82,46 @@ export default async function ProjectPage({ params }: PageProps) {
       </Main>
 
       <Aside>
-        <ProjectImage
-          src='/images/projects/mon-coach-bescherelle/pré-accueil-1.png'
-          alt=''
-          priority
-        />
-        <ProjectImage
-          src='/images/projects/mon-coach-bescherelle/tableau-de-bord-test.png'
-          alt=''
-          priority
-        />
-        <ProjectImage
-          src='/images/projects/mon-coach-bescherelle/tableau-de-bord-n1-td.png'
-          alt=''
-        />
-        <ProjectImage
-          src='/images/projects/mon-coach-bescherelle/parcours-test.png'
-          alt=''
-        />
-        <ProjectImage
-          src='/images/projects/mon-coach-bescherelle/parcours-conjugaison-intermédiaire.png'
-          alt=''
-        />
-        <ProjectImage
-          src='/images/projects/mon-coach-bescherelle/parcours-rédaction-Intermédiaire.png'
-          alt=''
-        />
-        <ProjectImage
-          src='/images/projects/mon-coach-bescherelle/parcours-confusions-exercice.png'
-          alt=''
-        />
-        <ProjectImage
-          src='/images/projects/mon-coach-bescherelle/parcours-accords-exercice.png'
-          alt=''
-        />
-        <ProjectImage
-          src='/images/projects/mon-coach-bescherelle/vidéos-accords.png'
-          alt=''
-        />
+        <section className='space-y-10'>
+          <ProjectImage
+            src='/images/projects/mon-coach-bescherelle/pré-accueil-1.png'
+            alt=''
+            priority
+          />
+          <ProjectImage
+            src='/images/projects/mon-coach-bescherelle/tableau-de-bord-test.png'
+            alt=''
+            priority
+          />
+          <ProjectImage
+            src='/images/projects/mon-coach-bescherelle/tableau-de-bord-n1-td.png'
+            alt=''
+          />
+          <ProjectImage
+            src='/images/projects/mon-coach-bescherelle/parcours-test.png'
+            alt=''
+          />
+          <ProjectImage
+            src='/images/projects/mon-coach-bescherelle/parcours-conjugaison-intermédiaire.png'
+            alt=''
+          />
+          <ProjectImage
+            src='/images/projects/mon-coach-bescherelle/parcours-rédaction-Intermédiaire.png'
+            alt=''
+          />
+          <ProjectImage
+            src='/images/projects/mon-coach-bescherelle/parcours-confusions-exercice.png'
+            alt=''
+          />
+          <ProjectImage
+            src='/images/projects/mon-coach-bescherelle/parcours-accords-exercice.png'
+            alt=''
+          />
+          <ProjectImage
+            src='/images/projects/mon-coach-bescherelle/vidéos-accords.png'
+            alt=''
+          />
+        </section>
       </Aside>
     </Container>
   )
