@@ -12,6 +12,7 @@ import { Aside } from '../_components/Aside'
 import { ProjectArticle } from '../_components/ProjectArticle'
 import { ReferenceLink } from '../_components/ReferenceLink'
 import clsx from 'clsx'
+import { SectionHeading } from '../_components/SectionHeading'
 
 type PageProps = {
   params: Promise<{
@@ -44,9 +45,10 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
               company='Université Sorbonne Paris Nord'
               title='La Maison Laurentine'
               subtitle={t('subtitle')}
+              className='mb-8'
             />
 
-            <div className='mt-8 space-y-10 xl:space-y-8'>
+            <div className='space-y-10 xl:space-y-8 has-[+*]:mb-10'>
               <section>
                 <Heading>{t('context.title')}</Heading>
                 <Paragraph>{t('context.description')}</Paragraph>
@@ -104,30 +106,22 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
 
       <Aside>
         <section>
-          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
-            <span className='bg-white dark:bg-black relative pr-4'>
-              {t('sections.proposal.title')}
-            </span>
-          </h2>
+          <SectionHeading>{t('sections.proposal.title')}</SectionHeading>
 
-          <div className='mt-8'>
+          <div>
             <Paragraph>{t('sections.proposal.description1')}</Paragraph>
             <Paragraph>{t('sections.proposal.description2')}</Paragraph>
           </div>
         </section>
 
-        <section className='mt-8'>
-          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
-            <span className='bg-white dark:bg-black relative pr-4'>
-              {t('sections.userflow.title')}
-            </span>
-          </h2>
+        <section>
+          <SectionHeading>{t('sections.userflow.title')}</SectionHeading>
 
-          <div className='mt-8 rounded space-y-4'>
+          <div className='rounded-sm space-y-4'>
             {[1, 2, 3, 4, 5].map((step) => (
               <article
                 key={step}
-                className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'
+                className='rounded-sm bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'
               >
                 <h3 className='font-medium text-base/tight text-[#282828] dark:text-[#D3D3D3]'>
                   {t(`sections.userflow.steps.${step}.number`)}
@@ -140,20 +134,16 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
           </div>
         </section>
 
-        <section className='mt-8'>
-          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
-            <span className='bg-white dark:bg-black relative pr-4'>
-              {t('sections.terminal')}
-            </span>
-          </h2>
+        <section>
+          <SectionHeading>{t('sections.terminal')}</SectionHeading>
 
-          <div className='space-y-10 mt-8'>
+          <div className='space-y-10'>
             <ProjectImage
               width={1194}
               height={834}
               src='/images/projects/maison-laurentine/1.Scan.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
 
             <ProjectImage
@@ -161,7 +151,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
               height={834}
               src='/images/projects/maison-laurentine/2.Validation.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
 
             <ProjectImage
@@ -169,7 +159,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
               height={834}
               src='/images/projects/maison-laurentine/3.Carnet.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
 
             <ProjectImage
@@ -177,7 +167,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
               height={834}
               src='/images/projects/maison-laurentine/4.Carnet.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
 
             <ProjectImage
@@ -185,7 +175,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
               height={834}
               src='/images/projects/maison-laurentine/5.Carnet.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
 
             <ProjectImage
@@ -193,7 +183,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
               height={834}
               src='/images/projects/maison-laurentine/6.Carnet.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
 
             <ProjectImage
@@ -201,7 +191,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
               height={834}
               src='/images/projects/maison-laurentine/7.Carnet.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
 
             <ProjectImage
@@ -209,25 +199,21 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
               height={834}
               src='/images/projects/maison-laurentine/8.Fin.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
           </div>
         </section>
 
-        <section className='mt-8'>
-          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
-            <span className='bg-white dark:bg-black relative pr-4'>
-              {t('sections.website')}
-            </span>
-          </h2>
+        <section>
+          <SectionHeading>{t('sections.website')}</SectionHeading>
 
-          <div className='space-y-10 mt-8'>
+          <div className='space-y-10'>
             <ProjectImage
               width={1920}
               height={1080}
               src='/images/projects/maison-laurentine/Frame-1.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
 
             <ProjectImage
@@ -235,7 +221,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
               height={982}
               src='/images/projects/maison-laurentine/Frame-2.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
 
             <ProjectImage
@@ -243,7 +229,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
               height={982}
               src='/images/projects/maison-laurentine/Frame-3.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
 
             <ProjectImage
@@ -251,7 +237,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
               height={982}
               src='/images/projects/maison-laurentine/Frame-7.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
 
             <ProjectImage
@@ -259,7 +245,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
               height={982}
               src='/images/projects/maison-laurentine/Frame-8.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
           </div>
         </section>

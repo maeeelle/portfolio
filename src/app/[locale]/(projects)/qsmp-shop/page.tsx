@@ -12,6 +12,7 @@ import { Aside } from '../_components/Aside'
 import { ProjectArticle } from '../_components/ProjectArticle'
 import clsx from 'clsx'
 import { ReferenceLink } from '../_components/ReferenceLink'
+import { SectionHeading } from '../_components/SectionHeading'
 
 type PageProps = {
   params: Promise<{
@@ -44,9 +45,10 @@ export default async function QSMPShopPage({ params }: PageProps) {
               company='Quackity Studios'
               title='QSMP.shop'
               subtitle={t('subtitle')}
+              className='mb-8'
             />
 
-            <div className='mt-8 space-y-10 xl:space-y-8'>
+            <div className='space-y-10 xl:space-y-8 has-[+*]:mb-10'>
               <section>
                 <Heading>{t('context.title')}</Heading>
                 <Paragraph>
@@ -105,13 +107,9 @@ export default async function QSMPShopPage({ params }: PageProps) {
 
       <Aside>
         <section>
-          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
-            <span className='bg-white dark:bg-black relative pr-4'>
-              {t('sections.product_visuals')}
-            </span>
-          </h2>
+          <SectionHeading>{t('sections.product_visuals')}</SectionHeading>
 
-          <div className='mt-8'>
+          <div>
             <ProjectImage
               width={1932}
               height={1432}
@@ -123,20 +121,16 @@ export default async function QSMPShopPage({ params }: PageProps) {
           </div>
         </section>
 
-        <section className='mt-8'>
-          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
-            <span className='bg-white dark:bg-black relative pr-4'>
-              {t('sections.interfaces')}
-            </span>
-          </h2>
+        <section>
+          <SectionHeading>{t('sections.interfaces')}</SectionHeading>
 
-          <div className='space-y-10 mt-8'>
+          <div className='space-y-10'>
             <ProjectImage
               width={1512}
               height={4647}
               src='/images/projects/qsmp-shop/QSMP.shop-Homepage.webp'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
 
             <ProjectImage
@@ -144,32 +138,28 @@ export default async function QSMPShopPage({ params }: PageProps) {
               height={5270}
               src='/images/projects/qsmp-shop/QSMP.shop-Catalog.webp'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
             <ProjectImage
               width={1512}
               height={3609}
               src='/images/projects/qsmp-shop/QSMP.shop-PDP.webp'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
           </div>
         </section>
 
-        <section className='mt-8'>
-          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
-            <span className='bg-white dark:bg-black relative pr-4'>
-              {t('sections.custom_hero')}
-            </span>
-          </h2>
+        <section>
+          <SectionHeading>{t('sections.custom_hero')}</SectionHeading>
 
-          <div className='mt-8'>
+          <div>
             <ProjectImage
               width={1512}
               height={934}
               src='/images/projects/qsmp-shop/QSMPshop_PDP_Tops.gif'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
           </div>
         </section>

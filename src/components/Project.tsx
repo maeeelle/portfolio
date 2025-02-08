@@ -9,7 +9,7 @@ type ProjectTagProps = {
 
 export function ProjectTag({ name }: ProjectTagProps) {
   return (
-    <li className='text-[#838383] dark:text-[#6D6D6D] text-base/[.7] -tracking-[.02em] px-2 py-1.5 rounded-sm border border-[#DBDBDB] dark:border-[#3C3C3C] font-[350]'>
+    <li className='text-[#838383] dark:text-[#6D6D6D] text-base/[.7] -tracking-[.02em] px-2 py-1.5 rounded-xs border border-[#DBDBDB] dark:border-[#3C3C3C] font-[350]'>
       {name}
     </li>
   )
@@ -66,38 +66,36 @@ export function Project({
   const locale = useLocale()
 
   return (
-    <Link
-      href={isLocked ? '/' : `/${id}`}
-      aria-labelledby={titleId}
-      data-locked={!!isLocked}
-      scroll={!isLocked}
-      locale={locale}
-      className='block group'
-    >
-      <article aria-labelledby={titleId} className='font-[350]'>
-        <header className='relative'>
+    <article className='font-[350]'>
+      <Link
+        href={isLocked ? '/' : `/${id}`}
+        aria-labelledby={titleId}
+        data-locked={!!isLocked}
+        scroll={!isLocked}
+        locale={locale}
+        className='block group'
+      >
+        <header className='relative mb-5 sm:mb-7'>
           <div className='text-[#161616] dark:text-[#D3D3D3] text-base -tracking-[.02em] mb-4 sm:mb-5 inline-flex items-center gap-2'>
             <Image
               src={organization.image}
               alt={`${organization.name} logo`}
               width={80}
               height={80}
-              className='rounded-sm size-5'
+              className='rounded-xs size-5'
             />
-            <div>
-              <span>{organization.name}</span>
-            </div>
+            <span>{organization.name}</span>
           </div>
           <div>
             <h2
               id={titleId}
-              className='text-3xl/none sm:text-4.5xl/none text-[#282828] dark:text-[#D3D3D3] inline-flex mb-3 sm:mb-2 items-center gap-2 group-data-[locked=false]:group-hover:text-[#4F32FF] dark:group-data-[locked=false]:group-hover:text-[#B2FF5D] transition-colors duration-150'
+              className='text-3xl/none sm:text-4.5xl/none text-[#282828] dark:text-[#D3D3D3] inline-flex mb-3 sm:mb-2 items-center gap-2 group-hover:group-data-[locked=false]:text-[#4F32FF] dark:group-hover:group-data-[locked=false]:text-[#B2FF5D] group-focus-visible:group-data-[locked=false]:text-[#4F32FF] dark:group-focus-visible:group-data-[locked=false]:text-[#B2FF5D] transition-colors duration-150'
             >
               {project.title}
               {isLocked ? (
                 <LockIcon className='shrink-0 group-focus:animate-wiggle group-active:animate-none text-[#DBDBDB] dark:text-[#3C3C3C] group-focus:text-red-500 transition-colors duration-75' />
               ) : (
-                <ArrowIcon className='hidden shrink-0 sm:inline-block transition-all duration-300 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0' />
+                <ArrowIcon className='hidden shrink-0 sm:inline-block transition-all duration-300 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 group-focus-visible:opacity-100 group-focus-visible:translate-x-0' />
               )}
             </h2>
             <p className='text-[#8E8E8E] dark:text-[#6D6D6D] text-xl/[22px] sm:text-2xl/7'>
@@ -106,12 +104,17 @@ export function Project({
           </div>
         </header>
 
-        <footer className='mt-5 sm:mt-7 text-[#8E8E8E] -tracking-[.02em] flex flex-col sm:flex-row gap-4 sm:items-center'>
-          <small className='font-[350] text-base leading-[.7]'>
+        <footer className='text-[#8E8E8E] -tracking-[.02em] flex flex-col sm:flex-row gap-4 sm:items-center'>
+          <time
+            dateTime={project.year}
+            className='font-[350] text-base leading-[.7]'
+          >
             {project.year}
-          </small>
+          </time>
 
-          <span className='hidden sm:inline-block'>•</span>
+          <span className='hidden sm:inline-block' aria-hidden>
+            •
+          </span>
 
           <ProjectTagList>
             {tags.map((tag) => (
@@ -119,7 +122,7 @@ export function Project({
             ))}
           </ProjectTagList>
         </footer>
-      </article>
-    </Link>
+      </Link>
+    </article>
   )
 }

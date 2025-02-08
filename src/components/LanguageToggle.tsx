@@ -14,7 +14,9 @@ export function LanguageToggleButton({
   return (
     <Link
       className='size-5 relative group overflow-hidden flex'
-      aria-label='Toggle language'
+      aria-label={
+        defaultLocale === 'en' ? 'Switch to French' : 'Passer en anglais'
+      }
       href={pathname}
       locale={defaultLocale === 'en' ? 'fr' : 'en'}
     >

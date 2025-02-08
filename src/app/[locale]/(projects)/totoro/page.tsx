@@ -13,6 +13,7 @@ import { ProjectArticle } from '../_components/ProjectArticle'
 import { ReferenceLink } from '../_components/ReferenceLink'
 import clsx from 'clsx'
 import { getTranslations } from 'next-intl/server'
+import { SectionHeading } from '../_components/SectionHeading'
 
 type PageProps = {
   params: Promise<{
@@ -45,9 +46,9 @@ export default async function ProjectPage({ params }: PageProps) {
               company='HETIC'
               title='Totoro'
               subtitle={t('subtitle')}
+              className='mb-8'
             />
-
-            <div className='mt-8 space-y-10 xl:space-y-8'>
+            <div className='space-y-10 xl:space-y-8 has-[+*]:mb-10'>
               <section>
                 <Heading>{t('context.title')}</Heading>
                 <Paragraph>{t('context.description1')}</Paragraph>
@@ -118,13 +119,9 @@ export default async function ProjectPage({ params }: PageProps) {
 
       <Aside>
         <section>
-          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
-            <span className='bg-white dark:bg-black relative pr-4'>
-              {t('sections.visual_identity')}
-            </span>
-          </h2>
+          <SectionHeading>{t('sections.visual_identity')}</SectionHeading>
 
-          <div className='space-y-8 mt-8'>
+          <div className='space-y-8'>
             <ProjectImage
               width={1920}
               height={1080}
@@ -143,14 +140,10 @@ export default async function ProjectPage({ params }: PageProps) {
           </div>
         </section>
 
-        <section className='mt-8'>
-          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
-            <span className='bg-white dark:bg-black relative pr-4'>
-              {t('sections.design_kit')}
-            </span>
-          </h2>
+        <section>
+          <SectionHeading>{t('sections.design_kit')}</SectionHeading>
 
-          <div className='space-y-8 mt-8'>
+          <div className='space-y-8'>
             <ProjectImage
               width={2290}
               height={2638}
@@ -160,83 +153,79 @@ export default async function ProjectPage({ params }: PageProps) {
           </div>
         </section>
 
-        <section className='mt-8'>
-          <h2 className='font-normal text-sm/none uppercase -tracking-[0.02em] text-[#818181] dark:text-[#6D6D6D] relative before:absolute before:w-full before:h-px before:bg-[#E1E1E1] dark:before:bg-[#3C3C3C] before:right-0 before:top-1/2 before:-translate-y-1/2'>
-            <span className='bg-white dark:bg-black relative pr-4'>
-              {t('sections.interfaces')}
-            </span>
-          </h2>
+        <section>
+          <SectionHeading>{t('sections.interfaces')}</SectionHeading>
 
-          <div className='mt-8 grid grid-cols-[repeat(auto-fill,minmax(13.25rem,1fr))] gap-6 justify-start items-start'>
+          <div className='grid grid-cols-[repeat(auto-fill,minmax(13.25rem,1fr))] gap-6 justify-start items-start'>
             <ProjectImage
               width={750}
               height={1624}
               src='/images/projects/totoro/Explications.webp'
               alt=''
-              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+              className='outline-1 -outline-offset-1 outline-black/10 rounded-sm min-w-0'
             />
             <ProjectImage
               width={750}
               height={1624}
               src='/images/projects/totoro/Explications-1.webp'
               alt=''
-              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+              className='outline-1 -outline-offset-1 outline-black/10 rounded-sm min-w-0'
             />
             <ProjectImage
               width={750}
               height={1624}
               src='/images/projects/totoro/Explications-2.webp'
               alt=''
-              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+              className='outline-1 -outline-offset-1 outline-black/10 rounded-sm min-w-0'
             />
             <ProjectImage
               width={750}
               height={1624}
               src='/images/projects/totoro/Missions.webp'
               alt=''
-              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+              className='outline-1 -outline-offset-1 outline-black/10 rounded-sm min-w-0'
             />
             <ProjectImage
               width={750}
               height={1624}
               src='/images/projects/totoro/Filtres.webp'
               alt=''
-              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+              className='outline-1 -outline-offset-1 outline-black/10 rounded-sm min-w-0'
             />
             <ProjectImage
               width={750}
               height={1624}
               src='/images/projects/totoro/Mission.webp'
               alt=''
-              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+              className='outline-1 -outline-offset-1 outline-black/10 rounded-sm min-w-0'
             />
             <ProjectImage
               width={750}
               height={1624}
               src='/images/projects/totoro/Messagerie.webp'
               alt=''
-              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+              className='outline-1 -outline-offset-1 outline-black/10 rounded-sm min-w-0'
             />
             <ProjectImage
               width={750}
               height={1624}
               src='/images/projects/totoro/Conversation-ouverte.webp'
               alt=''
-              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+              className='outline-1 -outline-offset-1 outline-black/10 rounded-sm min-w-0'
             />
             <ProjectImage
               width={750}
               height={1624}
               src='/images/projects/totoro/Boutiques.webp'
               alt=''
-              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+              className='outline-1 -outline-offset-1 outline-black/10 rounded-sm min-w-0'
             />
             <ProjectImage
               width={750}
               height={1624}
               src='/images/projects/totoro/Boutique.webp'
               alt=''
-              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+              className='outline-1 -outline-offset-1 outline-black/10 rounded-sm min-w-0'
               unoptimized
             />
             <ProjectImage
@@ -244,14 +233,14 @@ export default async function ProjectPage({ params }: PageProps) {
               height={1624}
               src='/images/projects/totoro/Profile.webp'
               alt=''
-              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+              className='outline-1 -outline-offset-1 outline-black/10 rounded-sm min-w-0'
             />
             <ProjectImage
               width={750}
               height={1624}
               src='/images/projects/totoro/Profile2.webp'
               alt=''
-              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+              className='outline-1 -outline-offset-1 outline-black/10 rounded-sm min-w-0'
             />
           </div>
         </section>

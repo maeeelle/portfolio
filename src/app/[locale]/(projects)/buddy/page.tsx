@@ -43,9 +43,10 @@ export default async function BuddyPage({ params }: PageProps) {
               company='Carrefour'
               title='Data Supermarket'
               subtitle={t('subtitle')}
+              className='mb-8'
             />
 
-            <div className='mt-8 space-y-10 xl:space-y-8'>
+            <div className='space-y-10 xl:space-y-8 has-[+*]:mb-10'>
               <section>
                 <Heading>{t('context.title')}</Heading>
                 <Paragraph>{t('context.description')}</Paragraph>
@@ -73,28 +74,28 @@ export default async function BuddyPage({ params }: PageProps) {
             height={1644}
             src='/images/projects/buddy/Pensif.webp'
             alt=''
-            className='h-auto w-full max-w-80 xl:max-w-[18.75rem] outline -outline-offset-1 outline-1 outline-black/10 rounded'
+            className='h-auto w-full max-w-80 xl:max-w-[18.75rem] -outline-offset-1 outline-1 outline-black/10 rounded-sm'
           />
           <ProjectImage
             width={1716}
             height={1644}
             src='/images/projects/buddy/Heureux.webp'
             alt=''
-            className='h-auto w-full max-w-80 xl:max-w-[18.75rem] outline -outline-offset-1 outline-1 outline-black/10 rounded'
+            className='h-auto w-full max-w-80 xl:max-w-[18.75rem] -outline-offset-1 outline-1 outline-black/10 rounded-sm'
           />
           <ProjectImage
             width={1716}
             height={1644}
             src='/images/projects/buddy/Triste.webp'
             alt=''
-            className='h-auto w-full max-w-80 xl:max-w-[18.75rem] outline -outline-offset-1 outline-1 outline-black/10 rounded'
+            className='h-auto w-full max-w-80 xl:max-w-[18.75rem] -outline-offset-1 outline-1 outline-black/10 rounded-sm'
           />
           <ProjectImage
             width={1716}
             height={1644}
             src='/images/projects/buddy/Gêné.webp'
             alt=''
-            className='h-auto w-full max-w-80 xl:max-w-[18.75rem] outline -outline-offset-1 outline-1 outline-black/10 rounded'
+            className='h-auto w-full max-w-80 xl:max-w-[18.75rem] -outline-offset-1 outline-1 outline-black/10 rounded-sm'
           />
         </section>
       </Aside>
