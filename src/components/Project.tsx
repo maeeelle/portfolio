@@ -66,15 +66,15 @@ export function Project({
   const locale = useLocale()
 
   return (
-    <Link
-      href={isLocked ? '/' : `/${id}`}
-      aria-labelledby={titleId}
-      data-locked={!!isLocked}
-      scroll={!isLocked}
-      locale={locale}
-      className='block group'
-    >
-      <article className='font-[350]'>
+    <article className='font-[350]'>
+      <Link
+        href={isLocked ? '/' : `/${id}`}
+        aria-labelledby={titleId}
+        data-locked={!!isLocked}
+        scroll={!isLocked}
+        locale={locale}
+        className='block group'
+      >
         <header className='relative mb-5 sm:mb-7'>
           <div className='text-[#161616] dark:text-[#D3D3D3] text-base -tracking-[.02em] mb-4 sm:mb-5 inline-flex items-center gap-2'>
             <Image
@@ -122,7 +122,7 @@ export function Project({
             ))}
           </ProjectTagList>
         </footer>
-      </article>
-    </Link>
+      </Link>
+    </article>
   )
 }
