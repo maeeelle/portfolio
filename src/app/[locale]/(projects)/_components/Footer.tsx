@@ -8,9 +8,12 @@ export function ProjectFooter({ children, year }: ProjectFooterProps) {
     <footer className='flex justify-between items-center mt-10'>
       {children}
 
-      <small className='font-[350] text-[#8E8E8E] dark:text-[#737373] text-base/5'>
+      <time
+        dateTime={year}
+        className='font-[350] text-[#8E8E8E] dark:text-[#737373] text-base/5'
+      >
         {year}
-      </small>
+      </time>
     </footer>
   )
 }

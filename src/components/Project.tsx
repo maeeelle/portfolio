@@ -107,9 +107,12 @@ export function Project({
         </header>
 
         <footer className='mt-5 sm:mt-7 text-[#8E8E8E] -tracking-[.02em] flex flex-col sm:flex-row gap-4 sm:items-center'>
-          <small className='font-[350] text-base leading-[.7]'>
+          <time
+            dateTime={project.year}
+            className='font-[350] text-base leading-[.7]'
+          >
             {project.year}
-          </small>
+          </time>
 
           <span className='hidden sm:inline-block'>•</span>
 
