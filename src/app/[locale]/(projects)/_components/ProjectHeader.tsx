@@ -6,6 +6,7 @@ type ProjectHeaderProps = {
   company: string
   title: string
   subtitle: string
+  className?: string
 }
 
 export function ProjectHeader({
@@ -14,9 +15,10 @@ export function ProjectHeader({
   company,
   title,
   subtitle,
+  className,
 }: ProjectHeaderProps) {
   return (
-    <header>
+    <header className={className}>
       <div className='text-base mb-2 xl:mb-4 inline-flex items-center gap-2 font-[350]'>
         <Image
           src={logoSrc}

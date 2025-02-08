@@ -44,9 +44,10 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
               company='Université Sorbonne Paris Nord'
               title='La Maison Laurentine'
               subtitle={t('subtitle')}
+              className='mb-8'
             />
 
-            <div className='mt-8 space-y-10 xl:space-y-8 has-[+*]:mb-10'>
+            <div className='space-y-10 xl:space-y-8 has-[+*]:mb-10'>
               <section>
                 <Heading>{t('context.title')}</Heading>
                 <Paragraph>{t('context.description')}</Paragraph>
