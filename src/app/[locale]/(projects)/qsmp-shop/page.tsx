@@ -136,7 +136,7 @@ export default async function QSMPShopPage({ params }: PageProps) {
               height={4647}
               src='/images/projects/qsmp-shop/QSMP.shop-Homepage.webp'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
 
             <ProjectImage
@@ -144,14 +144,14 @@ export default async function QSMPShopPage({ params }: PageProps) {
               height={5270}
               src='/images/projects/qsmp-shop/QSMP.shop-Catalog.webp'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
             <ProjectImage
               width={1512}
               height={3609}
               src='/images/projects/qsmp-shop/QSMP.shop-PDP.webp'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
           </div>
         </section>
@@ -169,7 +169,7 @@ export default async function QSMPShopPage({ params }: PageProps) {
               height={934}
               src='/images/projects/qsmp-shop/QSMPshop_PDP_Tops.gif'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
           </div>
         </section>

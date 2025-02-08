@@ -12,7 +12,7 @@ export default async function Home({ params }: HomeProps) {
   const t = await getTranslations('home')
 
   return (
-    <main className='relative flex flex-col gap-y-20 px-8 sm:px-20 py-10 max-w-screen-2xl mx-auto flex-1 w-full'>
+    <main className='relative flex flex-col gap-y-20 px-8 sm:px-20 py-10 max-w-(--breakpoint-2xl) mx-auto flex-1 w-full'>
       <div className='scroll-mt-8' id='collection-zoologie-sorbonne'>
         <Project
           id='collection-zoologie-sorbonne'

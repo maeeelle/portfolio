@@ -23,7 +23,7 @@ export function ProjectHeader({
           alt={logoAlt}
           width={80}
           height={80}
-          className='rounded-sm size-5'
+          className='rounded-xs size-5'
         />
         <span>{company}</span>
       </div>

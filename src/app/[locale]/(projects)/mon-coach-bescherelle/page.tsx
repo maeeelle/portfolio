@@ -27,7 +27,7 @@ function ProjectImage({ className, ...props }: ImageProps) {
       width={1920}
       height={1080}
       className={clsx(
-        'rounded w-full select-none border border-black/10 dark:border-white/10',
+        'rounded-sm w-full select-none border border-black/10 dark:border-white/10',
         className,
       )}
     />

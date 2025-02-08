@@ -126,7 +126,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
           </h2>
 
           <div className='mt-8 space-y-4'>
-            <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
+            <article className='rounded-sm bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
               <h3 className='font-medium text-base/tight text-[#282828] dark:text-[#D3D3D3]'>
                 {t('sections.issues.visibility.title')}
               </h3>
@@ -136,7 +136,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               </p>
             </article>
 
-            <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
+            <article className='rounded-sm bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
               <h3 className='font-medium text-base/tight text-[#282828] dark:text-[#D3D3D3]'>
                 {t('sections.issues.scenography.title')}
               </h3>
@@ -146,7 +146,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               </p>
             </article>
 
-            <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
+            <article className='rounded-sm bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
               <h3 className='font-medium text-base/tight text-[#282828] dark:text-[#D3D3D3]'>
                 {t('sections.issues.information.title')}
               </h3>
@@ -166,7 +166,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
           </h2>
 
           <div className='mt-8 space-y-4'>
-            <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
+            <article className='rounded-sm bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='24'
@@ -186,7 +186,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               </p>
             </article>
 
-            <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
+            <article className='rounded-sm bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='24'
@@ -206,7 +206,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               </p>
             </article>
 
-            <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
+            <article className='rounded-sm bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='24'
@@ -226,7 +226,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               </p>
             </article>
 
-            <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
+            <article className='rounded-sm bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='24'
@@ -246,7 +246,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               </p>
             </article>
 
-            <article className='rounded border border-[#F9F9F9] dark:border-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
+            <article className='rounded-sm border border-[#F9F9F9] dark:border-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='24'
@@ -266,7 +266,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               </p>
             </article>
 
-            <article className='rounded border border-[#F9F9F9] dark:border-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
+            <article className='rounded-sm border border-[#F9F9F9] dark:border-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='24'
@@ -285,7 +285,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
                 {t('sections.solutions.solution6')}
               </p>
             </article>
-            <article className='rounded border border-[#F9F9F9] dark:border-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
+            <article className='rounded-sm border border-[#F9F9F9] dark:border-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='24'
@@ -304,7 +304,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
                 {t('sections.solutions.solution7')}
               </p>
             </article>
-            <article className='rounded border border-[#F9F9F9] dark:border-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
+            <article className='rounded-sm border border-[#F9F9F9] dark:border-[#0F0F0F] px-6 py-6 sm:py-4 text-[#282828] dark:text-[#D3D3D3] flex flex-col sm:flex-row sm:items-center gap-4'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='24'
@@ -391,7 +391,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               height={3709}
               src='/images/projects/collection-zoologie-sorbonne/home-page.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
 
             <ProjectImage
@@ -399,7 +399,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               height={2890}
               src='/images/projects/collection-zoologie-sorbonne/base-de-donnée-page-passerelle.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
 
             <ProjectImage
@@ -407,7 +407,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               height={1857}
               src='/images/projects/collection-zoologie-sorbonne/base-de-donnée-généraliste.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
 
             <ProjectImage
@@ -415,7 +415,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               height={3627}
               src='/images/projects/collection-zoologie-sorbonne/page-spécimens.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
 
             <ProjectImage
@@ -423,7 +423,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               height={1086}
               src='/images/projects/collection-zoologie-sorbonne/réserver.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
           </div>
         </section>
@@ -441,7 +441,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               height={982}
               src='/images/projects/collection-zoologie-sorbonne/frise-chronologique.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
 
             <ProjectImage
@@ -449,7 +449,7 @@ export default async function CollectionZoologiePage({ params }: PageProps) {
               height={982}
               src='/images/projects/collection-zoologie-sorbonne/carte.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
           </div>
         </section>

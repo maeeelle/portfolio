@@ -123,11 +123,11 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
             </span>
           </h2>
 
-          <div className='mt-8 rounded space-y-4'>
+          <div className='mt-8 rounded-sm space-y-4'>
             {[1, 2, 3, 4, 5].map((step) => (
               <article
                 key={step}
-                className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'
+                className='rounded-sm bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'
               >
                 <h3 className='font-medium text-base/tight text-[#282828] dark:text-[#D3D3D3]'>
                   {t(`sections.userflow.steps.${step}.number`)}
@@ -153,7 +153,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
               height={834}
               src='/images/projects/maison-laurentine/1.Scan.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
 
             <ProjectImage
@@ -161,7 +161,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
               height={834}
               src='/images/projects/maison-laurentine/2.Validation.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
 
             <ProjectImage
@@ -169,7 +169,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
               height={834}
               src='/images/projects/maison-laurentine/3.Carnet.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
 
             <ProjectImage
@@ -177,7 +177,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
               height={834}
               src='/images/projects/maison-laurentine/4.Carnet.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
 
             <ProjectImage
@@ -185,7 +185,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
               height={834}
               src='/images/projects/maison-laurentine/5.Carnet.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
 
             <ProjectImage
@@ -193,7 +193,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
               height={834}
               src='/images/projects/maison-laurentine/6.Carnet.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
 
             <ProjectImage
@@ -201,7 +201,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
               height={834}
               src='/images/projects/maison-laurentine/7.Carnet.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
 
             <ProjectImage
@@ -209,7 +209,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
               height={834}
               src='/images/projects/maison-laurentine/8.Fin.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
           </div>
         </section>
@@ -227,7 +227,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
               height={1080}
               src='/images/projects/maison-laurentine/Frame-1.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
 
             <ProjectImage
@@ -235,7 +235,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
               height={982}
               src='/images/projects/maison-laurentine/Frame-2.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
 
             <ProjectImage
@@ -243,7 +243,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
               height={982}
               src='/images/projects/maison-laurentine/Frame-3.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
 
             <ProjectImage
@@ -251,7 +251,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
               height={982}
               src='/images/projects/maison-laurentine/Frame-7.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
 
             <ProjectImage
@@ -259,7 +259,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
               height={982}
               src='/images/projects/maison-laurentine/Frame-8.png'
               alt=''
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
           </div>
         </section>

@@ -16,7 +16,7 @@ export default async function Layout({ children, params }: LayoutProps) {
 
   return (
     <div className='min-h-dvh flex flex-col relative overflow-hidden'>
-      <header className='max-w-screen-2xl mx-auto w-full flex justify-between items-center p-8 sm:px-20 font-normal text-[#282828] dark:text-[#D3D3D3] text-sm'>
+      <header className='max-w-(--breakpoint-2xl) mx-auto w-full flex justify-between items-center p-8 sm:px-20 font-normal text-[#282828] dark:text-[#D3D3D3] text-sm'>
         <div className='flex gap-2 items-stretch h-4.5 uppercase'>
           <Link locale={locale} href='/'>
             MAËLLE.WORKS
@@ -44,7 +44,7 @@ export default async function Layout({ children, params }: LayoutProps) {
       {children}
 
       <Separator className='relative left-1/2 -translate-x-1/2 w-screen' />
-      <footer className='max-w-screen-2xl mx-auto w-full px-8 sm:px-20 font-normal text-[#282828] dark:text-[#D3D3D3] text-sm uppercase'>
+      <footer className='max-w-(--breakpoint-2xl) mx-auto w-full px-8 sm:px-20 font-normal text-[#282828] dark:text-[#D3D3D3] text-sm uppercase'>
         <div className='py-8 flex flex-col gap-4 sm:items-center'>
           <p>{t('footer.text')}</p>
 

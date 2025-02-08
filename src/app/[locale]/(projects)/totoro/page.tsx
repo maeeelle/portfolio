@@ -173,70 +173,70 @@ export default async function ProjectPage({ params }: PageProps) {
               height={1624}
               src='/images/projects/totoro/Explications.webp'
               alt=''
-              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+              className='outline-1 -outline-offset-1 outline-black/10 rounded-sm min-w-0'
             />
             <ProjectImage
               width={750}
               height={1624}
               src='/images/projects/totoro/Explications-1.webp'
               alt=''
-              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+              className='outline-1 -outline-offset-1 outline-black/10 rounded-sm min-w-0'
             />
             <ProjectImage
               width={750}
               height={1624}
               src='/images/projects/totoro/Explications-2.webp'
               alt=''
-              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+              className='outline-1 -outline-offset-1 outline-black/10 rounded-sm min-w-0'
             />
             <ProjectImage
               width={750}
               height={1624}
               src='/images/projects/totoro/Missions.webp'
               alt=''
-              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+              className='outline-1 -outline-offset-1 outline-black/10 rounded-sm min-w-0'
             />
             <ProjectImage
               width={750}
               height={1624}
               src='/images/projects/totoro/Filtres.webp'
               alt=''
-              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+              className='outline-1 -outline-offset-1 outline-black/10 rounded-sm min-w-0'
             />
             <ProjectImage
               width={750}
               height={1624}
               src='/images/projects/totoro/Mission.webp'
               alt=''
-              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+              className='outline-1 -outline-offset-1 outline-black/10 rounded-sm min-w-0'
             />
             <ProjectImage
               width={750}
               height={1624}
               src='/images/projects/totoro/Messagerie.webp'
               alt=''
-              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+              className='outline-1 -outline-offset-1 outline-black/10 rounded-sm min-w-0'
             />
             <ProjectImage
               width={750}
               height={1624}
               src='/images/projects/totoro/Conversation-ouverte.webp'
               alt=''
-              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+              className='outline-1 -outline-offset-1 outline-black/10 rounded-sm min-w-0'
             />
             <ProjectImage
               width={750}
               height={1624}
               src='/images/projects/totoro/Boutiques.webp'
               alt=''
-              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+              className='outline-1 -outline-offset-1 outline-black/10 rounded-sm min-w-0'
             />
             <ProjectImage
               width={750}
               height={1624}
               src='/images/projects/totoro/Boutique.webp'
               alt=''
-              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+              className='outline-1 -outline-offset-1 outline-black/10 rounded-sm min-w-0'
               unoptimized
             />
             <ProjectImage
@@ -244,14 +244,14 @@ export default async function ProjectPage({ params }: PageProps) {
               height={1624}
               src='/images/projects/totoro/Profile.webp'
               alt=''
-              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+              className='outline-1 -outline-offset-1 outline-black/10 rounded-sm min-w-0'
             />
             <ProjectImage
               width={750}
               height={1624}
               src='/images/projects/totoro/Profile2.webp'
               alt=''
-              className='outline-1 outline -outline-offset-1 outline-black/10 rounded min-w-0'
+              className='outline-1 -outline-offset-1 outline-black/10 rounded-sm min-w-0'
             />
           </div>
         </section>

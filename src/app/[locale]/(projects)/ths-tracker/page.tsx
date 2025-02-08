@@ -100,7 +100,7 @@ export default async function THSTrackerPage({ params }: PageProps) {
             <Paragraph>{t('research.intro')}</Paragraph>
 
             <div className='mt-6 space-y-4'>
-              <article className='rounded bg-[#FFCADE] dark:bg-[#3C1721] px-6 py-6 sm:py-4 text-[#6E001F] dark:text-[#FFCADE] flex flex-col sm:flex-row sm:items-center gap-4'>
+              <article className='rounded-sm bg-[#FFCADE] dark:bg-[#3C1721] px-6 py-6 sm:py-4 text-[#6E001F] dark:text-[#FFCADE] flex flex-col sm:flex-row sm:items-center gap-4'>
                 <Image
                   src='/images/projects/ths-tracker/icons/bar-chart.png'
                   width={96}
@@ -114,7 +114,7 @@ export default async function THSTrackerPage({ params }: PageProps) {
                 </p>
               </article>
 
-              <article className='rounded bg-[#FFF0CA] dark:bg-[#3C3317] px-6 py-6 sm:py-4 text-[#5F4400] dark:text-[#FFF0CA] flex flex-col sm:flex-row sm:items-center gap-4'>
+              <article className='rounded-sm bg-[#FFF0CA] dark:bg-[#3C3317] px-6 py-6 sm:py-4 text-[#5F4400] dark:text-[#FFF0CA] flex flex-col sm:flex-row sm:items-center gap-4'>
                 <Image
                   src='/images/projects/ths-tracker/icons/bell.png'
                   width={96}
@@ -128,7 +128,7 @@ export default async function THSTrackerPage({ params }: PageProps) {
                 </p>
               </article>
 
-              <article className='rounded bg-[#CAE1FF] dark:bg-[#172B3C] px-6 py-6 sm:py-4 text-[#003057] dark:text-[#CAE1FF] flex flex-col sm:flex-row sm:items-center gap-4'>
+              <article className='rounded-sm bg-[#CAE1FF] dark:bg-[#172B3C] px-6 py-6 sm:py-4 text-[#003057] dark:text-[#CAE1FF] flex flex-col sm:flex-row sm:items-center gap-4'>
                 <Image
                   src='/images/projects/ths-tracker/icons/stethoscope.png'
                   width={96}
@@ -157,7 +157,7 @@ export default async function THSTrackerPage({ params }: PageProps) {
             <Paragraph>{t('research.architecture.sections_intro')}</Paragraph>
 
             <div className='mt-6 space-y-4'>
-              <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
+              <article className='rounded-sm bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
                 <h3 className='font-medium text-base/tight text-[#282828] dark:text-[#D3D3D3]'>
                   {t('research.architecture.tracking.title')}
                 </h3>
@@ -166,7 +166,7 @@ export default async function THSTrackerPage({ params }: PageProps) {
                 </p>
               </article>
 
-              <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
+              <article className='rounded-sm bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
                 <h3 className='font-medium text-base/tight text-[#282828] dark:text-[#D3D3D3]'>
                   {t('research.architecture.journal.title')}
                 </h3>
@@ -175,7 +175,7 @@ export default async function THSTrackerPage({ params }: PageProps) {
                 </p>
               </article>
 
-              <article className='rounded bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
+              <article className='rounded-sm bg-[#F9F9F9] dark:bg-[#0F0F0F] px-6 py-4 space-y-2'>
                 <h3 className='font-medium text-base/tight text-[#282828] dark:text-[#D3D3D3]'>
                   {t('research.architecture.reminders.title')}
                 </h3>

@@ -121,7 +121,7 @@ export default async function QSMPCoPage({ params }: PageProps) {
               src='/images/projects/qsmp-co/QSMP.co-Desktop.webp'
               alt=''
               quality={90}
-              className='w-full outline-black/10 outline outline-1 -outline-offset-1 rounded'
+              className='w-full outline-black/10 outline-1 -outline-offset-1 rounded-sm'
             />
           </div>
         </section>

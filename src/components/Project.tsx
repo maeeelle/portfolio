@@ -9,7 +9,7 @@ type ProjectTagProps = {
 
 export function ProjectTag({ name }: ProjectTagProps) {
   return (
-    <li className='text-[#838383] dark:text-[#6D6D6D] text-base/[.7] -tracking-[.02em] px-2 py-1.5 rounded-sm border border-[#DBDBDB] dark:border-[#3C3C3C] font-[350]'>
+    <li className='text-[#838383] dark:text-[#6D6D6D] text-base/[.7] -tracking-[.02em] px-2 py-1.5 rounded-xs border border-[#DBDBDB] dark:border-[#3C3C3C] font-[350]'>
       {name}
     </li>
   )
@@ -82,7 +82,7 @@ export function Project({
               alt={`${organization.name} logo`}
               width={80}
               height={80}
-              className='rounded-sm size-5'
+              className='rounded-xs size-5'
             />
             <div>
               <span>{organization.name}</span>
@@ -91,7 +91,7 @@ export function Project({
           <div>
             <h2
               id={titleId}
-              className='text-3xl/none sm:text-4.5xl/none text-[#282828] dark:text-[#D3D3D3] inline-flex mb-3 sm:mb-2 items-center gap-2 group-data-[locked=false]:group-hover:text-[#4F32FF] dark:group-data-[locked=false]:group-hover:text-[#B2FF5D] transition-colors duration-150'
+              className='text-3xl/none sm:text-4.5xl/none text-[#282828] dark:text-[#D3D3D3] inline-flex mb-3 sm:mb-2 items-center gap-2 group-hover:group-data-[locked=false]:text-[#4F32FF] dark:group-hover:group-data-[locked=false]:text-[#B2FF5D] transition-colors duration-150'
             >
               {project.title}
               {isLocked ? (

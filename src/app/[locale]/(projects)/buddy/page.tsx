@@ -73,28 +73,28 @@ export default async function BuddyPage({ params }: PageProps) {
             height={1644}
             src='/images/projects/buddy/Pensif.webp'
             alt=''
-            className='h-auto w-full max-w-80 xl:max-w-[18.75rem] outline -outline-offset-1 outline-1 outline-black/10 rounded'
+            className='h-auto w-full max-w-80 xl:max-w-[18.75rem] -outline-offset-1 outline-1 outline-black/10 rounded-sm'
           />
           <ProjectImage
             width={1716}
             height={1644}
             src='/images/projects/buddy/Heureux.webp'
             alt=''
-            className='h-auto w-full max-w-80 xl:max-w-[18.75rem] outline -outline-offset-1 outline-1 outline-black/10 rounded'
+            className='h-auto w-full max-w-80 xl:max-w-[18.75rem] -outline-offset-1 outline-1 outline-black/10 rounded-sm'
           />
           <ProjectImage
             width={1716}
             height={1644}
             src='/images/projects/buddy/Triste.webp'
             alt=''
-            className='h-auto w-full max-w-80 xl:max-w-[18.75rem] outline -outline-offset-1 outline-1 outline-black/10 rounded'
+            className='h-auto w-full max-w-80 xl:max-w-[18.75rem] -outline-offset-1 outline-1 outline-black/10 rounded-sm'
           />
           <ProjectImage
             width={1716}
             height={1644}
             src='/images/projects/buddy/Gêné.webp'
             alt=''
-            className='h-auto w-full max-w-80 xl:max-w-[18.75rem] outline -outline-offset-1 outline-1 outline-black/10 rounded'
+            className='h-auto w-full max-w-80 xl:max-w-[18.75rem] -outline-offset-1 outline-1 outline-black/10 rounded-sm'
           />
         </section>
       </Aside>

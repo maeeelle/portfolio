@@ -21,7 +21,7 @@ export default async function LegalPage() {
   const t = await getTranslations('legal')
 
   return (
-    <main className='text-[#282828] dark:text-[#D3D3D3] tracking-[-.02em] px-8 sm:px-20 py-10 max-w-screen-2xl mx-auto flex-1 w-full'>
+    <main className='text-[#282828] dark:text-[#D3D3D3] tracking-[-.02em] px-8 sm:px-20 py-10 max-w-(--breakpoint-2xl) mx-auto flex-1 w-full'>
       <section className='space-y-6 has-[+section]:mb-10'>
         <H1>{t('credits.title')}</H1>
 
