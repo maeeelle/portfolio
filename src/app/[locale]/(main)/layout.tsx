@@ -2,7 +2,6 @@ import { LanguageToggleButton } from '@/components/LanguageToggle'
 import { Separator } from '@/components/Separator'
 import { ToggleThemeButton } from '@/components/ThemeToggle'
 import { Link } from '@/i18n/routing'
-import NextLink from 'next/link'
 import { setRequestLocale, getTranslations } from 'next-intl/server'
 
 type LayoutProps = {
@@ -23,8 +22,7 @@ export default async function Layout({ children, params }: LayoutProps) {
             MAËLLE.WORKS
           </Link>
           <span aria-hidden>•</span>
-          <NextLink
-            prefetch={false}
+          <a
             hrefLang={locale}
             href={
               locale === 'en'
@@ -34,7 +32,7 @@ export default async function Layout({ children, params }: LayoutProps) {
             className='no-underline text-[#4F32FF] dark:text-[#B2FF5D] transition-all duration-150 sm:underline decoration-from-font decoration-wavy underline-offset-4 decoration-[#4F32FF]/0 dark:decoration-[#B2FF5D]/0 hover:decoration-[#4F32FF]/100 dark:hover:decoration-[#B2FF5D]/100'
           >
             {t('header.cv')}
-          </NextLink>
+          </a>
         </div>
 
         <div className='flex gap-4 items-stretch h-4.5'>
