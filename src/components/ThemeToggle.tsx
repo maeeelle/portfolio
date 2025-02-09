@@ -1,6 +1,7 @@
 'use client'
 
 import { ThemeProvider as NextThemesProvider, useTheme } from 'next-themes'
+import { useEffect } from 'react'
 
 export function ThemeProvider({
   children,
@@ -10,7 +11,17 @@ export function ThemeProvider({
 }
 
 export function ToggleThemeButton() {
-  const { theme, setTheme } = useTheme()
+  const { theme, resolvedTheme, setTheme } = useTheme()
+
+  useEffect(() => {
+    if (
+      theme === 'system' &&
+      Boolean(resolvedTheme) &&
+      resolvedTheme !== 'system'
+    ) {
+      document.cookie = `NEXT_THEME=${resolvedTheme};path=/;max-age=31536000`
+    }
+  }, [resolvedTheme, theme])
 
   return (
     <button
@@ -19,6 +30,7 @@ export function ToggleThemeButton() {
       className='size-4.5 relative group overflow-hidden flex'
       onClick={() => {
         const newTheme = theme === 'light' ? 'dark' : 'light'
+        document.cookie = `NEXT_THEME=${newTheme};path=/;max-age=31536000`
         setTheme(newTheme)
       }}
     >
