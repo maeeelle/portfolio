@@ -12,6 +12,7 @@ import { NextIntlClientProvider } from 'next-intl'
 import { ThemeProvider } from '@/components/ThemeToggle'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { cookies } from 'next/headers'
 
 const overusedGR = localFont({
   src: '../fonts/OverusedGroteskRoman-VF.ttf',
@@ -58,11 +59,14 @@ export default async function RootLayout({
     notFound()
   }
 
+  const cookieStore = await cookies()
+  const themeCookie = cookieStore.get('NEXT_THEME')
+
   setRequestLocale(locale)
   const messages = await getMessages()
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale} className={themeCookie?.value} suppressHydrationWarning>
       <body
         className={`${overusedGR.variable} ${diolce.variable} relative antialiased selection:bg-[#b2ff5d] dark:selection:bg-[#4f32ff] dark:selection:text-[#D3D3D3]`}
       >
