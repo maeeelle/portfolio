@@ -14,14 +14,10 @@ export function ToggleThemeButton() {
   const { theme, resolvedTheme, setTheme } = useTheme()
 
   useEffect(() => {
-    if (
-      theme === 'system' &&
-      Boolean(resolvedTheme) &&
-      resolvedTheme !== 'system'
-    ) {
+    if (Boolean(resolvedTheme) && resolvedTheme !== 'system') {
       document.cookie = `NEXT_THEME=${resolvedTheme};path=/;max-age=31536000`
     }
-  }, [resolvedTheme, theme])
+  }, [resolvedTheme])
 
   return (
     <button
