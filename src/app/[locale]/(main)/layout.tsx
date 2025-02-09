@@ -24,6 +24,7 @@ export default async function Layout({ children, params }: LayoutProps) {
           </Link>
           <span aria-hidden>•</span>
           <NextLink
+            prefetch={false}
             hrefLang={locale}
             href={
               locale === 'en'
