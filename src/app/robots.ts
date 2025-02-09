@@ -5,6 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
+      disallow: '/doc/',
     },
     sitemap: 'https://www.maelle.works/sitemap.xml',
   }
