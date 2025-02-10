@@ -41,7 +41,7 @@ export default async function BuddyPage({ params }: PageProps) {
               logoSrc='/images/projects/carrefour.png'
               logoAlt='Carrefour logo'
               company='Carrefour'
-              title='Data Supermarket'
+              title='Buddy'
               subtitle={t('subtitle')}
               className='mb-8'
             />
