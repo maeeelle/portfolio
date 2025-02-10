@@ -43,7 +43,7 @@ export default async function MaisonLaurentinePage({ params }: PageProps) {
               logoSrc='/images/projects/sorbonne.png'
               logoAlt='Université Sorbonne Paris Nord logo'
               company='Université Sorbonne Paris Nord'
-              title='La Maison Laurentine'
+              title='Maison Laurentine'
               subtitle={t('subtitle')}
               className='mb-8'
             />
