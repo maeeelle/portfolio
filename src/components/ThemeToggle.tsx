@@ -23,7 +23,7 @@ export function ToggleThemeButton() {
     <button
       type='button'
       aria-label='Toggle theme'
-      className='size-4.5 relative group overflow-hidden flex'
+      className='size-4.5 relative group overflow-hidden flex hover:cursor-pointer'
       onClick={() => {
         const newTheme = theme === 'light' ? 'dark' : 'light'
         document.cookie = `NEXT_THEME=${newTheme};path=/;max-age=31536000`
