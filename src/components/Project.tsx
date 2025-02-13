@@ -75,7 +75,7 @@ export function Project({
         locale={locale}
         className='block group'
       >
-        <header className='relative mb-5 sm:mb-7'>
+        <div className='relative mb-5 sm:mb-7'>
           <div className='text-[#161616] dark:text-[#D3D3D3] text-base -tracking-[.02em] mb-4 sm:mb-5 inline-flex items-center gap-2'>
             <Image
               src={organization.image}
@@ -102,9 +102,9 @@ export function Project({
               {project.subtitle}
             </p>
           </div>
-        </header>
+        </div>
 
-        <footer className='text-[#8E8E8E] -tracking-[.02em] flex flex-col sm:flex-row gap-4 sm:items-center'>
+        <div className='text-[#8E8E8E] -tracking-[.02em] flex flex-col sm:flex-row gap-4 sm:items-center'>
           <time
             dateTime={project.year}
             className='font-[350] text-base leading-[.7]'
@@ -121,7 +121,7 @@ export function Project({
               <ProjectTag key={tag} name={tag} />
             ))}
           </ProjectTagList>
-        </footer>
+        </div>
       </Link>
     </article>
   )
