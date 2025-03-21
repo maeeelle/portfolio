@@ -7,14 +7,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: 'https://www.maelle.works/doc/cv_maelleworks_en.pdf',
-      lastModified: new Date(),
-    },
-    {
-      url: 'https://www.maelle.works/doc/cv_maelleworks_fr.pdf',
-      lastModified: new Date(),
-    },
-    {
       url: 'https://www.maelle.works/collection-zoologie-sorbonne',
       lastModified: new Date(),
     },
